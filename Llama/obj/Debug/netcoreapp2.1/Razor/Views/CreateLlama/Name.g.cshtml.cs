@@ -62,7 +62,7 @@ using Llama.Models;
             WriteLiteral("\n<div class=\"container\">\n    <div class=\"row text-center\">\n        <div class=\"col-lg-6 col-md-6 col-sm-12\">\n            <h1>Llama avatar here</h1>\n            ");
             EndContext();
             BeginContext(207, 90, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "c6a9f0a87d034dceaf91c519e9578376", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "e9adb664267d4631a246d2dd5bd36b5d", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();

@@ -32,4 +32,4 @@
 /mnt/NTFS600/DotNetProjects/LlamaApp/Llama/Llama/obj/Debug/netcoreapp2.1/Llama.csproj.CopyComplete
 /mnt/NTFS600/DotNetProjects/LlamaApp/Llama/Llama/obj/Debug/netcoreapp2.1/Razor/Views/CreateLlama/index.g.cshtml.cs
 /mnt/NTFS600/DotNetProjects/LlamaApp/Llama/Llama/obj/Debug/netcoreapp2.1/Razor/Views/CreateLlama/Name.g.cshtml.cs
-/mnt/NTFS600/DotNetProjects/LlamaApp/Llama/Llama/obj/Debug/netcoreapp2.1/Razor/Views/CreateLlama/Custumization.g.cshtml.cs
+/mnt/NTFS600/DotNetProjects/LlamaApp/Llama/Llama/obj/Debug/netcoreapp2.1/Razor/Views/CreateLlama/Customization.g.cshtml.cs

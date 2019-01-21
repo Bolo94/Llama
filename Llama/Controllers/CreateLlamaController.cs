@@ -16,7 +16,7 @@ namespace Llama.Controllers {
             return View ();
         }
 
-        public IActionResult Custumization () {
+        public IActionResult Customization () {
             return View ();
         }
     }
