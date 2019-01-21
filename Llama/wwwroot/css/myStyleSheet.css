@@ -1,0 +1,19 @@
+.custumizationContainer {
+  background-color: #d98816;
+  border-radius: 25px;
+  margin: 20px;
+}
+
+.nextBackButtonContainer {
+  padding: 2%;
+}
+
+.avatarCardsContainer {
+  margin: 20px;
+  padding: 10px;
+  background-color: #86467b;
+  border-radius: 25px;
+}
+.avatarImgCard {
+  padding: 10px;
+}
