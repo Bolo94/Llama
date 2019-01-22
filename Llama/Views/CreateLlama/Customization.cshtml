@@ -468,22 +468,41 @@
         <div class="col-lg-4 col-md-4 col-sm-12">
             <h1>Llama's colors </h1>
             <div class="row text-center">
-                <ul class="nav nav-tabs">
-                    <li class="active"><a data-toggle="tab" href="color">Color</a></li>
-                    <li><a data-toggle="tab" href="#eyes">Eyes</a></li>
-                    <li><a data-toggle="tab" href="#tail">Tail</a></li>
+                <ul id="llama-colorpick-tabs" class="nav nav-tabs">
+                    <li id="llama-colorpick-body" class="active"><a data-toggle="tab" href="#body">Body</a></li>
+
+                    
+                    <li id="llama-colorpick-eye"><a data-toggle="tab" href="#eyes">Eyes</a></li>
+
+
+                    <li id="llama-colorpick-tail"><a data-toggle="tab" href="#tail">Tail</a></li>
                 </ul>
+
+
                 <div class="tab-content">
-                        <div id="color" class="tab-pane fade in active">
-                            <h3>Color Options</h3>
-                            
+                        <div id="body" class="tab-pane fade in active">
+                            <h3> Body Color Options</h3>
+                            <!-- Buttons -->
+                            <button id="core_white_button" onClick="changeToWhite(this.id)" type="button" class="btn btn-default btn-circle btn-xl"></button>
+
+                            <button id="core_blue_button" onClick="changeToBlue(this.id)" type="button" class="btn btn-primary btn-circle btn-xl"></button>
+                            <button id="core_green_button" onClick="changeToGreen(this.id)"  type="button" class="btn btn-success btn-circle btn-xl"></button>
+                            <button id="core_light_blue_button" onClick="changeToLBlue(this.id)"  type="button" class="btn btn-info btn-circle btn-xl"></button>
+                            <button id="core_orange_button" onClick="changeToOrange(this.id)"  type="button" class="btn btn-warning btn-circle btn-xl"></button>
+                            <button id="core_red_button" onClick="changeToRed(this.id)"  type="button" class="btn btn-danger btn-circle btn-xl"></button>
+
+                            <button id="core_gray_button" onClick="changeToGray(this.id)" type="button" class="btn btn-circle btn-xl btn-gray  "></button>
+                            <button id="core_lbrown_button" onClick="changeToLBrown(this.id)" type="button" class="btn btn-default btn-circle btn-xl btn-lbrown"></button>
+
                         </div>
+
+
                         <div id="eyes" class="tab-pane fade">
-                            <h3>Color Options</h3>
+                            <h3> Eyes Color Options</h3>
                             
                         </div>
                         <div id="tail" class="tab-pane fade">
-                            <h3>Color Options</h3>
+                            <h3> Tail Color Options</h3>
                             
                         </div>
                 </div>
