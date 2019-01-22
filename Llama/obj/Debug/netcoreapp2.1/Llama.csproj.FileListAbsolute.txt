@@ -72,3 +72,4 @@ C:\Users\Camille\source\repos\Llama-create-avatar\Llama\Llama\obj\Debug\netcorea
 =======
 /mnt/NTFS600/DotNetProjects/LlamaApp/Llama/Llama/obj/Debug/netcoreapp2.1/Razor/Views/CreateLlama/Customization.g.cshtml.cs
 >>>>>>> 0ffac5d53709f28541e650ca53e071514c20e188
+C:\Users\Camille\source\repos\Llama-create-avatar\Llama\Llama\obj\Debug\netcoreapp2.1\Razor\Views\CreateLlama\Customization.g.cshtml.cs

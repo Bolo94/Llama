@@ -75,13 +75,8 @@ using Llama.Models;
                     <a href=""#"" class=""d-block mb-4 h-100"">
                         ");
             EndContext();
-<<<<<<< HEAD
             BeginContext(381, 95, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "c611ccaf656f46b7bcf7b4b0ab822093", async() => {
-=======
-            BeginContext(370, 95, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "ea47518e2ea14dda9d83d7679e8a91b2", async() => {
->>>>>>> 0ffac5d53709f28541e650ca53e071514c20e188
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "23a2503b7cdb4686861e1686fc0a6cb9", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -100,13 +95,8 @@ using Llama.Models;
             BeginContext(476, 187, true);
             WriteLiteral("\r\n                    </a>\r\n                </div>\r\n                <div class=\"col-lg-4 col-sm-12\">\r\n                    <a href=\"#\" class=\"d-block mb-4 h-100\">\r\n                        ");
             EndContext();
-<<<<<<< HEAD
             BeginContext(663, 83, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "d2b1af3453654ea788fa253a1a72b110", async() => {
-=======
-            BeginContext(647, 83, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "b3f3f7faa6c248b9bd99053126f380c7", async() => {
->>>>>>> 0ffac5d53709f28541e650ca53e071514c20e188
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "35fdae174da548088e93939da135e9da", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -125,13 +115,8 @@ using Llama.Models;
             BeginContext(746, 187, true);
             WriteLiteral("\r\n                    </a>\r\n                </div>\r\n                <div class=\"col-lg-4 col-sm-12\">\r\n                    <a href=\"#\" class=\"d-block mb-4 h-100\">\r\n                        ");
             EndContext();
-<<<<<<< HEAD
             BeginContext(933, 83, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "635c7a9c61ef422daa38cbe941bb8cb1", async() => {
-=======
-            BeginContext(912, 83, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "fd985c884d924a4e986c210bf21bac0d", async() => {
->>>>>>> 0ffac5d53709f28541e650ca53e071514c20e188
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "3705fad384ff4754a6f3b3179a531e0d", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -150,13 +135,8 @@ using Llama.Models;
             BeginContext(1016, 187, true);
             WriteLiteral("\r\n                    </a>\r\n                </div>\r\n                <div class=\"col-lg-4 col-sm-12\">\r\n                    <a href=\"#\" class=\"d-block mb-4 h-100\">\r\n                        ");
             EndContext();
-<<<<<<< HEAD
             BeginContext(1203, 83, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "5f2759a3f2aa47638cec2482f04a1ace", async() => {
-=======
-            BeginContext(1177, 83, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "f222491fd3a2431daaeb79917e025729", async() => {
->>>>>>> 0ffac5d53709f28541e650ca53e071514c20e188
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "6a539f3630e24ffa90022d419fe10dc2", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -175,13 +155,8 @@ using Llama.Models;
             BeginContext(1286, 187, true);
             WriteLiteral("\r\n                    </a>\r\n                </div>\r\n                <div class=\"col-lg-4 col-sm-12\">\r\n                    <a href=\"#\" class=\"d-block mb-4 h-100\">\r\n                        ");
             EndContext();
-<<<<<<< HEAD
             BeginContext(1473, 83, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "1b181b70e3b74b07978ba2cb1a35eabb", async() => {
-=======
-            BeginContext(1442, 83, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "cfddb2eee2874fb0bbfc94d93db3302a", async() => {
->>>>>>> 0ffac5d53709f28541e650ca53e071514c20e188
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "4d17dac95802458ab905ae7a0570d3d7", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -200,13 +175,8 @@ using Llama.Models;
             BeginContext(1556, 186, true);
             WriteLiteral("\r\n                    </a>\r\n                </div>\r\n                <div class=\"col-lg-4 col-sm-12\">\r\n                   <a href=\"#\" class=\"d-block mb-4 h-100\">\r\n                        ");
             EndContext();
-<<<<<<< HEAD
             BeginContext(1742, 83, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "48026aee0ffe42ecb2b0cc940a19b5a9", async() => {
-=======
-            BeginContext(1706, 83, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "6eaab5d8ad28471f9dd3c8d69db471e2", async() => {
->>>>>>> 0ffac5d53709f28541e650ca53e071514c20e188
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "f56a3210d91848369435e310211fae9f", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -225,13 +195,8 @@ using Llama.Models;
             BeginContext(1825, 191, true);
             WriteLiteral("\r\n                    </a>\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <div class=\"col-lg-6 col-md-6 col-sm-12\">\r\n            <h1>Llama avatar here</h1>\r\n            ");
             EndContext();
-<<<<<<< HEAD
             BeginContext(2016, 90, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "23403f21ad474c2486d6e8005740be4d", async() => {
-=======
-            BeginContext(1973, 90, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "b44f6912b05d43dc83a399bb8cf7bca6", async() => {
->>>>>>> 0ffac5d53709f28541e650ca53e071514c20e188
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "81f5589b22874e3398a3fe7f410c2f70", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -251,7 +216,7 @@ using Llama.Models;
             WriteLiteral("\r\n                    \r\n        </div>\r\n    </div>\r\n    <div class=\"row text-right\">\r\n        ");
             EndContext();
             BeginContext(2200, 134, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "38f2b2316e234fb796e805476847ef53", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a9c24037d62440c3a9ad309d9f67705d", async() => {
                 BeginContext(2271, 59, true);
                 WriteLiteral("<button type=\"button\" class=\"btn btn-success\">Next</button>");
                 EndContext();
