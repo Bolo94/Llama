@@ -1,12 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
 namespace Llama.Models
 {
-    public class User
+    public partial class Users
     {
+        [Key]
         public int IdUser { get; set; }
         public String NickName { get; set; }
         public String UserName { get; set; }
@@ -15,4 +17,5 @@ namespace Llama.Models
         public Boolean Gender { get; set; }
         //code
     }
+
 }

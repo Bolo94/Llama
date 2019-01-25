@@ -1,0 +1,48 @@
+﻿@model IEnumerable<Llama.Models.Users>
+
+        @{
+    ViewBag.Title = "Users";
+        }
+
+        <h2>Users</h2>
+
+        <p>
+            <a asp-controller="Users" asp-action="Create">Create New</a>
+        </p>
+
+        <table class="table">
+            <tr>
+                <th>IdUser</th>
+                <th>NickName</th>
+                <th>UserName</th>
+                <th>Password</th>
+                <th>Age</th>
+                <th>Gender</th>
+                
+            </tr>
+
+            @foreach (var item in Model)
+    {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.IdUser)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NickName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.UserName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Password)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Age)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Gender)
+                </td>
+            </tr>
+    }
+
+        </table>

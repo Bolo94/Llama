@@ -30,3 +30,4 @@ C:\Users\Carlos\Documents\GitHub\Llama\Llama\obj\Debug\netcoreapp2.1\Llama.Views
 C:\Users\Carlos\Documents\GitHub\Llama\Llama\obj\Debug\netcoreapp2.1\Llama.dll
 C:\Users\Carlos\Documents\GitHub\Llama\Llama\obj\Debug\netcoreapp2.1\Llama.pdb
 C:\Users\Carlos\Documents\GitHub\Llama\Llama\obj\Debug\netcoreapp2.1\Llama.csproj.CopyComplete
+C:\Users\Carlos\Documents\GitHub\Llama\Llama\obj\Debug\netcoreapp2.1\Razor\Views\Home\Register.g.cshtml.cs
