@@ -119,6 +119,26 @@ function changeToGray(clicked_id){
     else if(clicked_id == "tail_gray_button"){
         document.getElementById('llama-tail').setAttribute('style', 'fill: #C0C0C0');
       }
+}
+
+document.getElementById("text").onclick = function () {
+  var div = document.createElement('div');
+     // div.style.backgroundColor = "pink";
+     div.style.position = "absolute";
+     div.style.left = "135px";
+     div.style.top = "100px";
+     div.style.height = "100px";
+     div.style.width = "400px";
+    // div.innerHTML += 'Extra stuff';
+    div.id = "test"
+
+     document.getElementsByTagName('body')[0].appendChild(div);
+
+//   Add image
+  var element = document.getElementById("llamahat");
+  element.setAttribute("data", "/images/Hat_of_Santa.svg"); 
+  element.setAttribute("type", "image/svg+xml"); 
+
 
 }
   
