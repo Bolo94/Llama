@@ -1,4 +1,4 @@
-﻿@model IEnumerable<Llama.Models.Users>
+﻿@model IEnumerable<Users>
 
         @{
     ViewBag.Title = "Users";
@@ -6,9 +6,6 @@
 
         <h2>Users</h2>
 
-        <p>
-            <a asp-controller="Users" asp-action="Create">Create New</a>
-        </p>
 
         <table class="table">
             <tr>
@@ -25,22 +22,29 @@
     {
             <tr>
                 <td>
-                    @Html.DisplayFor(modelItem => item.IdUser)
+                    @item.IdUser
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.NickName)
+                    @item.NickName
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.UserName)
+                    @item.UserName
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.Password)
+                    @item.Password
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.Age)
+                    @item.Age
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.Gender)
+                    @if (item.Gender)
+                    {
+                        <span>Male</span>
+                    }
+                    else
+                    {
+                        <span>Female</span>
+                    }
                 </td>
             </tr>
     }

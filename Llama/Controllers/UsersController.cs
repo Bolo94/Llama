@@ -9,30 +9,46 @@ namespace Llama.Controllers
 {
     public class UsersController : Controller
     {
-        private UserDbContext _context;
-        public UsersController( UserDbContext context)
+        private readonly IUserRepository _userRepository;
+
+        public UsersController(IUserRepository userRepository)
         {
-            _context = context;
+            _userRepository = userRepository;
         }
+
         public IActionResult Index()
         {
-            return View(_context.Users.ToList());
+            return View(_userRepository.GetAllUsers());
         }
+
         public IActionResult Create()
         {
             return View();
         }
+
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public IActionResult Create(Users users)
+        public IActionResult Create(Users user)
         {
-            if (ModelState.IsValid)
-            {
-                _context.Users.Add(users);
-                _context.SaveChanges();
-                return RedirectToAction("Index");
-            }
-            return View(User);
+            _userRepository.AddUser(user);
+            return RedirectToAction("RegisterComplete");
         }
+
+        public IActionResult RegisterComplete()
+        {
+            return View();
+        }
+
+        //[HttpPost]
+        //[ValidateAntiForgeryToken]
+        //public IActionResult Create(Users users)
+        //{
+        //    if (ModelState.IsValid)
+        //    {
+        //        _context.Users.Add(users);
+        //        _context.SaveChanges();
+        //        return RedirectToAction("Index");
+        //    }
+        //    return View(User);
+        //}
     }
 }

@@ -10,10 +10,22 @@ namespace Llama.Models
     {
         [Key]
         public int IdUser { get; set; }
+
+        [Required]
         public String NickName { get; set; }
+
+        [Required]
         public String UserName { get; set; }
+
+        [Required]
+        [DataType(DataType.Password)]
         public String Password { get; set; }
+
+        [Required]
+        [Range(1, 15)]
         public int Age { get; set; }
+
+        [Required]
         public Boolean Gender { get; set; }
         //code
     }
