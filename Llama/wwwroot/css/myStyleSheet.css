@@ -1,3 +1,50 @@
+/* Fonts*/
+@import url("https://fonts.googleapis.com/css?family=Spicy+Rice");
+
+body {
+  background-color: #00dcf8;
+  width: 100%;
+  height: 100%;
+}
+
+.landPageContainer {
+}
+
+.floorLandPage {
+  background: url(../images/landPageFloor.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 20%;
+  left: 0;
+  bottom: 0;
+  position: fixed;
+
+  margin: 0;
+}
+
+.btnPlay {
+  background-color: #ca8400;
+  border: 8px solid #a67f2a;
+  font-family: "Spicy Rice", cursive;
+  font-size: 40px;
+  text-decoration: none;
+  color: #fbdd74;
+  display: inline-block;
+  border-radius: 25px;
+  padding: 8px 4px;
+  width: 20%;
+  height: 15%;
+  margin: 3%;
+}
+
+.imgLlamaBus {
+  bottom: 0;
+  margin-left: 25%;
+  margin-bottom: 14%;
+  position: fixed;
+}
+
 .custumizationContainer {
   background-color: #d98816;
   border-radius: 25px;
@@ -16,14 +63,13 @@
   border: 2px dashed #fff;
   line-height: 1.3em;
   box-shadow: 0 0 0 4px #86467b, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
-   
 }
 
 .avatarImgCard {
   padding: 10px;
 }
 
-svg::before{
+svg::before {
   content: "dgfcg";
   background: #ff0030;
   display: block;
@@ -31,201 +77,194 @@ svg::before{
   height: 40px;
 }
 
-
 /* Animation */
 @-webkit-keyframes pulse {
   0% {
-    -webkit-transform: scale(1) rotate(0deg); 
+    -webkit-transform: scale(1) rotate(0deg);
   }
   50% {
-    -webkit-transform: scale(1.1) rotate(-5deg); 
+    -webkit-transform: scale(1.1) rotate(-5deg);
   }
   100% {
-    -webkit-transform: scale(1) rotate(0deg); 
+    -webkit-transform: scale(1) rotate(0deg);
   }
 }
 @-o-keyframes pulse {
   0% {
-    -o-transform: scale(1) rotate(0deg); 
+    -o-transform: scale(1) rotate(0deg);
   }
   50% {
-    -o-transform: scale(1.1) rotate(-5deg); 
+    -o-transform: scale(1.1) rotate(-5deg);
   }
   100% {
-    -o-transform: scale(1) rotate(0deg); 
+    -o-transform: scale(1) rotate(0deg);
   }
 }
 @-moz-keyframes pulse {
   0% {
-    -moz-transform: scale(1) rotate(0deg); 
+    -moz-transform: scale(1) rotate(0deg);
   }
   50% {
-    -moz-transform: scale(1.1) rotate(-5deg); 
+    -moz-transform: scale(1.1) rotate(-5deg);
   }
   100% {
-    -moz-transform: scale(1) rotate(0deg); 
+    -moz-transform: scale(1) rotate(0deg);
   }
 }
 @keyframes pulse {
   0% {
-    transform: scale(1) rotate(0deg); 
+    transform: scale(1) rotate(0deg);
   }
   50% {
-    transform: scale(1.1) rotate(-5deg); 
+    transform: scale(1.1) rotate(-5deg);
   }
   100% {
-    transform: scale(1) rotate(0deg); 
+    transform: scale(1) rotate(0deg);
   }
 }
 
 @-webkit-keyframes bump {
-0% {
+  0% {
     top: 0;
-}
-5% {
+  }
+  5% {
     top: 3px;
-}
-10% {
-    top:0;
-}
-100% {
-    top:0;
-}
+  }
+  10% {
+    top: 0;
+  }
+  100% {
+    top: 0;
+  }
 }
 @-o-keyframes bump {
-0% {
+  0% {
     top: 0;
-}
-5% {
+  }
+  5% {
     top: 3px;
-}
-10% {
-    top:0;
-}
-100% {
-    top:0;
-}
+  }
+  10% {
+    top: 0;
+  }
+  100% {
+    top: 0;
+  }
 }
 @-moz-keyframes bump {
-0% {
+  0% {
     top: 0;
-}
-5% {
+  }
+  5% {
     top: 3px;
-}
-10% {
-    top:0;
-}
-100% {
-    top:0;
-}
+  }
+  10% {
+    top: 0;
+  }
+  100% {
+    top: 0;
+  }
 }
 @keyframes bump {
-0% {
+  0% {
     top: 0;
-}
-5% {
+  }
+  5% {
     top: 3px;
-}
-10% {
-    top:0;
-}
-100% {
-    top:0;
-}
+  }
+  10% {
+    top: 0;
+  }
+  100% {
+    top: 0;
+  }
 }
 
 /* Styling  */
 
-
 /* Takes out ugly blue square outline */
-*:focus {outline:none !important}  
+*:focus {
+  outline: none !important;
+}
 
 .stitched {
- padding: 10px 16px;
- width: 70px;
- height: 70px;
- line-height: 1.3em;
- border: 2px dashed #fff;
- border-radius: 50%;
+  padding: 10px 16px;
+  width: 70px;
+  height: 70px;
+  line-height: 1.3em;
+  border: 2px dashed #fff;
+  border-radius: 50%;
   margin-right: 20px;
   margin-bottom: 20px;
 }
 
-
-.white{
+.white {
   background: #ffffff;
   color: #ffffff;
   box-shadow: 0 0 0 4px #ffffff, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
   border: 2px dashed lightgray;
 }
 
-.yellow{
-  background: #FFFF0D;
-  color: #FFFF0D;
-  box-shadow: 0 0 0 4px #FFFF0D, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
+.yellow {
+  background: #ffff0d;
+  color: #ffff0d;
+  box-shadow: 0 0 0 4px #ffff0d, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
 }
 
-.blue{
-  background: #347AB6;
+.blue {
+  background: #347ab6;
   color: #fff;
-  box-shadow: 0 0 0 4px #347AB6, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
+  box-shadow: 0 0 0 4px #347ab6, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
 }
 
-.fuchsia{
+.fuchsia {
   background: #ff0030;
   color: #fff;
   box-shadow: 0 0 0 4px #ff0030, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
 }
 
-.green{
-  background: #57BB58;
-  color: #57BB58;
-  box-shadow: 0 0 0 4px #57BB58, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
+.green {
+  background: #57bb58;
+  color: #57bb58;
+  box-shadow: 0 0 0 4px #57bb58, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
 }
 
-.orange{
-  background: #EFAD4D;
-  color: #EFAD4D;
-  box-shadow: 0 0 0 4px #EFAD4D, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
+.orange {
+  background: #efad4d;
+  color: #efad4d;
+  box-shadow: 0 0 0 4px #efad4d, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
 }
 
-.red{
-  background: #D9544F;
-  color: #D9544F;
-  box-shadow: 0 0 0 4px #D9544F, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
+.red {
+  background: #d9544f;
+  color: #d9544f;
+  box-shadow: 0 0 0 4px #d9544f, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
 }
 
-.gray{
-  background: #C0C0C0;
-  color: #C0C0C0;
-  box-shadow: 0 0 0 4px #C0C0C0, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
+.gray {
+  background: #c0c0c0;
+  color: #c0c0c0;
+  box-shadow: 0 0 0 4px #c0c0c0, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
 }
 
-.lbrown{
+.lbrown {
   background: #c67e5d;
   color: #c67e5d;
   box-shadow: 0 0 0 4px #c67e5d, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
 }
 
-
-
-.btn:hover{
-
+.btn:hover {
   -webkit-animation: pulse 1s ease 0s infinite normal;
   -o-animation: pulse 1s ease 0s infinite normal;
   -moz-animation: pulse 1s ease 0s infinite normal;
   animation: pulse 1s ease 0s infinite normal;
 }
 
-.stickyContainer{
+.stickyContainer {
   display: flex;
-
 }
 
-.hatStyling{
+.hatStyling {
   position: -webkit-sticky;
   position: sticky;
 }
-
-
