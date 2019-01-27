@@ -10,7 +10,7 @@
             <div class="row text-center avatarCardsContainer">
                 <div class="col-lg-4 col-sm-12 avatarImgCard">
                     <a href="#" class="d-block mb-4 h-100">
-                        <img class="img-fluid img-thumbnail img-rounded" src="~/images/avatarType.png" alt="Llama img">
+                        <img class="img-fluid img-thumbnail img-rounded" src="~/images/smallHatStatic.png" alt="Llama img" onclick="addSantaHat()">
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-12 avatarImgCard">
@@ -40,22 +40,17 @@
                 </div>
             </div>
         </div>
-        @*
-        <div class="col-lg-4 col-md-4 col-sm-12 avatarImgCard">
-            <h1>Llama avatar </h1>
-            <img class="img-fluid" src="~/images/llamaAvatarChoosen.png" alt="Llama img">
-                    
-        </div>
-        *@
+
 
         <div class="col-lg-4 col-md-4 col-sm-12 avatarImgCard">
+            <div id="menu">
         <svg
    
         width="72.666916mm"
         height="105.83334mm"
         viewBox="0 0 72.666916 105.83334"
         version="1.1"
-        id="svg6690"
+        id="llamaDrawing"
         inkscape:version="0.92.3 (2405546, 2018-03-11)"
         sodipodi:docname="llamaAvatar.svg">
         <defs
@@ -106,7 +101,7 @@
             <path
             sodipodi:nodetypes="ssssss"
             inkscape:connector-curvature="0"
-            id="path5367"
+            id="llama=-leear-inner-shadow"
             d="m 102.77404,103.79605 c 0.87273,-0.9109 1.88211,-2.01656 1.88211,-2.01656 0.67128,-0.71924 -1.62344,-2.64969 -3.00243,-3.54018 -0.33483,-0.21623 -1.12054,-0.12721 -1.16511,0.26887 -0.13324,1.18387 -0.51201,2.64064 0.22406,3.58499 0.58398,0.74925 1.44478,2.34643 2.06137,1.70288 z"
             style="fill:#be6b45;fill-opacity:1;stroke:none;stroke-width:0.25564244;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
             
@@ -120,45 +115,45 @@
             <path
             style="fill:#be6b45;fill-opacity:1;stroke:none;stroke-width:0.25564244;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
             d="m 122.70561,103.52549 c -0.87273,-0.91089 -1.88211,-2.01656 -1.88211,-2.01656 -0.67128,-0.71923 1.62344,-2.64969 3.00243,-3.54018 0.33483,-0.21622 1.12054,-0.1272 1.16511,0.26887 0.13324,1.18387 0.51201,2.64064 -0.22406,3.585 -0.58398,0.74924 -1.44478,2.34642 -2.06137,1.70287 z"
-            id="path5371"
+            id="llama-rear-inner-shadow"
             inkscape:connector-curvature="0"
             sodipodi:nodetypes="ssssss" />
             
             <path
             sodipodi:nodetypes="casaaaaac"
             inkscape:connector-curvature="0"
-            id="llama-tail"
+            id="llama-tail-outer-shadow"
             d="m 77.9915,151.68583 c 0,0 -3.73883,-1.67487 -5.48891,-2.72975 -1.83546,-1.10634 -3.5191,-4.4541 -5.21999,-3.75337 -0.74376,0.30641 -0.87829,1.43641 -0.89624,2.24062 -0.0564,2.52632 0.75702,5.32633 2.49863,7.15725 1.04723,1.10094 2.71698,1.5156 4.22323,1.71561 1.46197,0.19413 2.9945,-0.0654 4.39162,-0.53775 0.95135,-0.32165 2.42251,-0.53501 2.59911,-1.52362 0.19478,-1.09035 -2.10745,-2.56899 -2.10745,-2.56899"
             style="fill:#ce9074;fill-opacity:1;stroke:none;stroke-width:0.25564244;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
             
             <path
             sodipodi:nodetypes="cacaaacaacacaacacaacaaacacacacacac"
             inkscape:connector-curvature="0"
-            id="path5375"
+            id="llama-floor-shadow"
             d="m 81.68492,189.09524 c 0,0 -2.86563,-1.28343 -4.1827,-0.76049 -0.92675,0.36796 -1.77448,2.40822 -1.77448,2.40822 0,0 -2.73827,-0.43226 -4.05596,-0.12674 -0.79168,0.18356 -1.97486,0.34821 -2.15472,1.14074 -0.3142,1.3844 1.29257,2.73538 2.53497,3.42221 0.9642,0.53304 3.29546,0.2535 3.29546,0.2535 0,0 0.99854,1.64126 1.77448,2.15473 1.61654,1.06971 3.66039,1.9381 5.57694,1.64773 1.50615,-0.22819 3.80246,-2.53498 3.80246,-2.53498 0,0 0.72526,2.47146 1.77448,2.66172 1.28065,0.23223 3.16872,-2.28147 3.16872,-2.28147 0,0 0.88806,1.6019 1.64773,2.02797 1.93346,1.08441 4.38997,1.15172 6.59093,0.88725 1.03604,-0.12449 2.91522,-1.14074 2.91522,-1.14074 0,0 1.86119,1.15881 2.91522,1.26749 2.27488,0.23456 6.71768,-1.39424 6.71768,-1.39424 0,0 2.82188,1.09685 4.30945,1.26749 2.18629,0.25079 4.51788,0.35816 6.59093,-0.38025 1.42504,-0.5076 3.6757,-2.66172 3.6757,-2.66172 0,0 3.3156,0.25673 4.9432,0 1.49136,-0.23524 3.16451,-0.41006 4.30946,-1.39422 1.28957,-1.10849 2.87261,-2.96851 2.28147,-4.56297 -0.49371,-1.33166 -3.9292,-1.64773 -3.9292,-1.64773 0,0 -3.42387,-1.07088 -5.06995,-0.63374 -0.40834,0.10845 -1.01399,0.76049 -1.01399,0.76049 0,0 -2.92626,-1.15885 -4.4362,-1.01398 -2.27998,0.21874 -6.28528,2.7768 -6.28528,2.7768 0,0 -2.29248,-3.86224 -4.24654,-4.108 -1.05739,-0.13299 -2.77679,1.58469 -2.77679,1.58469 0,0 -4.26134,-2.00118 -6.33743,-1.39424 -0.4588,0.13413 -1.01399,1.01399 -1.01399,1.01399 0,0 -7.84209,-1.39558 -11.78688,-1.20444 -3.31485,0.16061 -9.76039,1.96493 -9.76039,1.96493 z"
             style="fill:#971a8b;fill-opacity:0.47668397;stroke:none;stroke-width:0.13527745px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
             
             <path
             sodipodi:nodetypes="sssss"
             inkscape:connector-curvature="0"
-            id="llama-front-leg-outer"
+            id="llama-fourth-leg-outer"
             d="m 117.60693,189.83587 c 0.47542,1.77474 5.44635,1.83614 5.51194,0 0.22539,-6.30966 0.0807,-11.60509 -0.717,-16.13247 -0.34215,-1.94183 -5.89893,-1.97168 -5.91523,0 -0.0448,5.42025 -0.0448,11.78307 1.12029,16.13247 z"
             style="fill:#ce9074;fill-opacity:1;stroke:none;stroke-width:0.13527745px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
             
             <path
             style="fill:#ce9074;fill-opacity:1;stroke:none;stroke-width:0.13527745px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
             d="m 113.3604,189.83587 c -0.47542,1.77474 -5.44635,1.83614 -5.51194,0 -0.22539,-6.30966 -0.0807,-11.60509 0.717,-16.13247 0.34216,-1.94183 5.89893,-1.97168 5.91523,0 0.0448,5.42025 0.0448,11.78307 -1.12029,16.13247 z"
-            id="llama-front-leg-inner"
+            id="llama-third-leg-outer"
             inkscape:connector-curvature="0"
             sodipodi:nodetypes="sssss" />
             
             <path
             style="fill:#ce9074;fill-opacity:1;stroke:none;stroke-width:0.13527745px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
             d="m 95.69185,189.83587 c 0.47542,1.77474 5.44634,1.83614 5.51194,0 0.22538,-6.30966 0.0807,-11.60509 -0.717,-16.13247 -0.34216,-1.94183 -5.89894,-1.97168 -5.91524,0 -0.0448,5.42025 -0.0448,11.78307 1.1203,16.13247 z"
-            id="llama-back-leg-inner"
+            id="llama-second-leg-outer"
             inkscape:connector-curvature="0"
             sodipodi:nodetypes="sssss"
-            inkscape:label="#llama-back-leg-inner" />
+          />
             
             <path
             style="fill:#c98466;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -170,7 +165,7 @@
             <path
             sodipodi:nodetypes="sssss"
             inkscape:connector-curvature="0"
-            id="llama-back-leg-outer"
+            id="llama-first-leg-outer"
             d="m 91.44531,189.83587 c -0.47542,1.77474 -5.44634,1.83614 -5.51194,0 -0.22538,-6.30966 -0.0807,-11.60509 0.717,-16.13247 0.34216,-1.94183 5.89894,-1.97168 5.91524,0 0.0448,5.42025 0.0448,11.78307 -1.1203,16.13247 z"
             style="fill:#ce9074;fill-opacity:1;stroke:none;stroke-width:0.13527745px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
             
@@ -193,8 +188,7 @@
             d="M 176.28125 13.332031 C 174.64772 13.413492 172.96135 13.921053 171.82031 14.78125 C 170.73645 15.598309 169.9931 17.020606 169.9043 18.375 C 169.81484 19.736424 171.3418 22.207031 171.3418 22.207031 C 171.3418 22.207031 169.25072 20.543488 167.98828 20.291016 C 166.72588 20.038543 165.13712 19.935691 164.15625 20.769531 C 163.07841 21.685877 162.7775 23.438421 162.95703 24.841797 C 163.0751 25.765363 164.39453 27.236328 164.39453 27.236328 C 164.39453 27.236328 161.58112 25.248829 160.32227 25.919922 C 159.03995 26.603563 159.125 30.111328 159.125 30.111328 C 159.125 30.111328 153.35517 27.846006 150.74219 28.914062 C 149.16054 29.56055 148.21704 31.380117 147.62891 32.984375 C 147.07861 34.48549 147.38867 37.775391 147.38867 37.775391 C 147.38867 37.775391 141.80491 38.17642 139.60352 39.691406 C 137.64225 41.041227 136.01121 43.228541 135.53125 45.560547 C 135.04675 47.914777 136.89995 50.683898 136.96875 52.626953 C 136.96875 52.626953 134.87925 58.470857 135.05273 61.488281 C 135.29462 65.697843 137.52066 69.790122 139.72461 73.464844 C 140.10321 74.0961 141.16016 75.140625 141.16016 75.140625 C 141.16016 75.140625 137.79534 80.182837 137.80664 83.044922 C 137.81632 85.657029 140.92188 90.236328 140.92188 90.236328 C 140.92188 90.236328 135.94185 96.518179 135.65234 100.29102 C 135.40713 103.48824 136.79154 105.80407 138.58398 108.46289 C 141.33825 112.31641 138.58532 108.46361 142.35938 112.50781 C 142.35938 112.50781 139.89385 117.14781 139.72461 119.69336 C 139.57796 121.89682 140.31325 124.12073 141.16016 126.16016 C 142.46826 129.31021 146.66992 134.7832 146.66992 134.7832 C 146.66992 134.7832 143.08603 138.2489 142.35938 140.53125 C 141.4628 143.34718 141.6784 146.58593 142.59766 149.39453 C 143.38297 151.79412 145.60793 153.34865 146.91016 155.62109 C 147.54191 156.72347 144.28997 156.56775 144.07031 158.5957 C 143.77702 160.06041 145.3418 162.96289 145.3418 162.96289 C 145.3418 162.96289 143.23953 163.65874 142.59766 164.48438 C 140.67206 166.96117 139.94378 170.4594 140.20312 173.58594 C 140.49263 177.07607 144.51367 183.16797 144.51367 183.16797 C 144.51367 183.16797 138.17627 179.71323 134.69336 179.57422 C 130.22222 179.39583 125.40074 180.56678 121.75977 183.16797 C 119.00272 185.13763 116.01172 191.55078 116.01172 191.55078 C 116.01172 191.55078 111.85534 188.07062 109.30469 187.71875 C 106.0436 187.26887 102.15758 187.89795 99.722656 190.11328 C 98.658039 191.08198 98.287109 194.18555 98.287109 194.18555 C 98.287109 194.18555 94.252091 190.03404 91.580078 189.63477 C 85.960223 188.79499 79.148818 190.49206 75.291016 194.66406 C 73.068579 197.0675 73.136719 204.24609 73.136719 204.24609 C 73.136719 204.24609 68.326588 201.16165 65.591797 201.73047 C 62.229643 202.42975 59.962891 208.31641 59.962891 208.31641 C 59.962891 208.31641 57.246541 205.31851 55.412109 205.20312 C 52.097766 204.9945 47.657328 208.17817 45.830078 210.95117 C 44.553089 212.8892 46.070312 216.70117 46.070312 216.70117 C 46.070312 216.70117 41.502501 217.98964 39.603516 219.33594 C 37.342527 220.93888 34.849127 222.8959 34.09375 225.5625 C 33.585744 227.35589 35.050781 231.07227 35.050781 231.07227 C 35.050781 231.07227 28.346575 236.14937 27.626953 239.93555 C 26.919803 243.65619 28.888029 247.72778 31.21875 250.71289 C 33.140716 253.17446 39.123047 255.74414 39.123047 255.74414 C 39.123047 255.74414 36.053522 262.52596 36.488281 266.04297 C 37.022971 270.36852 39.725339 274.3712 42.716797 277.54102 C 45.423657 280.4093 52.777344 283.76758 52.777344 283.76758 C 52.777344 283.76758 47.409049 286.64266 46.548828 289.27734 C 45.737061 291.76355 46.835179 294.72566 48.224609 296.94141 C 49.735059 299.35007 52.168693 301.54068 54.931641 302.21094 C 56.985966 302.70927 61.160156 301.01367 61.160156 301.01367 C 61.160156 301.01367 62.232722 305.30664 63.554688 307.00195 C 65.312583 309.25632 67.726835 311.34496 70.501953 312.03125 C 73.790294 312.84437 80.560547 310.59375 80.560547 310.59375 C 80.560547 310.59375 81.603229 319.27441 84.154297 322.57031 C 86.040092 325.00667 89.012257 326.9011 92.058594 327.36133 C 95.964622 327.95143 103.55664 324.48633 103.55664 324.48633 C 103.55664 324.48633 106.7992 332.00486 109.48047 333.85547 C 113.22647 336.44101 118.0547 337.30281 122.53711 336.51172 C 126.48569 335.81485 132.29883 329.03711 132.29883 329.03711 C 132.29883 329.03711 138.86663 334.28078 142.83789 335.02539 C 145.53473 335.53101 148.65654 335.28354 150.98242 333.82812 C 152.78454 332.70032 157.96289 329.57422 157.96289 329.57422 C 157.96289 329.57422 168.73381 332.70034 175.65234 331.19336 C 178.76992 330.5143 181.38694 328.25512 183.79688 326.16406 C 186.15185 324.12066 188.85352 321.85742 188.85352 321.85742 C 188.85352 321.85742 191.84729 324.94745 194.66992 324.91211 C 198.64088 324.86261 202.01399 321.57717 204.96875 318.92383 C 207.47579 316.67255 213.49805 308.91797 213.49805 308.91797 C 213.49805 308.91797 217.90299 308.38188 219.72461 307.24023 C 222.41035 305.55698 225.24058 303.14317 225.95312 300.05469 C 226.51042 297.63919 224.03711 292.86914 224.03711 292.86914 C 224.03711 292.86914 227.03863 291.5434 227.86914 290.23438 C 230.25289 286.47707 230.02539 277.06055 230.02539 277.06055 C 230.02539 277.06055 235.67834 270.48757 237.21094 266.52148 C 238.66394 262.76146 240.02972 258.41047 238.88672 254.54492 C 237.98795 251.50538 232.66016 247.35938 232.66016 247.35938 C 232.66016 247.35938 236.75219 244.89723 237.45117 242.80859 C 238.06765 240.96637 237.23185 238.85677 236.49219 237.06055 C 235.59784 234.88933 232.41992 231.3125 232.41992 231.3125 C 232.41992 231.3125 239.27275 225.03697 240.32422 220.77344 C 241.52482 215.90514 240.88222 209.97458 237.92969 205.92188 C 235.23836 202.22777 225.71289 199.69531 225.71289 199.69531 C 225.71289 199.69531 227.59218 194.2804 226.67188 191.79102 C 226.22121 190.57193 224.83578 189.93725 223.79688 189.15625 C 222.40608 188.11068 219.33984 186.43945 219.33984 186.43945 C 219.33984 186.43945 221.00641 183.40159 221.25586 181.48828 C 221.54904 179.2378 221.55383 176.34499 220.69531 174.24414 C 219.61692 171.60539 215.49831 167.6798 215.26758 167.46094 L 215.23828 167.32422 C 215.3273 167.22451 216.92849 165.42685 217.22266 164.25195 C 217.54607 162.96026 217.35906 161.51566 216.88477 160.27148 C 216.48255 159.21643 214.85156 157.56055 214.85156 157.56055 C 214.85156 157.56055 218.03962 153.07046 218.32422 150.44727 C 218.53111 148.54145 217.84715 146.56333 216.96875 144.85938 C 215.85209 142.69333 212.17969 139.33398 212.17969 139.33398 C 212.17969 139.33398 214.88518 136.31813 215.29492 134.42383 C 215.72106 132.45386 215.10418 130.34368 214.45508 128.43555 C 213.80444 126.52296 211.46094 123.16602 211.46094 123.16602 C 211.46094 123.16602 213.64483 121.9594 213.73633 120.89062 C 213.80716 120.06296 212.30078 118.85547 212.30078 118.85547 C 212.30078 118.85547 214.2825 116.31009 214.57617 114.7832 C 215.27546 111.14597 215.34361 106.74162 213.13867 103.76562 C 210.93048 100.78521 210.26367 96.5625 210.26367 96.5625 C 210.26367 96.5625 211.39449 92.213966 212.41992 90.236328 C 213.83958 87.498363 214.62394 85.751913 214.33594 83.404297 C 213.9725 80.440694 209.9043 75.621094 209.9043 75.621094 C 209.9043 75.621094 212.20122 75.08539 212.7793 74.183594 C 214.74106 71.123575 214.4157 66.688243 213.13867 63.285156 C 212.27535 60.98452 208.10938 57.896484 208.10938 57.896484 C 208.10937 57.896484 211.49328 54.574386 212.06055 52.386719 C 212.58503 50.363992 211.3418 46.158203 211.3418 46.158203 C 211.3418 46.158203 212.81247 42.208032 212.66016 40.169922 C 212.51041 38.166357 211.55159 36.257324 210.50391 34.542969 C 209.41302 32.757973 208.13745 30.893759 206.3125 29.871094 C 204.96684 29.117037 201.76172 29.033203 201.76172 29.033203 C 201.76172 29.033203 202.39634 24.09602 200.92188 22.445312 C 199.79951 21.189114 197.69637 21.263167 196.01172 21.248047 C 194.21043 21.233874 190.74219 22.445312 190.74219 22.445312 C 190.74219 22.445312 192.56259 18.138656 191.46094 16.457031 C 190.54739 15.062196 188.30111 14.668098 186.67188 15.021484 C 185.23297 15.333722 183.49019 17.520342 183.03125 18.123047 C 182.38181 16.972512 180.69373 14.221968 179.03516 13.662109 C 178.22282 13.387914 177.26137 13.283155 176.28125 13.332031 z "
             transform="matrix(0.26458333,0,0,0.26458333,65.802243,94.350426)"
             id="llama-core">
-            <title
-                id="title7639">llama-core</title>
+            
             </path>
             
             <path
@@ -464,7 +458,9 @@
         </g>
         </svg>
         </div>
+        
 
+        </div>
 
         <div class="col-lg-4 col-md-4 col-sm-12">
             <h1>Llama's colors </h1>
@@ -472,11 +468,12 @@
                 <ul id="llama-colorpick-tabs" class="nav nav-tabs">
                     <li id="llama-colorpick-body" class="active"><a data-toggle="tab" href="#body">Body</a></li>
 
-                    
                     <li id="llama-colorpick-eye"><a data-toggle="tab" href="#eyes">Eyes</a></li>
 
-
                     <li id="llama-colorpick-tail"><a data-toggle="tab" href="#tail">Tail</a></li>
+
+                    <li id="llama-colorpick-ears"><a data-toggle="tab" href="#ears">Ears</a></li>
+
                 </ul>
 
 
@@ -484,49 +481,67 @@
                         <div id="body" class="tab-pane fade in active">
                             <h3> Body Color Options</h3>
                             <!-- Buttons -->
-                            <button id="core_white_button" onClick="changeToWhite(this.id)" type="button" class="btn btn-default btn-circle btn-xl"></button>
-
-                            <button id="core_blue_button" onClick="changeToBlue(this.id)" type="button" class="btn btn-primary btn-circle btn-xl"></button>
-                            <button id="core_green_button" onClick="changeToGreen(this.id)"  type="button" class="btn btn-success btn-circle btn-xl"></button>
-                            <button id="core_light_blue_button" onClick="changeToLBlue(this.id)"  type="button" class="btn btn-info btn-circle btn-xl"></button>
-                            <button id="core_orange_button" onClick="changeToOrange(this.id)"  type="button" class="btn btn-warning btn-circle btn-xl"></button>
-                            <button id="core_red_button" onClick="changeToRed(this.id)"  type="button" class="btn btn-danger btn-circle btn-xl"></button>
-                            <button id="core_gray_button" onClick="changeToGray(this.id)" type="button" class="btn btn-circle btn-xl btn-gray  "></button>
-                            <button id="core_lbrown_button" onClick="changeToLBrown(this.id)" type="button" class="btn btn-circle btn-xl btn-lbrown"></button>
+                            <button type="button" class="btn stitched white" id="core_white_button" onClick="changeToWhite(this.id)"></button>
+                            <button type="button" class="btn stitched yellow" id="core_yellow_button" onClick="changeToYellow(this.id)"></button>
+                            <button type="button" class="btn stitched blue" id="core_blue_button" onClick="changeToBlue(this.id)"></button>
+                            <button type="button" class="btn stitched fuchsia" id="core_fuchsia_button" onClick="changeToFuchsia(this.id)"></button>
+                            <button type="button" class="btn stitched green" id="core_green_button" onClick="changeToGreen(this.id)"></button>
+                            <button type="button" class="btn stitched orange" id="core_orange_button" onClick="changeToOrange(this.id)"></button>
+                            <button type="button" class="btn stitched red" id="core_red_button" onClick="changeToRed(this.id)"></button>
+                            <button type="button" class="btn stitched gray" id="core_gray_button" onClick="changeToGray(this.id)"></button>
+                            <button type="button" class="btn stitched lbrown" id="core_lbrown_button" onClick="changeToLBrown(this.id)"></button>
 
                         </div>
 
 
                         <div id="eyes" class="tab-pane fade">
                             <h3> Eyes Color Options</h3>
-                            <button id="eyes_white_button" onClick="changeToWhite(this.id)" type="button" class="btn btn-default btn-circle btn-xl"></button>
-                            <button id="eyes_blue_button" onClick="changeToBlue(this.id)" type="button" class="btn btn-primary btn-circle btn-xl"></button>
-                            <button id="eyes_green_button" onClick="changeToGreen(this.id)"  type="button" class="btn btn-success btn-circle btn-xl"></button>
-                            <button id="eyes_light_blue_button" onClick="changeToLBlue(this.id)"  type="button" class="btn btn-info btn-circle btn-xl"></button>
-                            <button id="eyes_orange_button" onClick="changeToOrange(this.id)"  type="button" class="btn btn-warning btn-circle btn-xl"></button>
-                            <button id="eyes_red_button" onClick="changeToRed(this.id)"  type="button" class="btn btn-danger btn-circle btn-xl"></button>
-                            <button id="eyes_gray_button" onClick="changeToGray(this.id)" type="button" class="btn btn-circle btn-xl btn-gray  "></button>
-                            <button id="eyes_lbrown_button" onClick="changeToLBrown(this.id)" type="button" class="btn btn-default btn-circle btn-xl btn-lbrown"></button>
-                            
+                            <!-- Buttons -->
+                            <button type="button" class="btn stitched white" id="eyes_white_button" onClick="changeToWhite(this.id)"></button>
+                            <button type="button" class="btn stitched yellow" id="eyes_yellow_button" onClick="changeToYellow(this.id)"></button>
+                            <button type="button" class="btn stitched blue" id="eyes_blue_button" onClick="changeToBlue(this.id)"></button>
+                            <button type="button" class="btn stitched fuchsia" id="eyes_fuchsia_button" onClick="changeToFuchsia(this.id)"></button>
+                            <button type="button" class="btn stitched green" id="eyes_green_button" onClick="changeToGreen(this.id)"></button>
+                            <button type="button" class="btn stitched orange" id="eyes_orange_button" onClick="changeToOrange(this.id)"></button>
+                            <button type="button" class="btn stitched red" id="eyes_red_button" onClick="changeToRed(this.id)"></button>
+                            <button type="button" class="btn stitched gray" id="eyes_gray_button" onClick="changeToGray(this.id)"></button>
+                            <button type="button" class="btn stitched lbrown" id="eyes_lbrown_button" onClick="changeToLBrown(this.id)"></button> 
                         </div>
+
                         <div id="tail" class="tab-pane fade">
                             <h3> Tail Color Options</h3>
-                            <button id="tail_white_button" onClick="changeToWhite(this.id)" type="button" class="btn btn-default btn-circle btn-xl"></button>
-                            <button id="tail_blue_button" onClick="changeToBlue(this.id)" type="button" class="btn btn-primary btn-circle btn-xl"></button>
-                            <button id="tail_green_button" onClick="changeToGreen(this.id)"  type="button" class="btn btn-success btn-circle btn-xl"></button>
-                            <button id="tail_light_blue_button" onClick="changeToLBlue(this.id)"  type="button" class="btn btn-info btn-circle btn-xl"></button>
-                            <button id="tail_orange_button" onClick="changeToOrange(this.id)"  type="button" class="btn btn-warning btn-circle btn-xl"></button>
-                            <button id="tail_red_button" onClick="changeToRed(this.id)"  type="button" class="btn btn-danger btn-circle btn-xl"></button>
-                            <button id="tail_gray_button" onClick="changeToGray(this.id)" type="button" class="btn btn-circle btn-xl btn-gray  "></button>
-                            <button id="tail_lbrown_button" onClick="changeToLBrown(this.id)" type="button" class="btn btn-default btn-circle btn-xl btn-lbrown"></button>
-                            
+                            <!-- Buttons -->
+                            <button type="button" class="btn stitched white" id="tail_white_button" onClick="changeToWhite(this.id)"></button>
+                            <button type="button" class="btn stitched yellow" id="tail_yellow_button" onClick="changeToYellow(this.id)"></button>
+                            <button type="button" class="btn stitched blue" id="tail_blue_button" onClick="changeToBlue(this.id)"></button>
+                            <button type="button" class="btn stitched fuchsia" id="tail_fuchsia_button" onClick="changeToFuchsia(this.id)"></button>
+                            <button type="button" class="btn stitched green" id="tail_green_button" onClick="changeToGreen(this.id)"></button>
+                            <button type="button" class="btn stitched orange" id="tail_orange_button" onClick="changeToOrange(this.id)"></button>
+                            <button type="button" class="btn stitched red" id="tail_red_button" onClick="changeToRed(this.id)"></button>
+                            <button type="button" class="btn stitched gray" id="tail_gray_button" onClick="changeToGray(this.id)"></button>
+                            <button type="button" class="btn stitched lbrown" id="tail_lbrown_button" onClick="changeToLBrown(this.id)"></button>
                         </div>
+
+                        <div id="ears" class="tab-pane fade">
+                            <h3> Ears Color Options</h3>
+                            <!-- Buttons -->
+                            <button type="button" class="btn stitched white" id="ears_white_button" onClick="changeToWhite(this.id)"></button>
+                            <button type="button" class="btn stitched yellow" id="ears_yellow_button" onClick="changeToYellow(this.id)"></button>
+                            <button type="button" class="btn stitched blue" id="ears_blue_button" onClick="changeToBlue(this.id)"></button>
+                            <button type="button" class="btn stitched fuchsia" id="ears_fuchsia_button" onClick="changeToFuchsia(this.id)"></button>
+                            <button type="button" class="btn stitched green" id="ears_green_button" onClick="changeToGreen(this.id)"></button>
+                            <button type="button" class="btn stitched orange" id="ears_orange_button" onClick="changeToOrange(this.id)"></button>
+                            <button type="button" class="btn stitched red" id="ears_red_button" onClick="changeToRed(this.id)"></button>
+                            <button type="button" class="btn stitched gray" id="ears_gray_button" onClick="changeToGray(this.id)"></button>
+                            <button type="button" class="btn stitched lbrown" id="ears_lbrown_button" onClick="changeToLBrown(this.id)"></button>
+                        </div>
+
                 </div>
             </div>
         </div>
 
-        <div id="text" >CLICK HERE to create a new div</div>
-        <object id="llamahat"></object>
+        <!-- <div id="text" >CLICK HERE to create a new div</div> -->
+        
         
     </div>
     <div class="row">

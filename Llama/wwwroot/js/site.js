@@ -9,14 +9,34 @@
       document.getElementById('llama-core').setAttribute('style', 'fill: #ffffff');
      }
     else if(clicked_id =="eyes_white_button"){
-      document.getElementById('llama-right-eye').setAttribute('style', 'fill: #ffffff');
       document.getElementById('llama-left-eye').setAttribute('style', 'fill: #ffffff');
-  
+      document.getElementById('llama-right-eye').setAttribute('style', 'fill: #ffffff');
     }
     else if(clicked_id == "tail_white_button"){
-      document.getElementById('llama-tail').setAttribute('style', 'fill: #fffff');
+      document.getElementById('llama-tail-outer-shadow').setAttribute('style', 'fill: #fffff');
+    }
+    else if(clicked_id == "ears_white_button"){
+      document.getElementById('llama-left-ear').setAttribute('style', 'fill: #ffffff');
+      document.getElementById('llama-right-ear').setAttribute('style', 'fill: #ffffff');
     }
     
+  }
+
+  function changeToYellow(clicked_id){
+    if(clicked_id == "core_yellow_button"){
+      document.getElementById('llama-core').setAttribute('style', 'fill: #FFFF0D');
+     }
+    else if(clicked_id =="eyes_yellow_button"){
+      document.getElementById('llama-right-eye').setAttribute('style', 'fill: #FFFF0D');
+      document.getElementById('llama-left-eye').setAttribute('style', 'fill: #FFFF0D');
+    }
+    else if(clicked_id == "tail_yellow_button"){
+      document.getElementById('llama-tail-outer-shadow').setAttribute('style', 'fill: #FFFF0D');
+    }
+    else if(clicked_id == "ears_yellow_button"){
+      document.getElementById('llama-left-ear').setAttribute('style', 'fill: #FFFF0D');
+      document.getElementById('llama-right-ear').setAttribute('style', 'fill: #FFFF0D');
+    } 
   }
   
   function changeToBlue(clicked_id)
@@ -27,10 +47,30 @@
     else if(clicked_id =="eyes_blue_button"){
       document.getElementById('llama-right-eye').setAttribute('style', 'fill: #347AB6');
       document.getElementById('llama-left-eye').setAttribute('style', 'fill: #347AB6');
-  
     }
     else if(clicked_id == "tail_blue_button"){
-      document.getElementById('llama-tail').setAttribute('style', 'fill: #347AB6');
+      document.getElementById('llama-tail-outer-shadow').setAttribute('style', 'fill: #347AB6');
+    }
+    else if(clicked_id == "ears_blue_button"){
+      document.getElementById('llama-left-ear').setAttribute('style', 'fill: #347AB6');
+      document.getElementById('llama-right-ear').setAttribute('style', 'fill: #347AB6');
+    }
+  }
+
+  function changeToFuchsia(clicked_id){
+    if(clicked_id == "core_fuchsia_button"){
+      document.getElementById('llama-core').setAttribute('style', 'fill: #ff0030');
+     }
+    else if(clicked_id =="eyes_fuchsia_button"){
+      document.getElementById('llama-right-eye').setAttribute('style', 'fill: #ff0030');
+      document.getElementById('llama-left-eye').setAttribute('style', 'fill: #ff0030');
+    }
+    else if(clicked_id == "tail_fuchsia_button"){
+      document.getElementById('llama-tail-outer-shadow').setAttribute('style', 'fill: #ff0030');
+    } 
+    else if(clicked_id == "ears_fuchsia_button"){
+      document.getElementById('llama-left-ear').setAttribute('style', 'fill: #ff0030');
+      document.getElementById('llama-right-ear').setAttribute('style', 'fill: #ff0030');
     }
   }
   
@@ -43,7 +83,11 @@
       document.getElementById('llama-left-eye').setAttribute('style', 'fill: #57BB58');
     }
     else if(clicked_id == "tail_green_button"){
-      document.getElementById('llama-tail').setAttribute('style', 'fill: #57BB58');
+      document.getElementById('llama-tail-outer-shadow').setAttribute('style', 'fill: #57BB58');
+    }
+    else if(clicked_id == "ears_green_button"){
+      document.getElementById('llama-left-ear').setAttribute('style', 'fill: #57BB58');
+      document.getElementById('llama-right-ear').setAttribute('style', 'fill: #57BB58');
     }
   }
   
@@ -61,7 +105,6 @@
 
 }
   
-  
   function changeToOrange(clicked_id){
     if(clicked_id == "core_orange_button"){
       document.getElementById('llama-core').setAttribute('style', 'fill: #EFAD4D');
@@ -71,7 +114,11 @@
       document.getElementById('llama-left-eye').setAttribute('style', 'fill: #EFAD4D');
     }
     else if(clicked_id == "tail_orange_button"){
-      document.getElementById('llama-tail').setAttribute('style', 'fill: #EFAD4D');
+      document.getElementById('llama-tail-outer-shadow').setAttribute('style', 'fill: #EFAD4D');
+    }
+    else if(clicked_id == "ears_orange_button"){
+      document.getElementById('llama-left-ear').setAttribute('style', 'fill: #EFAD4D');
+      document.getElementById('llama-right-ear').setAttribute('style', 'fill: #EFAD4D');
     }
   
   }
@@ -79,65 +126,98 @@
   function changeToRed(clicked_id){
     if(clicked_id == "core_red_button"){
       document.getElementById('llama-core').setAttribute('style', 'fill: #D9544F');
-     }
+    }
     else if(clicked_id =="eyes_red_button"){
       document.getElementById('llama-right-eye').setAttribute('style', 'fill: #D9544F');
       document.getElementById('llama-left-eye').setAttribute('style', 'fill: #D9544F');
     }
     else if(clicked_id == "tail_red_button"){
-      document.getElementById('llama-tail').setAttribute('style', 'fill: #D9544F');
+      document.getElementById('llama-tail-outer-shadow').setAttribute('style', 'fill: #D9544F');
     }
     else if(clicked_id == "ears_red_button") {
      document.getElementById('llama-left-ear').setAttribute('style', 'fill: #D9544F');
      document.getElementById('llama-right-ear').setAttribute('style', 'fill: #D9544F');
-  }
-  
+    }
+    else if(clicked_id == "ears_red_button"){
+      document.getElementById('llama-left-ear').setAttribute('style', 'fill: #D9544F');
+      document.getElementById('llama-right-ear').setAttribute('style', 'fill: #D9544F');
+    }
 }
 
 function changeToLBrown(clicked_id){
     if(clicked_id == "core_lbrown_button"){
         document.getElementById('llama-core').setAttribute('style', 'fill: #C77E5D');
-       }
+    }
     else if(clicked_id =="eyes_lbrown_button"){
         document.getElementById('llama-right-eye').setAttribute('style', 'fill: #C77E5D');
         document.getElementById('llama-left-eye').setAttribute('style', 'fill: #C77E5D');
-      }
+    }
     else if(clicked_id == "tail_lbrown_button"){
-        document.getElementById('llama-tail').setAttribute('style', 'fill: #C77E5D');
-      }
+        document.getElementById('llama-tail-outer-shadow').setAttribute('style', 'fill: #C77E5D');
+    }
+    else if(clicked_id == "ears_lbrown_button"){
+      document.getElementById('llama-left-ear').setAttribute('style', 'fill: #C77E5D');
+      document.getElementById('llama-right-ear').setAttribute('style', 'fill: #C77E5D');
+    }
 
 }
 
 function changeToGray(clicked_id){
     if(clicked_id == "core_gray_button"){
-        document.getElementById('llama-core').setAttribute('style', 'fill: #C0C0C0');
-       }
+        document.getElementById('llama-core').setAttribute('style', 'fill: #C0C0C0');        
+
+    }
     else if(clicked_id =="eyes_gray_button"){
         document.getElementById('llama-right-eye').setAttribute('style', 'fill: #C0C0C0');
         document.getElementById('llama-left-eye').setAttribute('style', 'fill: #C0C0C0');
-      }
+    }
     else if(clicked_id == "tail_gray_button"){
-        document.getElementById('llama-tail').setAttribute('style', 'fill: #C0C0C0');
-      }
+        document.getElementById('llama-tail-outer-shadow').setAttribute('style', 'fill: #C0C0C0');
+    }
+    else if(clicked_id == "ears_gray_button"){
+      document.getElementById('llama-left-ear').setAttribute('style', 'fill: #C0C0C0');
+      document.getElementById('llama-right-ear').setAttribute('style', 'fill: #C0C0C0');
+    }
 }
 
 document.getElementById("text").onclick = function () {
   var div = document.createElement('div');
-     // div.style.backgroundColor = "pink";
      div.style.position = "absolute";
      div.style.left = "135px";
      div.style.top = "100px";
      div.style.height = "100px";
      div.style.width = "400px";
-    // div.innerHTML += 'Extra stuff';
-    div.id = "test"
+      div.id = "test"
 
      document.getElementsByTagName('body')[0].appendChild(div);
 
-//   Add image
-  var element = document.getElementById("llamahat");
-  element.setAttribute("data", "/images/Hat_of_Santa.svg"); 
+}
+
+function addSantaHat(){
+
+    //Create new div element
+    var div = document.createElement('div');
+    div.style.position = "absolute";
+    div.style.right = "41px";
+    div.style.top = "-50px";
+    div.style.height = "100px";
+    div.style.width = "400px";
+    div.id = "test"
+
+    //Insert new div before llama drawing
+  var siblingElem = document.getElementById("llamaDrawing");
+  var parentReference = siblingElem.parentNode;
+  parentReference.insertBefore(div, siblingElem);
+
+
+  //Add image to div
+  var element = document.createElement('object');
+  element.style.position = "absolute";
+  element.id = "test"
+  element.setAttribute("data", "/images/smallHat.svg"); 
   element.setAttribute("type", "image/svg+xml"); 
+  element.setAttribute("class", "hatStyling");
+  document.getElementById("test").appendChild(element);  
 
 
 }
