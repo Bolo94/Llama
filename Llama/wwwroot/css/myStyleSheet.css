@@ -21,6 +21,7 @@ body {
   position: fixed;
 
   margin: 0;
+  z-index: 0;
 }
 
 .btnPlay {
@@ -43,6 +44,15 @@ body {
   margin-left: 25%;
   margin-bottom: 14%;
   position: fixed;
+  z-index: 10;
+}
+
+.imgLandPageLlama {
+  bottom: 0;
+  margin-left: -100px;
+  margin-bottom: 0;
+  position: fixed;
+  z-index: 15;
 }
 
 .custumizationContainer {
