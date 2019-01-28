@@ -12,8 +12,10 @@ namespace Llama.Models
         public int IdUser { get; set; }
 
         [Required]
+        [StringLength(20, ErrorMessage ="NickName is required")]
         public String NickName { get; set; }
 
+        [StringLength(20, ErrorMessage = "UserName is required")]
         [Required]
         public String UserName { get; set; }
 
