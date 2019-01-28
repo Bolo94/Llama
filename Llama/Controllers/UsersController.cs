@@ -29,8 +29,12 @@ namespace Llama.Controllers
         [HttpPost]
         public IActionResult Create(Users user)
         {
-            _userRepository.AddUser(user);
-            return RedirectToAction("RegisterComplete");
+            if (ModelState.IsValid)
+            {
+                _userRepository.AddUser(user);
+                return RedirectToAction("RegisterComplete");
+            }
+            return View(user);
         }
 
         public IActionResult RegisterComplete()
