@@ -58,6 +58,36 @@ body {
   margin: 3%;
 }
 
+.btnNext {
+  background-color: #ca8400;
+  border: 8px solid #a67f2a;
+  font-family: "Spicy Rice", cursive;
+  font-size: 40px;
+  text-decoration: none;
+  color: #fbdd74;
+  display: inline-block;
+  border-radius: 25px;
+  padding: 8px 4px;
+  /*width: 10%;
+  height: 15%;*/
+  margin: 3%;
+}
+
+.btnBack {
+  background-color: #a67f2a;
+  border: 8px solid #ca8400;
+  font-family: "Spicy Rice", cursive;
+  font-size: 40px;
+  text-decoration: none;
+  color: #fbdd74;
+  display: inline-block;
+  border-radius: 25px;
+  padding: 8px 4px;
+  /*width: 10%;
+  height: 15%;*/
+  margin: 3%;
+}
+
 .imgLlamaBus {
   bottom: 0;
   margin-left: 25%;

@@ -67,7 +67,7 @@ using Llama.Models;
             WriteLiteral("\n<div class=\"container\">\n    <div class=\"row text-center\">\n        <div class=\"col-lg-6 col-md-6 col-sm-12\">\n            <h1>Llama avatar here</h1>\n            ");
             EndContext();
             BeginContext(207, 77, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "46928cf8b0594624a0e5a236dce423aa", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "3aeac3fcdb3d4692b0fc135bdf19606d", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -100,7 +100,7 @@ using Llama.Models;
             ");
             EndContext();
             BeginContext(647, 141, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5a2e2f2cf29b4d41bafa849cd9e28825", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0173a82000c745ffaa89e9e917526f70", async() => {
                 BeginContext(718, 66, true);
                 WriteLiteral("<button type=\"button\" class=\"btn btn-primary btn-lg\">Back</button>");
                 EndContext();
@@ -126,7 +126,7 @@ using Llama.Models;
             WriteLiteral("\n\n        </div>\n        <div class=\"col-lg-6 col-md-6 col-sm-12 text-right nextBackButtonContainer\">\n            ");
             EndContext();
             BeginContext(902, 132, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2230ce3943044790a8d941abd8d888c3", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7ddda87f0258469c9d8e3175ceef4853", async() => {
                 BeginContext(964, 66, true);
                 WriteLiteral("<button type=\"button\" class=\"btn btn-success btn-lg\">Next</button>");
                 EndContext();
