@@ -23,8 +23,13 @@ using Llama.Models;
 
 #line default
 #line hidden
+#line 3 "C:\Users\Carlos\Documents\GitHub\Llama\Llama\Views\_ViewImports.cshtml"
+using Llama.Models.Miscellaneous;
+
+#line default
+#line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"f5989146c20e297d05361cc87bf290b8b98e9284", @"/Views/Home/About.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"0cc6b89d47fbdace5dc805a4d33948a1892225f9", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"f05c742b7425d53b84a35901cf85f131aa0a7f05", @"/Views/_ViewImports.cshtml")]
     public class Views_Home_About : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998

@@ -4,10 +4,11 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Llama.Models.DTOs
+namespace Llama.Models
 {
-    public class UserDto
+    public partial class UserDto
     {
+     
         [Key]
         public int IdUser { get; set; }
 

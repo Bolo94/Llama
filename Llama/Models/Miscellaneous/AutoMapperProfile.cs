@@ -1,0 +1,18 @@
+﻿using AutoMapper;
+using Llama.Models;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace Llama.Models.Miscellaneous
+{
+    public class AutoMapperProfile : Profile
+    {
+        public AutoMapperProfile()
+        {
+            CreateMap<Users, UserDto>();
+            CreateMap<UserDto, Users>();
+        }
+    }
+}
