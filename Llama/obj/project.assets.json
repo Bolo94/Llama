@@ -12943,23 +12943,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Brigham\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\nerea\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\dev\\LIama\\Llama\\Llama.csproj",
+      "projectUniqueName": "c:\\Users\\nerea\\source\\repos\\Llama-SignUpFE\\Llama\\Llama\\Llama.csproj",
       "projectName": "Llama",
-      "projectPath": "C:\\dev\\LIama\\Llama\\Llama.csproj",
-      "packagesPath": "C:\\Users\\Brigham\\.nuget\\packages\\",
-      "outputPath": "C:\\dev\\LIama\\Llama\\obj\\",
+      "projectPath": "c:\\Users\\nerea\\source\\repos\\Llama-SignUpFE\\Llama\\Llama\\Llama.csproj",
+      "packagesPath": "C:\\Users\\nerea\\.nuget\\packages\\",
+      "outputPath": "c:\\Users\\nerea\\source\\repos\\Llama-SignUpFE\\Llama\\Llama\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Brigham\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\nerea\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
