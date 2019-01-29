@@ -13,14 +13,17 @@ namespace Llama.Models
         {
             _userDbContext = userDbContext;
         }
-        public void AddUser(Users user)
+        public void AddUser(UserDto pUserDto)
         {
-            //_userDbContext.Users.Add(user);
-            //_userDbContext.SaveChanges();
-
+       
             byte[] passwordHash, passwordSalt;
-            CreatePasswordHash("pass", out passwordHash, out passwordSalt);
+            CreatePasswordHash(pUserDto.Password, out passwordHash, out passwordSalt);
 
+            Users user = new Users();
+            user.NickName = pUserDto.NickName;
+            user.UserName = pUserDto.UserName;
+            user.Gender = pUserDto.Gender;
+            user.Age = pUserDto.Age;
             user.PasswordHash = passwordHash;
             user.PasswordSalt = passwordSalt;
 

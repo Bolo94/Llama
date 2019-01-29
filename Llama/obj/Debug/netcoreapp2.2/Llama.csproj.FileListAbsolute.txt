@@ -68,3 +68,4 @@ C:\dev\LIama\Llama\obj\Debug\netcoreapp2.2\Razor\Views\Users\Create.g.cshtml.cs
 C:\dev\LIama\Llama\obj\Debug\netcoreapp2.2\Razor\Views\Users\RegisterComplete.g.cshtml.cs
 C:\Users\Carlos\Documents\GitHub\Llama\Llama\obj\Debug\netcoreapp2.2\Razor\Views\Users\Create.g.cshtml.cs
 C:\Users\Carlos\Documents\GitHub\Llama\Llama\obj\Debug\netcoreapp2.2\Razor\Views\Users\RegisterComplete.g.cshtml.cs
+C:\Users\Carlos\Documents\GitHub\Llama\Llama\obj\Debug\netcoreapp2.2\Razor\Views\Users\LogIn.g.cshtml.cs

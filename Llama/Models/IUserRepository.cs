@@ -7,7 +7,7 @@ namespace Llama.Models
 {
     public interface IUserRepository
     {
-        void AddUser(Users user);
+        void AddUser(UserDto user);
         IEnumerable<Users> GetAllUsers();
     }
 }

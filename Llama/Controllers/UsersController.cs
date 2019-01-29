@@ -27,7 +27,7 @@ namespace Llama.Controllers
         }
 
         [HttpPost]
-        public IActionResult Create(Users user)
+        public IActionResult Create(UserDto user)
         {
             if (ModelState.IsValid)
             {
