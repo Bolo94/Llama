@@ -1,0 +1,91 @@
+@model Users
+
+
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Title Page</title>
+        <link href="~/Content/loginS.css" rel="stylesheet" type="text/css" />
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+
+
+    </head>
+    <body>
+
+        <!-- <script src="~/Logic/indexLogic.js"></script> -->
+
+
+            <div class="overlay">
+
+                <form>
+                <!--   con = Container  for items in the form-->
+                    <div class="con">
+                    <header class="head-form">
+                        <h2>Log In</h2>
+                        <p>login here using your username and password</p>
+                    </header>
+                <br>
+
+
+                <!-- Username and Password -->
+                <div class="field-set">
+
+                    <!--   user name -->
+                    <span class="input-item">
+                        <i class="fa fa-user-circle"></i>
+                    </span>
+                    <input class="form-input" id="txt-input" type="text" placeholder="UserName" required>
+                    <br>
+                    
+                        <!--   Password -->
+                    <span class="input-item">
+                        <i class="fa fa-key"></i>
+                    </span>
+                    <input class="form-input" type="password" placeholder="Password" id="pwd"  name="password" required>
+                    
+                <!--      Show/hide password  -->
+                    <span>
+                        <i class="fa fa-eye" aria-hidden="true"  type="button" id="eye"></i>
+                    </span>
+                    <br>
+
+                <!--      button LogIn -->
+                    <button class="log-in"> Log In </button>
+                </div>
+                
+
+
+                <!--   Froget password and Sign up buttons -->
+                <div class="other">
+                    <button class="btn submits frgt-pass">Forgot Password</button>
+                    <button class="btn submits sign-up">Sign Up 
+                <!--         Sign Up font icon -->
+                    <i class="fa fa-user-plus" aria-hidden="true"></i>
+                    </button>
+                <!--      End Other the Division -->
+                </div>
+                    
+                <!--   End Container  -->
+                </div>
+                
+                <!-- End Form -->
+                </form>
+                </div>
+        </div>
+
+        <script src="~/js/site.js"></script>
+
+    </body>
+</html>
+
+
+
+
+
+
+</div>
