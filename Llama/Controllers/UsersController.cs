@@ -42,6 +42,11 @@ namespace Llama.Controllers
             return View();
         }
 
+        public IActionResult LogIn()
+        {
+            return View();
+        }
+
         //[HttpPost]
         //[ValidateAntiForgeryToken]
         //public IActionResult Create(Users users)
