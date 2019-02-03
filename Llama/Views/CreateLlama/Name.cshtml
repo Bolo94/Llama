@@ -12,11 +12,11 @@
         <div class="col-lg-6 col-md-6 col-sm-12">
             
             <div class="row text-left">
-                <form action="">
+                <form  asp-action="Name" id="llamaNameForm" method="post">
                     <div class="llamaSpeechBubble">
                         <p>Hey, my name is </p>
-                        <p><input type="text" name="llamaname" maxlength="15"> !!!</p>
-                        <button class="btn">Submit</button>
+                        <p><input  type="text" name="llamaName" id="llamaName"  maxlength="15"/> !!!</p>
+                        <button  type="submit" form ="llamaNameForm"  class="btn">Submit</button>
                    </div>
                    
                 </form>
@@ -30,7 +30,7 @@
 
         </div>
         <div class="col-lg-6 col-md-6 col-sm-12 text-right nextBackButtonContainer">
-            <a asp-area="" asp-controller="CreateLlama" asp-action="Name"><button type="button" class="btn btnNext">Next</button></a>
+            <button type="button" class="btn btnNext"  >Next</button></a>
         </div>
     </div>
     
