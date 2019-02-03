@@ -1,4 +1,4 @@
-/* Fonts*/
+/* Google Fonts*/
 @import url("https://fonts.googleapis.com/css?family=Spicy+Rice");
 
 body {
@@ -29,17 +29,23 @@ body {
   top: 0;
 }
 
+.landPageScenarioContainer {
+  bottom: 0;
+  margin: 0;
+}
+
 .floorLandPage {
   background: url(../images/landPageFloor.svg);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 30%;
+  height: 25%;
   left: 0;
   bottom: 0;
   position: absolute;
-
+  padding: 0;
   margin: 0;
+
   z-index: 0;
 }
 
@@ -53,9 +59,14 @@ body {
   display: inline-block;
   border-radius: 25px;
   padding: 8px 4px;
-  width: 20%;
+  width: 250px;
   height: 15%;
-  margin: 3%;
+  margin-bottom: 3%;
+  margin-left: -125px;
+  left: 50%;
+
+  position: absolute;
+  bottom: 0;
 }
 
 .btnNext {
@@ -89,9 +100,11 @@ body {
 }
 
 .imgLlamaBus {
-  bottom: 0;
-  margin-left: 25%;
-  margin-bottom: 14%;
+  bottom: 100%;
+  left: -235px;
+  margin-left: 50%;
+
+  /*margin-bottom: 14%;*/
   position: absolute;
   z-index: 10;
 }
@@ -104,11 +117,14 @@ body {
 
 .imgLandPageLlama {
   bottom: 0;
-  margin-left: -100px;
-  margin-bottom: 0;
-  position: fixed;
+  left: 0;
+  padding: 0;
+  /*margin-bottom: 200px;*/
+  height: 60%;
+  /*margin-left: -100px;*/
+
+  position: absolute;
   z-index: 15;
-  height: 70%;
 }
 
 .custumizationContainer {
