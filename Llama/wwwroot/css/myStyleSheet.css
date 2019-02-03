@@ -154,6 +154,87 @@ body {
   padding: 10px;
 }
 
+/*Llama speech bubble*/
+.llamaSpeechBubble {
+  position: relative;
+  margin: 0.5em auto;
+  padding: 0.2em;
+  width: 15em;
+  height: 12em;
+  border-radius: 0.25em;
+  transform: rotate(-4deg) rotateY(-15deg);
+  background: #629bdd;
+  font: 2em/4 Century Gothic, Verdana, sans-serif;
+  text-align: center;
+}
+
+.llamaSpeechBubble:before,
+.llamaSpeechBubble:after {
+  position: absolute;
+  z-index: -1;
+  content: "";
+}
+
+.llamaSpeechBubble:after {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: inherit;
+  transform: rotate(2deg) translate(0.35em, -0.15em) scale(1.02);
+  background: #f4fbfe;
+}
+
+.llamaSpeechBubble:before {
+  border: solid 0 transparent;
+  border-right: solid 3.5em #f4fbfe;
+  border-bottom: solid 0.25em #629bdd;
+  /*bottom: 0.25em;*/
+  top: 0.25em;
+  left: 0.25em;
+  width: 0;
+  height: 2em;
+  transform: rotate(-200deg) skewX(75deg);
+}
+
+.llamaSpeechBubble p {
+  margin: -0.5em;
+  font-weight: bold;
+}
+
+.llamaSpeechBubble input {
+  background-color: #bdc3c7;
+  border-radius: 5px;
+  outline: 0;
+  border-bottom: 4px dashed #bdc3c7;
+  text-align: left;
+  font-weight: bold;
+  font-size: 1.1em;
+  width: 300px;
+  height: 50px;
+  line-height: 15px;
+  margin: 2px auto;
+  letter-spacing: -0.07em;
+  text-shadow: white 2px 2px 2px;
+}
+
+.llamaSpeechBubble button {
+  background-color: #d2e4b5;
+  border: 8px solid #373536;
+  font-family: "Spicy Rice", cursive;
+  font-size: 0.8em;
+  text-decoration: none;
+  color: #524a45;
+  display: inline-block;
+  border-radius: 20px;
+  width: 5em;
+
+  right: 100%;
+
+  margin-right: -8em;
+}
+/*End of Llama speech bubble*/
+
 svg::before {
   content: "dgfcg";
   background: #ff0030;
