@@ -1,0 +1,436 @@
+/* Google Fonts*/
+@import url("https://fonts.googleapis.com/css?family=Spicy+Rice");
+
+body {
+  background-color: #00dcf8;
+  width: 100%;
+  height: 100%;
+}
+
+.navbar-default {
+  border: none;
+  background-color: #a67f2a;
+  font-family: "Spicy Rice", cursive;
+  font-size: 20px;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #fbdd74;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #c88300;
+  background-color: #fbdd74;
+}
+
+.landPageContainer {
+  top: 0;
+}
+
+.landPageScenarioContainer {
+  bottom: 0;
+  margin: 0;
+}
+
+.floorLandPage {
+  background: url(../images/landPageFloor.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 25%;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  padding: 0;
+  margin: 0;
+
+  z-index: 0;
+}
+
+.btnPlay {
+  background-color: #ca8400;
+  border: 8px solid #a67f2a;
+  font-family: "Spicy Rice", cursive;
+  font-size: 40px;
+  text-decoration: none;
+  color: #fbdd74;
+  display: inline-block;
+  border-radius: 25px;
+  padding: 8px 4px;
+  width: 250px;
+  height: 15%;
+  margin-bottom: 3%;
+  margin-left: -125px;
+  left: 50%;
+
+  position: absolute;
+  bottom: 0;
+}
+
+.btnNext {
+  background-color: #ca8400;
+  border: 8px solid #a67f2a;
+  font-family: "Spicy Rice", cursive;
+  font-size: 40px;
+  text-decoration: none;
+  color: #fbdd74;
+  display: inline-block;
+  border-radius: 25px;
+  padding: 8px 4px;
+  /*width: 10%;
+  height: 15%;*/
+  margin: 3%;
+}
+
+.btnBack {
+  background-color: #a67f2a;
+  border: 8px solid #ca8400;
+  font-family: "Spicy Rice", cursive;
+  font-size: 40px;
+  text-decoration: none;
+  color: #fbdd74;
+  display: inline-block;
+  border-radius: 25px;
+  padding: 8px 4px;
+  /*width: 10%;
+  height: 15%;*/
+  margin: 3%;
+}
+
+.imgLlamaBus {
+  bottom: 100%;
+  left: -235px;
+  margin-left: 50%;
+
+  /*margin-bottom: 14%;*/
+  position: absolute;
+  z-index: 10;
+}
+
+.imgLlamaLogo {
+  top: 0;
+  left: 50%;
+  margin-top: 1%;
+  margin-left: -75px;
+  height: 150px;
+  position: absolute;
+}
+
+.imgLandPageLlama {
+  bottom: 0;
+  left: 0;
+  padding: 0;
+  /*margin-bottom: 200px;*/
+  height: 60%;
+  /*margin-left: -100px;*/
+
+  position: absolute;
+  z-index: 15;
+}
+
+.custumizationContainer {
+  background-color: #d98816;
+  border-radius: 25px;
+  margin: 20px;
+}
+
+.nextBackButtonContainer {
+  padding: 2%;
+}
+
+.avatarCardsContainer {
+  margin: 20px;
+  padding: 10px 16px;
+  background-color: #86467b;
+  border-radius: 25px;
+  border: 2px dashed #fff;
+  line-height: 1.3em;
+  box-shadow: 0 0 0 4px #86467b, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
+}
+
+.avatarImgCard {
+  padding: 10px;
+}
+
+/*Llama speech bubble*/
+.llamaSpeechBubble {
+  position: relative;
+  margin: 0.5em auto;
+  padding: 0.2em;
+  width: 15em;
+  height: 12em;
+  border-radius: 0.25em;
+  transform: rotate(-4deg) rotateY(-15deg);
+  background: #629bdd;
+  font: 2em/4 Century Gothic, Verdana, sans-serif;
+  text-align: center;
+}
+
+.llamaSpeechBubble:before,
+.llamaSpeechBubble:after {
+  position: absolute;
+  z-index: -1;
+  content: "";
+}
+
+.llamaSpeechBubble:after {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: inherit;
+  transform: rotate(2deg) translate(0.35em, -0.15em) scale(1.02);
+  background: #f4fbfe;
+}
+
+.llamaSpeechBubble:before {
+  border: solid 0 transparent;
+  border-right: solid 3.5em #f4fbfe;
+  border-bottom: solid 0.25em #629bdd;
+  /*bottom: 0.25em;*/
+  top: 0.25em;
+  left: 0.25em;
+  width: 0;
+  height: 2em;
+  transform: rotate(-200deg) skewX(75deg);
+}
+
+.llamaSpeechBubble p {
+  margin: -0.5em;
+  font-weight: bold;
+}
+
+.llamaSpeechBubble input {
+  background-color: #bdc3c7;
+  border-radius: 5px;
+  outline: 0;
+  border-bottom: 4px dashed #bdc3c7;
+  text-align: left;
+  font-weight: bold;
+  font-size: 1.1em;
+  width: 300px;
+  height: 50px;
+  line-height: 15px;
+  margin: 2px auto;
+  letter-spacing: -0.07em;
+  text-shadow: white 2px 2px 2px;
+}
+
+.llamaSpeechBubble button {
+  background-color: #d2e4b5;
+  border: 8px solid #373536;
+  font-family: "Spicy Rice", cursive;
+  font-size: 0.8em;
+  text-decoration: none;
+  color: #524a45;
+  display: inline-block;
+  border-radius: 20px;
+  width: 5em;
+
+  right: 100%;
+
+  margin-right: -8em;
+}
+/*End of Llama speech bubble*/
+
+svg::before {
+  content: "dgfcg";
+  background: #ff0030;
+  display: block;
+  width: 40px;
+  height: 40px;
+}
+
+/* Animation */
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1) rotate(0deg);
+  }
+  50% {
+    -webkit-transform: scale(1.1) rotate(-5deg);
+  }
+  100% {
+    -webkit-transform: scale(1) rotate(0deg);
+  }
+}
+@-o-keyframes pulse {
+  0% {
+    -o-transform: scale(1) rotate(0deg);
+  }
+  50% {
+    -o-transform: scale(1.1) rotate(-5deg);
+  }
+  100% {
+    -o-transform: scale(1) rotate(0deg);
+  }
+}
+@-moz-keyframes pulse {
+  0% {
+    -moz-transform: scale(1) rotate(0deg);
+  }
+  50% {
+    -moz-transform: scale(1.1) rotate(-5deg);
+  }
+  100% {
+    -moz-transform: scale(1) rotate(0deg);
+  }
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  50% {
+    transform: scale(1.1) rotate(-5deg);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+@-webkit-keyframes bump {
+  0% {
+    top: 0;
+  }
+  5% {
+    top: 3px;
+  }
+  10% {
+    top: 0;
+  }
+  100% {
+    top: 0;
+  }
+}
+@-o-keyframes bump {
+  0% {
+    top: 0;
+  }
+  5% {
+    top: 3px;
+  }
+  10% {
+    top: 0;
+  }
+  100% {
+    top: 0;
+  }
+}
+@-moz-keyframes bump {
+  0% {
+    top: 0;
+  }
+  5% {
+    top: 3px;
+  }
+  10% {
+    top: 0;
+  }
+  100% {
+    top: 0;
+  }
+}
+@keyframes bump {
+  0% {
+    top: 0;
+  }
+  5% {
+    top: 3px;
+  }
+  10% {
+    top: 0;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+/* Styling  */
+
+/* Takes out ugly blue square outline */
+*:focus {
+  outline: none !important;
+}
+
+.stitched {
+  padding: 10px 16px;
+  width: 70px;
+  height: 70px;
+  line-height: 1.3em;
+  border: 2px dashed #fff;
+  border-radius: 50%;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.white {
+  background: #ffffff;
+  color: #ffffff;
+  box-shadow: 0 0 0 4px #ffffff, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
+  border: 2px dashed lightgray;
+}
+
+.yellow {
+  background: #ffff0d;
+  color: #ffff0d;
+  box-shadow: 0 0 0 4px #ffff0d, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
+}
+
+.blue {
+  background: #347ab6;
+  color: #fff;
+  box-shadow: 0 0 0 4px #347ab6, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
+}
+
+.fuchsia {
+  background: #ff0030;
+  color: #fff;
+  box-shadow: 0 0 0 4px #ff0030, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
+}
+
+.green {
+  background: #57bb58;
+  color: #57bb58;
+  box-shadow: 0 0 0 4px #57bb58, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
+}
+
+.orange {
+  background: #efad4d;
+  color: #efad4d;
+  box-shadow: 0 0 0 4px #efad4d, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
+}
+
+.red {
+  background: #d9544f;
+  color: #d9544f;
+  box-shadow: 0 0 0 4px #d9544f, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
+}
+
+.gray {
+  background: #c0c0c0;
+  color: #c0c0c0;
+  box-shadow: 0 0 0 4px #c0c0c0, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
+}
+
+.lbrown {
+  background: #c67e5d;
+  color: #c67e5d;
+  box-shadow: 0 0 0 4px #c67e5d, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
+}
+
+.btn:hover {
+  -webkit-animation: pulse 1s ease 0s infinite normal;
+  -o-animation: pulse 1s ease 0s infinite normal;
+  -moz-animation: pulse 1s ease 0s infinite normal;
+  animation: pulse 1s ease 0s infinite normal;
+}
+
+.stickyContainer {
+  display: flex;
+}
+
+.hatStyling {
+  position: -webkit-sticky;
+  position: sticky;
+}

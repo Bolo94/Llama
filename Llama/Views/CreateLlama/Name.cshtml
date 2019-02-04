@@ -1,0 +1,38 @@
+@{
+    ViewData["Title"] = "Character_name";
+}
+
+<div class="container">
+    <div class="row text-center">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+            
+            <img class="img-fluid" src="~/images/llamaAvatarChoosen.png" alt="Llama img">
+                    
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12">
+            
+            <div class="row text-left">
+                <form  asp-action="Name" id="llamaNameForm" method="post">
+                    <div class="llamaSpeechBubble">
+                        <p>Hey, my name is </p>
+                        <p><input  type="text" name="llamaName" id="llamaName"  maxlength="15"/> !!!</p>
+                        <button  type="submit" form ="llamaNameForm"  class="btn">Submit</button>
+                   </div>
+                   
+                </form>
+            </div>
+        </div>
+        
+    </div>
+    <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12 text-left nextBackButtonContainer">
+            <a asp-area="" asp-controller="CreateLlama" asp-action="Customization"><button type="button" class="btn btnBack">Back</button></a>
+
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 text-right nextBackButtonContainer">
+            <button type="button" class="btn btnNext"  >Next</button></a>
+        </div>
+    </div>
+    
+
+</div>
