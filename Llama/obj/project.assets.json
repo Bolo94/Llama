@@ -12985,11 +12985,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/mnt/NTFS600/DotNetProjects/LlamaApp/Llama/Llama/Llama.csproj",
+      "projectUniqueName": "/mnt/NTFS600/DotNetProjects/LlamaApp/Dev/Llama/Llama/Llama.csproj",
       "projectName": "Llama",
-      "projectPath": "/mnt/NTFS600/DotNetProjects/LlamaApp/Llama/Llama/Llama.csproj",
+      "projectPath": "/mnt/NTFS600/DotNetProjects/LlamaApp/Dev/Llama/Llama/Llama.csproj",
       "packagesPath": "/home/marcos/.nuget/packages/",
-      "outputPath": "/mnt/NTFS600/DotNetProjects/LlamaApp/Llama/Llama/obj/",
+      "outputPath": "/mnt/NTFS600/DotNetProjects/LlamaApp/Dev/Llama/Llama/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/share/dotnet/sdk/NuGetFallbackFolder"
