@@ -2,7 +2,7 @@
 // for details on configuring this project to bundle and minify static web assets.
 
 // Write your JavaScript code.
-<<<<<<< HEAD
+
 
 
   function changeToWhite(clicked_id){
@@ -229,7 +229,6 @@ function addSantaHat(){
     
   
   
-=======
 // Show/hide password onClick of button using Javascript only
 
 function show() {
@@ -254,4 +253,3 @@ document.getElementById("eye").addEventListener("click", function () {
         hide();
     }
 }, false);
->>>>>>> origin/dev
