@@ -147,3 +147,5 @@ C:\Users\nerea\source\repos\NewLlama\Llama\Llama\obj\Debug\netcoreapp2.2\Llama.V
 C:\Users\nerea\source\repos\NewLlama\Llama\Llama\obj\Debug\netcoreapp2.2\Llama.dll
 C:\Users\nerea\source\repos\NewLlama\Llama\Llama\obj\Debug\netcoreapp2.2\Llama.pdb
 C:\Users\nerea\source\repos\NewLlama\Llama\Llama\obj\Debug\netcoreapp2.2\Llama.csproj.CopyComplete
+C:\Users\nerea\source\repos\NewLlama\Llama\Llama\obj\Debug\netcoreapp2.2\Razor\Views\Users\FormT.g.cshtml.cs
+C:\Users\nerea\source\repos\NewLlama\Llama\Llama\obj\Debug\netcoreapp2.2\Razor\Views\Users\Page2.g.cshtml.cs

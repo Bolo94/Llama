@@ -181,7 +181,7 @@ function changeToGray(clicked_id){
     }
 }
 
-document.getElementById("text").onclick = function () {
+document.getElementById("text").onclick = function() {
   var div = document.createElement('div');
      div.style.position = "absolute";
      div.style.left = "135px";
@@ -219,6 +219,10 @@ function addSantaHat(){
   element.setAttribute("type", "image/svg+xml"); 
   element.setAttribute("class", "hatStyling");
   document.getElementById("test").appendChild(element);  
+
+  var llamaBodyColor = document.getElementById("llama-core").style.fill;
+
+  console.log(llamaBodyColor);
 
 
 }

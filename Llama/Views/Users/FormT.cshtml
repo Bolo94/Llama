@@ -1,50 +1,19 @@
-@{
-    ViewData["Title"] = "Character_name";
-}
+@model Llama.Models.FormTModel
 
+<form asp-action="Page2" method="post" class="form-horizontal" role="form">
 
-<div class="container custumizationContainer">
-    <div class="row text-center">
-        <div class="col-lg-4 col-md-4 col-sm-12 ">
-            <h1>Llama's acessories</h1>
-            <div class="row text-center avatarCardsContainer">
-                <div class="col-lg-4 col-sm-12 avatarImgCard">
-                    <a href="#" class="d-block mb-4 h-100">
-                        <img class="img-fluid img-thumbnail img-rounded" src="~/images/smallHatStatic.png" alt="Llama img" onclick="addSantaHat()">
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-12 avatarImgCard">
-                    <a href="#" class="d-block mb-4 h-100">
-                        <img class="img-fluid img-thumbnail" src="~/images/avatarType.png" alt="Llama img">
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-12 avatarImgCard">
-                    <a href="#" class="d-block mb-4 h-100">
-                        <img class="img-fluid img-thumbnail" src="~/images/avatarType.png" alt="Llama img">
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-12 avatarImgCard">
-                    <a href="#" class="d-block mb-4 h-100">
-                        <img class="img-fluid img-thumbnail" src="~/images/avatarType.png" alt="Llama img">
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-12 avatarImgCard">
-                    <a href="#" class="d-block mb-4 h-100">
-                        <img class="img-fluid img-thumbnail" src="~/images/avatarType.png" alt="Llama img">
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-12 avatarImgCard">
-                   <a href="#" class="d-block mb-4 h-100">
-                        <img class="img-fluid img-thumbnail" src="~/images/avatarType.png" alt="Llama img">
-                    </a>
-                </div>
-            </div>
-        </div>
+    <div class="form-group">
+        <label asp-for="Name" class="col-md-2 control-label"></label>
+        <input asp-for="Name" class="form-control">
+    </div>
 
+    <div class="form-group">
+        <label asp-for="Color" class="col-md-2 control-label"></label>
+        <input asp-for="Color" class="form-control">
+    </div>
 
-        <div class="col-lg-4 col-md-4 col-sm-12 avatarImgCard">
-            <div id="menu">
-        <svg
+    <div class="form-group">
+        <svg asp-for="SvgString"
         width="72.666916mm"
         height="105.83334mm"
         viewBox="0 0 72.666916 105.83334"
@@ -456,102 +425,16 @@
             style="fill:#c77393;fill-opacity:1;stroke:none;stroke-width:0.13527745px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
         </g>
         </svg>
-        </div>
-        
-
-        </div>
-
-        <div class="col-lg-4 col-md-4 col-sm-12">
-            <h1>Llama's colors </h1>
-            <div class="row text-center">
-                <ul id="llama-colorpick-tabs" class="nav nav-tabs">
-                    <li id="llama-colorpick-body" class="active"><a data-toggle="tab" href="#body">Body</a></li>
-
-                    <li id="llama-colorpick-eye"><a data-toggle="tab" href="#eyes">Eyes</a></li>
-
-                    <li id="llama-colorpick-tail"><a data-toggle="tab" href="#tail">Tail</a></li>
-
-                    <li id="llama-colorpick-ears"><a data-toggle="tab" href="#ears">Ears</a></li>
-
-                </ul>
-
-
-                <div class="tab-content">
-                        <div id="body" class="tab-pane fade in active">
-                            <h3> Body Color Options</h3>
-                            <!-- Buttons -->
-                            <button type="button" class="btn stitched white" id="core_white_button" onClick="changeToWhite(this.id)"></button>
-                            <button type="button" class="btn stitched yellow" id="core_yellow_button" onClick="changeToYellow(this.id)"></button>
-                            <button type="button" class="btn stitched blue" id="core_blue_button" onClick="changeToBlue(this.id)"></button>
-                            <button type="button" class="btn stitched fuchsia" id="core_fuchsia_button" onClick="changeToFuchsia(this.id)"></button>
-                            <button type="button" class="btn stitched green" id="core_green_button" onClick="changeToGreen(this.id)"></button>
-                            <button type="button" class="btn stitched orange" id="core_orange_button" onClick="changeToOrange(this.id)"></button>
-                            <button type="button" class="btn stitched red" id="core_red_button" onClick="changeToRed(this.id)"></button>
-                            <button type="button" class="btn stitched gray" id="core_gray_button" onClick="changeToGray(this.id)"></button>
-                            <button type="button" class="btn stitched lbrown" id="core_lbrown_button" onClick="changeToLBrown(this.id)"></button>
-
-                        </div>
-
-
-                        <div id="eyes" class="tab-pane fade">
-                            <h3> Eyes Color Options</h3>
-                            <!-- Buttons -->
-                            <button type="button" class="btn stitched white" id="eyes_white_button" onClick="changeToWhite(this.id)"></button>
-                            <button type="button" class="btn stitched yellow" id="eyes_yellow_button" onClick="changeToYellow(this.id)"></button>
-                            <button type="button" class="btn stitched blue" id="eyes_blue_button" onClick="changeToBlue(this.id)"></button>
-                            <button type="button" class="btn stitched fuchsia" id="eyes_fuchsia_button" onClick="changeToFuchsia(this.id)"></button>
-                            <button type="button" class="btn stitched green" id="eyes_green_button" onClick="changeToGreen(this.id)"></button>
-                            <button type="button" class="btn stitched orange" id="eyes_orange_button" onClick="changeToOrange(this.id)"></button>
-                            <button type="button" class="btn stitched red" id="eyes_red_button" onClick="changeToRed(this.id)"></button>
-                            <button type="button" class="btn stitched gray" id="eyes_gray_button" onClick="changeToGray(this.id)"></button>
-                            <button type="button" class="btn stitched lbrown" id="eyes_lbrown_button" onClick="changeToLBrown(this.id)"></button> 
-                        </div>
-
-                        <div id="tail" class="tab-pane fade">
-                            <h3> Tail Color Options</h3>
-                            <!-- Buttons -->
-                            <button type="button" class="btn stitched white" id="tail_white_button" onClick="changeToWhite(this.id)"></button>
-                            <button type="button" class="btn stitched yellow" id="tail_yellow_button" onClick="changeToYellow(this.id)"></button>
-                            <button type="button" class="btn stitched blue" id="tail_blue_button" onClick="changeToBlue(this.id)"></button>
-                            <button type="button" class="btn stitched fuchsia" id="tail_fuchsia_button" onClick="changeToFuchsia(this.id)"></button>
-                            <button type="button" class="btn stitched green" id="tail_green_button" onClick="changeToGreen(this.id)"></button>
-                            <button type="button" class="btn stitched orange" id="tail_orange_button" onClick="changeToOrange(this.id)"></button>
-                            <button type="button" class="btn stitched red" id="tail_red_button" onClick="changeToRed(this.id)"></button>
-                            <button type="button" class="btn stitched gray" id="tail_gray_button" onClick="changeToGray(this.id)"></button>
-                            <button type="button" class="btn stitched lbrown" id="tail_lbrown_button" onClick="changeToLBrown(this.id)"></button>
-                        </div>
-
-                        <div id="ears" class="tab-pane fade">
-                            <h3> Ears Color Options</h3>
-                            <!-- Buttons -->
-                            <button type="button" class="btn stitched white" id="ears_white_button" onClick="changeToWhite(this.id)"></button>
-                            <button type="button" class="btn stitched yellow" id="ears_yellow_button" onClick="changeToYellow(this.id)"></button>
-                            <button type="button" class="btn stitched blue" id="ears_blue_button" onClick="changeToBlue(this.id)"></button>
-                            <button type="button" class="btn stitched fuchsia" id="ears_fuchsia_button" onClick="changeToFuchsia(this.id)"></button>
-                            <button type="button" class="btn stitched green" id="ears_green_button" onClick="changeToGreen(this.id)"></button>
-                            <button type="button" class="btn stitched orange" id="ears_orange_button" onClick="changeToOrange(this.id)"></button>
-                            <button type="button" class="btn stitched red" id="ears_red_button" onClick="changeToRed(this.id)"></button>
-                            <button type="button" class="btn stitched gray" id="ears_gray_button" onClick="changeToGray(this.id)"></button>
-                            <button type="button" class="btn stitched lbrown" id="ears_lbrown_button" onClick="changeToLBrown(this.id)"></button>
-                        </div>
-
-                </div>
-            </div>
-        </div>
-
-        <!-- <div id="text" >CLICK HERE to create a new div</div> -->
-        
-        
     </div>
-    <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-12 text-left ">
-            <a asp-area="" asp-controller="CreateLlama" asp-action="Index"><button type="button" class="btn btnBack">Back</button></a>
 
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-12 text-right ">
-            <a asp-area="" asp-controller="CreateLlama" asp-action="Name"><button type="button" class="btn btnNext">Next</button></a>
+
+
+     <div class="form-group">
+        <div class="col-md-offset-2 col-md-5">
+            <input type="submit" class="btn btn-primary" value="Create" />
         </div>
     </div>
-    
 
-</div>
+
+</form>
+
