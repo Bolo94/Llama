@@ -153,6 +153,68 @@ body {
 .avatarImgCard {
   padding: 10px;
 }
+/* Clouds*/
+.cloudsWrapper{
+  text-align: right;
+}
+.cloudSmall{
+  margin-top: 3%;
+  padding-right: 3%;
+  z-index: 1;
+  animation-name: cloudMoveSmall;
+  animation-duration: 180s;
+  animation-delay:2s;
+  animation-iteration-count: infinite;
+}
+
+.cloudMed{
+  margin-top: 6%;
+  right: 0;
+  z-index:2 ;
+  animation-name: cloudMoveMed;
+  animation-duration: 140s;
+  animation-delay:0s;
+  animation-iteration-count: infinite;
+}
+
+.cloudLarge{
+  margin-top: 1%;
+  right: 0;
+  margin-right: -400px;
+  z-index: 3 ;
+  animation-name: cloudMoveLarge;
+  animation-duration: 100s;
+  animation-delay:8s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes cloudMoveSmall{
+  from{ 
+    transform: translateX(0);
+  }
+  to{
+    transform: translateX(-500px);
+  }
+}
+
+@keyframes cloudMoveMed{
+  from{ 
+    transform: translateX(0);
+  }
+  to{
+    transform: translateX(-500px);
+  }
+}
+
+@keyframes cloudMoveLarge{
+  from{ 
+    transform: translateX(0);
+  }
+  to{
+    transform: translateX(-500px);
+  }
+}
+
 
 /*Llama speech bubble*/
 .llamaSpeechBubble {
