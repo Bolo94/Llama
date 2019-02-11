@@ -45,7 +45,7 @@ body {
   position: absolute;
   padding: 0;
   margin: 0;
-
+  
   z-index: 0;
 }
 
@@ -109,6 +109,32 @@ body {
   z-index: 10;
 }
 
+.imgLlamaBusBackWheel{
+  left:-13.2%;
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  -o-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  animation-name: busWheelBackAnim;
+  animation-duration: 1s;
+  animation-delay:0s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.imgLlamaBusFrontWheel{
+  left:2.3%;
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  -o-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  animation-name: busWheelBackAnim;
+  animation-duration: 1s;
+  animation-delay:0s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
 .imgLlamaLogo {
   top: 0;
   left: 50%;
@@ -162,14 +188,14 @@ body {
   padding-right: 3%;
   z-index: 1;
   animation-name: cloudMoveSmall;
-  animation-duration: 180s;
-  animation-delay:2s;
+  animation-duration: 140s;
+  animation-delay:0s;
   animation-iteration-count: infinite;
 }
 
 .cloudMed{
   margin-top: 6%;
-  right: 0;
+ 
   z-index:2 ;
   animation-name: cloudMoveMed;
   animation-duration: 140s;
@@ -179,13 +205,35 @@ body {
 
 .cloudLarge{
   margin-top: 1%;
-  right: 0;
-  margin-right: -400px;
+ 
   z-index: 3 ;
   animation-name: cloudMoveLarge;
-  animation-duration: 100s;
+  animation-duration: 140s;
   animation-delay:8s;
   animation-iteration-count: infinite;
+}
+
+.imgBusBody{
+  animation-name: busBodyAnim;
+  animation-duration: 2s;
+  animation-delay:2s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+}
+
+
+.groundLine{
+  overflow:hidden;
+}
+.groundLineAnim{
+  
+  animation-name: groundLineRoad;
+  animation-duration: 3.5s;
+  animation-delay:0s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+ 
+  
 }
 
 @keyframes cloudMoveSmall{
@@ -193,7 +241,7 @@ body {
     transform: translateX(0);
   }
   to{
-    transform: translateX(-500px);
+    transform: translateX(500px);
   }
 }
 
@@ -214,6 +262,35 @@ body {
     transform: translateX(-500px);
   }
 }
+
+@keyframes busBodyAnim{
+ 
+  from{
+    transform: translateY(0);
+  }
+  to{
+    transform: translateY(-3px);
+  }
+}
+
+@keyframes busWheelBackAnim{
+ 
+  
+  to{
+    transform:rotate(360deg);
+  }
+}
+
+@keyframes groundLineRoad{
+  0% {
+    margin-left: 0px;
+ }
+ 100% {
+    margin-left: -1000px;
+ }
+}
+
+
 
 
 /*Llama speech bubble*/
