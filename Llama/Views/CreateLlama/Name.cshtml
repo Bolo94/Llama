@@ -2,6 +2,8 @@
     ViewData["Title"] = "Character_name";
 }
 
+@model Llama.Models.LlamaName
+
 <div class="container">
     <div class="row text-center">
         <div class="col-lg-6 col-md-6 col-sm-12">
@@ -12,11 +14,12 @@
         <div class="col-lg-6 col-md-6 col-sm-12">
             
             <div class="row text-left">
-                <form  asp-action="Name" id="llamaNameForm" method="post">
+
+                <form  asp-action="NamePageTest"  method="post">
                     <div class="llamaSpeechBubble">
                         <p>Hey, my name is </p>
-                        <p><input  type="text" name="llamaName" id="llamaName"  maxlength="15"/> !!!</p>
-                        <button  type="submit" form ="llamaNameForm"  class="btn">Submit</button>
+                        <p><input  asp-for="MyName" type="text"   maxlength="15"/> !!!</p>
+                        <button  type="submit"  class="btn">Submit</button>
                    </div>
                    
                 </form>
@@ -24,7 +27,7 @@
         </div>
         
     </div>
-    <div class="row">
+    <!-- <div class="row">
         <div class="col-lg-6 col-md-6 col-sm-12 text-left nextBackButtonContainer">
             <a asp-area="" asp-controller="CreateLlama" asp-action="Customization"><button type="button" class="btn btnBack">Back</button></a>
 
@@ -33,6 +36,6 @@
             <button type="button" class="btn btnNext"  >Next</button></a>
         </div>
     </div>
-    
+     -->
 
 </div>

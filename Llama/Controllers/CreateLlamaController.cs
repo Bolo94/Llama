@@ -21,11 +21,10 @@ namespace Llama.Controllers {
 
         }
 
-        [HttpPost]
-        public IActionResult Name (string llamaName) {
+       
+        public IActionResult NamePageTest (LlamaName test) {
 
-            Console.WriteLine (llamaName);
-            return View ();
+           return View(test);
 
         }
 
