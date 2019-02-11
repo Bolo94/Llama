@@ -110,7 +110,8 @@ body {
 }
 
 .imgLlamaBusBackWheel{
-  left:-13.2%;
+  /*left:-13.2%;*/
+  left: -169px;
   -webkit-transform-origin: 50% 50%;
   -moz-transform-origin: 50% 50%;
   -o-transform-origin: 50% 50%;
@@ -123,7 +124,8 @@ body {
 }
 
 .imgLlamaBusFrontWheel{
-  left:2.3%;
+  /*left:2.3%;*/
+  left:29px;
   -webkit-transform-origin: 50% 50%;
   -moz-transform-origin: 50% 50%;
   -o-transform-origin: 50% 50%;
