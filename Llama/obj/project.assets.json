@@ -13026,11 +13026,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\DotNetProjects\\LlamaApp\\DevBranch\\Llama\\Llama\\Llama.csproj",
+      "projectUniqueName": "d:\\DotNetProjects\\LlamaApp\\DevBranch\\Llama\\Llama\\Llama.csproj",
       "projectName": "Llama",
-      "projectPath": "D:\\DotNetProjects\\LlamaApp\\DevBranch\\Llama\\Llama\\Llama.csproj",
+      "projectPath": "d:\\DotNetProjects\\LlamaApp\\DevBranch\\Llama\\Llama\\Llama.csproj",
       "packagesPath": "C:\\Users\\Marcos\\.nuget\\packages\\",
-      "outputPath": "D:\\DotNetProjects\\LlamaApp\\DevBranch\\Llama\\Llama\\obj\\",
+      "outputPath": "d:\\DotNetProjects\\LlamaApp\\DevBranch\\Llama\\Llama\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
