@@ -9,22 +9,22 @@ namespace Llama.Models
     {
         private LlamaColorsDbContext _llamaColorRepositoryDbContext;
 
-        public LlamaColorRepository(LlamaColorsDbContext LlamaColorDbContext)
+        public LlamaColorRepository(LlamaColorsDbContext llamaColorDbContext)
         {
-            _llamaColorRepositoryDbContext = llamaColorRepositoryDbContext;
+            _llamaColorRepositoryDbContext = llamaColorDbContext;
         }
         public void AddLamaColor(LlamaColors pLlamaColor)
         {
        
            
-            _llamaColorRepositoryDbContext.Users.Add(pLlamaColor);
+            _llamaColorRepositoryDbContext.LlamaColors.Add(pLlamaColor);
             _llamaColorRepositoryDbContext.SaveChanges();
         }
 
-        public IEnumerable<Users> GetAllUsers()
-        {
-            return _userDbContext.Users;
-        }
+        // public IEnumerable<LlamaColors> GetAllUsers()
+        // {
+        //     return _llamaColorRepositoryDbContext.LlamaColors;
+        // }
 
         // private helper methods
 
