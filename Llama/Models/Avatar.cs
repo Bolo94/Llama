@@ -8,8 +8,15 @@ namespace Llama.Models
 {
     public partial class Avatar
     {
-        public int ID { get; set; }
-        public int IDUser { get; set; }
-        public int IDAvatarCos { get; set; }
-    }
+        [Key]
+       public int IdAvatar { get; set; }
+       public int IdUser { get; set; }
+       public String Name { get; set; }
+       public String BodyColor { get; set; }
+       public String EyesColor { get; set; }
+       public String TailColor { get; set; }
+       public String EarsColor { get; set; }
+
+   }
+    
 }
