@@ -6,15 +6,10 @@ using System.Threading.Tasks;
 
 namespace Llama.Models
 {
-    public partial class LlamaColors
+    public partial class Avatar
     {
-        //Avatar's colors
-
-        [Key]
         public int ID { get; set; }
-        public String ColorName { get; set; }
-        public String HexCode { get; set; }
-
+        public int IDUser { get; set; }
+        public int IDAvatarCos { get; set; }
     }
-
 }
