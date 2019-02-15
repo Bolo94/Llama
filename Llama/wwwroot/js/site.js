@@ -5,182 +5,182 @@
 
 
 
-//  function changeToWhite(clicked_id){
-//    if(clicked_id == "core_white_button"){
-//      document.getElementById('llama-core').setAttribute('style', 'fill: #ffffff');
-//     }
-//    else if(clicked_id =="eyes_white_button"){
-//      document.getElementById('llama-left-eye').setAttribute('style', 'fill: #ffffff');
-//      document.getElementById('llama-right-eye').setAttribute('style', 'fill: #ffffff');
-//    }
-//    else if(clicked_id == "tail_white_button"){
-//      document.getElementById('llama-tail-outer-shadow').setAttribute('style', 'fill: #fffff');
-//    }
-//    else if(clicked_id == "ears_white_button"){
-//      document.getElementById('llama-left-ear').setAttribute('style', 'fill: #ffffff');
-//      document.getElementById('llama-right-ear').setAttribute('style', 'fill: #ffffff');
-//    }
+  function changeToWhite(clicked_id){
+    if(clicked_id == "core_white_button"){
+      document.getElementById('llama-core').setAttribute('style', 'fill: #ffffff');
+     }
+    else if(clicked_id =="eyes_white_button"){
+      document.getElementById('llama-left-eye').setAttribute('style', 'fill: #ffffff');
+      document.getElementById('llama-right-eye').setAttribute('style', 'fill: #ffffff');
+    }
+    else if(clicked_id == "tail_white_button"){
+      document.getElementById('llama-tail-outer-shadow').setAttribute('style', 'fill: #fffff');
+    }
+    else if(clicked_id == "ears_white_button"){
+      document.getElementById('llama-left-ear').setAttribute('style', 'fill: #ffffff');
+      document.getElementById('llama-right-ear').setAttribute('style', 'fill: #ffffff');
+    }
     
-//  }
+  }
 
-//  function changeToYellow(clicked_id){
-//    if(clicked_id == "core_yellow_button"){
-//      document.getElementById('llama-core').setAttribute('style', 'fill: #FFFF0D');
-//     }
-//    else if(clicked_id =="eyes_yellow_button"){
-//      document.getElementById('llama-right-eye').setAttribute('style', 'fill: #FFFF0D');
-//      document.getElementById('llama-left-eye').setAttribute('style', 'fill: #FFFF0D');
-//    }
-//    else if(clicked_id == "tail_yellow_button"){
-//      document.getElementById('llama-tail-outer-shadow').setAttribute('style', 'fill: #FFFF0D');
-//    }
-//    else if(clicked_id == "ears_yellow_button"){
-//      document.getElementById('llama-left-ear').setAttribute('style', 'fill: #FFFF0D');
-//      document.getElementById('llama-right-ear').setAttribute('style', 'fill: #FFFF0D');
-//    } 
-//  }
+  function changeToYellow(clicked_id){
+    if(clicked_id == "core_yellow_button"){
+      document.getElementById('llama-core').setAttribute('style', 'fill: #FFFF0D');
+     }
+    else if(clicked_id =="eyes_yellow_button"){
+      document.getElementById('llama-right-eye').setAttribute('style', 'fill: #FFFF0D');
+      document.getElementById('llama-left-eye').setAttribute('style', 'fill: #FFFF0D');
+    }
+    else if(clicked_id == "tail_yellow_button"){
+      document.getElementById('llama-tail-outer-shadow').setAttribute('style', 'fill: #FFFF0D');
+    }
+    else if(clicked_id == "ears_yellow_button"){
+      document.getElementById('llama-left-ear').setAttribute('style', 'fill: #FFFF0D');
+      document.getElementById('llama-right-ear').setAttribute('style', 'fill: #FFFF0D');
+    } 
+  }
   
-//  function changeToBlue(clicked_id)
-//  {
-//    if(clicked_id == "core_blue_button"){
-//      document.getElementById('llama-core').setAttribute('style', 'fill: #347AB6');
-//     }
-//    else if(clicked_id =="eyes_blue_button"){
-//      document.getElementById('llama-right-eye').setAttribute('style', 'fill: #347AB6');
-//      document.getElementById('llama-left-eye').setAttribute('style', 'fill: #347AB6');
-//    }
-//    else if(clicked_id == "tail_blue_button"){
-//      document.getElementById('llama-tail-outer-shadow').setAttribute('style', 'fill: #347AB6');
-//    }
-//    else if(clicked_id == "ears_blue_button"){
-//      document.getElementById('llama-left-ear').setAttribute('style', 'fill: #347AB6');
-//      document.getElementById('llama-right-ear').setAttribute('style', 'fill: #347AB6');
-//    }
-//  }
+  function changeToBlue(clicked_id)
+  {
+    if(clicked_id == "core_blue_button"){
+      document.getElementById('llama-core').setAttribute('style', 'fill: #347AB6');
+     }
+    else if(clicked_id =="eyes_blue_button"){
+      document.getElementById('llama-right-eye').setAttribute('style', 'fill: #347AB6');
+      document.getElementById('llama-left-eye').setAttribute('style', 'fill: #347AB6');
+    }
+    else if(clicked_id == "tail_blue_button"){
+      document.getElementById('llama-tail-outer-shadow').setAttribute('style', 'fill: #347AB6');
+    }
+    else if(clicked_id == "ears_blue_button"){
+      document.getElementById('llama-left-ear').setAttribute('style', 'fill: #347AB6');
+      document.getElementById('llama-right-ear').setAttribute('style', 'fill: #347AB6');
+    }
+  }
 
-//  function changeToFuchsia(clicked_id){
-//    if(clicked_id == "core_fuchsia_button"){
-//      document.getElementById('llama-core').setAttribute('style', 'fill: #ff0030');
-//     }
-//    else if(clicked_id =="eyes_fuchsia_button"){
-//      document.getElementById('llama-right-eye').setAttribute('style', 'fill: #ff0030');
-//      document.getElementById('llama-left-eye').setAttribute('style', 'fill: #ff0030');
-//    }
-//    else if(clicked_id == "tail_fuchsia_button"){
-//      document.getElementById('llama-tail-outer-shadow').setAttribute('style', 'fill: #ff0030');
-//    } 
-//    else if(clicked_id == "ears_fuchsia_button"){
-//      document.getElementById('llama-left-ear').setAttribute('style', 'fill: #ff0030');
-//      document.getElementById('llama-right-ear').setAttribute('style', 'fill: #ff0030');
-//    }
-//  }
+  function changeToFuchsia(clicked_id){
+    if(clicked_id == "core_fuchsia_button"){
+      document.getElementById('llama-core').setAttribute('style', 'fill: #ff0030');
+     }
+    else if(clicked_id =="eyes_fuchsia_button"){
+      document.getElementById('llama-right-eye').setAttribute('style', 'fill: #ff0030');
+      document.getElementById('llama-left-eye').setAttribute('style', 'fill: #ff0030');
+    }
+    else if(clicked_id == "tail_fuchsia_button"){
+      document.getElementById('llama-tail-outer-shadow').setAttribute('style', 'fill: #ff0030');
+    } 
+    else if(clicked_id == "ears_fuchsia_button"){
+      document.getElementById('llama-left-ear').setAttribute('style', 'fill: #ff0030');
+      document.getElementById('llama-right-ear').setAttribute('style', 'fill: #ff0030');
+    }
+  }
   
-//  function changeToGreen(clicked_id){
-//    if(clicked_id == "core_green_button"){ 
-//      document.getElementById('llama-core').setAttribute('style', 'fill: #57BB58');
-//     }
-//    else if(clicked_id =="eyes_green_button"){
-//      document.getElementById('llama-right-eye').setAttribute('style', 'fill: #57BB58');
-//      document.getElementById('llama-left-eye').setAttribute('style', 'fill: #57BB58');
-//    }
-//    else if(clicked_id == "tail_green_button"){
-//      document.getElementById('llama-tail-outer-shadow').setAttribute('style', 'fill: #57BB58');
-//    }
-//    else if (clicked_id == "ears_green_button") {
-//        alert("Hello! I am an alert box!!");
-//      document.getElementById('llama-left-ear').setAttribute('style', 'fill: #57BB58');
-//      document.getElementById('llama-right-ear').setAttribute('style', 'fill: #57BB58');
-//    }
-//  }
+  function changeToGreen(clicked_id){
+    if(clicked_id == "core_green_button"){ 
+      document.getElementById('llama-core').setAttribute('style', 'fill: #57BB58');
+     }
+    else if(clicked_id =="eyes_green_button"){
+      document.getElementById('llama-right-eye').setAttribute('style', 'fill: #57BB58');
+      document.getElementById('llama-left-eye').setAttribute('style', 'fill: #57BB58');
+    }
+    else if(clicked_id == "tail_green_button"){
+      document.getElementById('llama-tail-outer-shadow').setAttribute('style', 'fill: #57BB58');
+    }
+    else if (clicked_id == "ears_green_button") {
+        alert("Hello! I am an alert box!!");
+      document.getElementById('llama-left-ear').setAttribute('style', 'fill: #57BB58');
+      document.getElementById('llama-right-ear').setAttribute('style', 'fill: #57BB58');
+    }
+  }
   
-//  function changeToLBlue(clicked_id){
-//    if(clicked_id == "core_light_blue_button"){
-//      document.getElementById('llama-core').setAttribute('style', 'fill: #5BC0DE');
-//     }
-//    else if(clicked_id == "eyes_light_blue_button"){
-//      document.getElementById('llama-right-eye').setAttribute('style', 'fill: #5BC0DE');
-//      document.getElementById('llama-left-eye').setAttribute('style', 'fill: #5BC0DE');
-//    }
-//    else if(clicked_id == "tail_blue_button"){
-//      document.getElementById('llama-tail').setAttribute('style', 'fill: #347AB6');
-//  }
+  function changeToLBlue(clicked_id){
+    if(clicked_id == "core_light_blue_button"){
+      document.getElementById('llama-core').setAttribute('style', 'fill: #5BC0DE');
+     }
+    else if(clicked_id == "eyes_light_blue_button"){
+      document.getElementById('llama-right-eye').setAttribute('style', 'fill: #5BC0DE');
+      document.getElementById('llama-left-eye').setAttribute('style', 'fill: #5BC0DE');
+    }
+    else if(clicked_id == "tail_blue_button"){
+      document.getElementById('llama-tail').setAttribute('style', 'fill: #347AB6');
+  }
 
-//}
+}
   
-//  function changeToOrange(clicked_id){
-//    if(clicked_id == "core_orange_button"){
-//      document.getElementById('llama-core').setAttribute('style', 'fill: #EFAD4D');
-//     }
-//    else if(clicked_id =="eyes_orange_button"){
-//      document.getElementById('llama-right-eye').setAttribute('style', 'fill: #EFAD4D');
-//      document.getElementById('llama-left-eye').setAttribute('style', 'fill: #EFAD4D');
-//    }
-//    else if(clicked_id == "tail_orange_button"){
-//      document.getElementById('llama-tail-outer-shadow').setAttribute('style', 'fill: #EFAD4D');
-//    }
-//    else if(clicked_id == "ears_orange_button"){
-//      document.getElementById('llama-left-ear').setAttribute('style', 'fill: #EFAD4D');
-//      document.getElementById('llama-right-ear').setAttribute('style', 'fill: #EFAD4D');
-//    }
+  function changeToOrange(clicked_id){
+    if(clicked_id == "core_orange_button"){
+      document.getElementById('llama-core').setAttribute('style', 'fill: #EFAD4D');
+     }
+    else if(clicked_id =="eyes_orange_button"){
+      document.getElementById('llama-right-eye').setAttribute('style', 'fill: #EFAD4D');
+      document.getElementById('llama-left-eye').setAttribute('style', 'fill: #EFAD4D');
+    }
+    else if(clicked_id == "tail_orange_button"){
+      document.getElementById('llama-tail-outer-shadow').setAttribute('style', 'fill: #EFAD4D');
+    }
+    else if(clicked_id == "ears_orange_button"){
+      document.getElementById('llama-left-ear').setAttribute('style', 'fill: #EFAD4D');
+      document.getElementById('llama-right-ear').setAttribute('style', 'fill: #EFAD4D');
+    }
   
-//  }
+  }
   
-//  function changeToRed(clicked_id){
-//    if(clicked_id == "core_red_button"){
-//      document.getElementById('llama-core').setAttribute('style', 'fill: #D9544F');
-//    }
-//    else if(clicked_id =="eyes_red_button"){
-//      document.getElementById('llama-right-eye').setAttribute('style', 'fill: #D9544F');
-//      document.getElementById('llama-left-eye').setAttribute('style', 'fill: #D9544F');
-//    }
-//    else if(clicked_id == "tail_red_button"){
-//      document.getElementById('llama-tail-outer-shadow').setAttribute('style', 'fill: #D9544F');
-//    }
-//    else if(clicked_id == "ears_red_button") {
-//     document.getElementById('llama-left-ear').setAttribute('style', 'fill: #D9544F');
-//     document.getElementById('llama-right-ear').setAttribute('style', 'fill: #D9544F');
-//    }
-//    else if(clicked_id == "ears_red_button"){
-//      document.getElementById('llama-left-ear').setAttribute('style', 'fill: #D9544F');
-//      document.getElementById('llama-right-ear').setAttribute('style', 'fill: #D9544F');
-//    }
-//}
+  function changeToRed(clicked_id){
+    if(clicked_id == "core_red_button"){
+      document.getElementById('llama-core').setAttribute('style', 'fill: #D9544F');
+    }
+    else if(clicked_id =="eyes_red_button"){
+      document.getElementById('llama-right-eye').setAttribute('style', 'fill: #D9544F');
+      document.getElementById('llama-left-eye').setAttribute('style', 'fill: #D9544F');
+    }
+    else if(clicked_id == "tail_red_button"){
+      document.getElementById('llama-tail-outer-shadow').setAttribute('style', 'fill: #D9544F');
+    }
+    else if(clicked_id == "ears_red_button") {
+     document.getElementById('llama-left-ear').setAttribute('style', 'fill: #D9544F');
+     document.getElementById('llama-right-ear').setAttribute('style', 'fill: #D9544F');
+    }
+    else if(clicked_id == "ears_red_button"){
+      document.getElementById('llama-left-ear').setAttribute('style', 'fill: #D9544F');
+      document.getElementById('llama-right-ear').setAttribute('style', 'fill: #D9544F');
+    }
+}
 
-//function changeToLBrown(clicked_id){
-//    if(clicked_id == "core_lbrown_button"){
-//        document.getElementById('llama-core').setAttribute('style', 'fill: #C77E5D');
-//    }
-//    else if(clicked_id =="eyes_lbrown_button"){
-//        document.getElementById('llama-right-eye').setAttribute('style', 'fill: #C77E5D');
-//        document.getElementById('llama-left-eye').setAttribute('style', 'fill: #C77E5D');
-//    }
-//    else if(clicked_id == "tail_lbrown_button"){
-//        document.getElementById('llama-tail-outer-shadow').setAttribute('style', 'fill: #C77E5D');
-//    }
-//    else if(clicked_id == "ears_lbrown_button"){
-//      document.getElementById('llama-left-ear').setAttribute('style', 'fill: #C77E5D');
-//      document.getElementById('llama-right-ear').setAttribute('style', 'fill: #C77E5D');
-//    }
+function changeToLBrown(clicked_id){
+    if(clicked_id == "core_lbrown_button"){
+        document.getElementById('llama-core').setAttribute('style', 'fill: #C77E5D');
+    }
+    else if(clicked_id =="eyes_lbrown_button"){
+        document.getElementById('llama-right-eye').setAttribute('style', 'fill: #C77E5D');
+        document.getElementById('llama-left-eye').setAttribute('style', 'fill: #C77E5D');
+    }
+    else if(clicked_id == "tail_lbrown_button"){
+        document.getElementById('llama-tail-outer-shadow').setAttribute('style', 'fill: #C77E5D');
+    }
+    else if(clicked_id == "ears_lbrown_button"){
+      document.getElementById('llama-left-ear').setAttribute('style', 'fill: #C77E5D');
+      document.getElementById('llama-right-ear').setAttribute('style', 'fill: #C77E5D');
+    }
 
-//}
+}
 
-//function changeToGray(clicked_id){
-//    if(clicked_id == "core_gray_button"){
-//        document.getElementById('llama-core').setAttribute('style', 'fill: #C0C0C0');        
+function changeToGray(clicked_id){
+    if(clicked_id == "core_gray_button"){
+        document.getElementById('llama-core').setAttribute('style', 'fill: #C0C0C0');        
 
-//    }
-//    else if(clicked_id =="eyes_gray_button"){
-//        document.getElementById('llama-right-eye').setAttribute('style', 'fill: #C0C0C0');
-//        document.getElementById('llama-left-eye').setAttribute('style', 'fill: #C0C0C0');
-//    }
-//    else if(clicked_id == "tail_gray_button"){
-//        document.getElementById('llama-tail-outer-shadow').setAttribute('style', 'fill: #C0C0C0');
-//    }
-//    else if(clicked_id == "ears_gray_button"){
-//      document.getElementById('llama-left-ear').setAttribute('style', 'fill: #C0C0C0');
-//      document.getElementById('llama-right-ear').setAttribute('style', 'fill: #C0C0C0');
-//    }
-//}
+    }
+    else if(clicked_id =="eyes_gray_button"){
+        document.getElementById('llama-right-eye').setAttribute('style', 'fill: #C0C0C0');
+        document.getElementById('llama-left-eye').setAttribute('style', 'fill: #C0C0C0');
+    }
+    else if(clicked_id == "tail_gray_button"){
+        document.getElementById('llama-tail-outer-shadow').setAttribute('style', 'fill: #C0C0C0');
+    }
+    else if(clicked_id == "ears_gray_button"){
+      document.getElementById('llama-left-ear').setAttribute('style', 'fill: #C0C0C0');
+      document.getElementById('llama-right-ear').setAttribute('style', 'fill: #C0C0C0');
+    }
+}
 function ChangeColor(clicked_id) {
     if (clicked_id == "core_white_button") {
         document.getElementById('llama-core').setAttribute('style', 'fill: #ffffff');
