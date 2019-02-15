@@ -12,8 +12,8 @@ namespace Llama.Models
 
         [Key]
         public int ID{get; set;}
+        public String ColorName { get; set; }
         public String HexCode { get; set; }
-         public String ColorName { get; set; }
 
 
 
