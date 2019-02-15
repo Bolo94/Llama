@@ -277,3 +277,5 @@ C:\Users\nerea\source\repos\NewLlama\Llama\Llama\obj\Debug\netcoreapp2.2\Llama.V
 C:\Users\nerea\source\repos\NewLlama\Llama\Llama\obj\Debug\netcoreapp2.2\Llama.dll
 C:\Users\nerea\source\repos\NewLlama\Llama\Llama\obj\Debug\netcoreapp2.2\Llama.pdb
 C:\Users\nerea\source\repos\NewLlama\Llama\Llama\obj\Debug\netcoreapp2.2\Llama.csproj.CopyComplete
+D:\DotNetProjects\LlamaApp\DevBranch\Llama\Llama\obj\Debug\netcoreapp2.2\Razor\Views\CreateLlama\LlamaColor.g.cshtml.cs
+D:\DotNetProjects\LlamaApp\DevBranch\Llama\Llama\obj\Debug\netcoreapp2.2\Razor\Views\CreateLlama\LlamaColorResult.g.cshtml.cs

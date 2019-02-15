@@ -31,5 +31,13 @@ namespace Llama.Controllers {
         public IActionResult Customization () {
             return View ();
         }
+
+        public IActionResult LlamaColor () {
+            return View ();
+        }
+
+        public IActionResult LlamaColorResult (LlamaColors test){
+            return View (test);
+        }
     }
 }
