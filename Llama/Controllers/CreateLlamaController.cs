@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Llama.Controllers
 {
-   
+
 
     /*List for form submition test */
 
@@ -55,19 +55,19 @@ namespace Llama.Controllers
             if (ModelState.IsValid)
             {
                 _AvatarRepository.AddAvatar(pAvatar);
-               
+
             }
             return View(pAvatar);
         }
 
-        public IActionResult LlamaColor()
-        {
-            return View();
-        }
+        // public IActionResult LlamaColor()
+        // {
+        //     return View();
+        // }
 
-        public IActionResult LlamaColorResult(LlamaColors llamacolor)
-        {
-            return View(llamacolor);
-        }
+        // public IActionResult LlamaColorResult(LlamaColors llamacolor)
+        // {
+        //     return View(llamacolor);
+        // }
     }
 }
