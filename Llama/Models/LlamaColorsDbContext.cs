@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace Llama.Models
 {
-    public class LlamaColorsDbContext : DbContext
-    {
-        public virtual DbSet<LlamaColors> LlamaColors { get; set; }
+    //public class LlamaColorsDbContext : DbContext
+    //{
+    //    public virtual DbSet<LlamaColors> LlamaColors { get; set; }
 
-        public LlamaColorsDbContext(DbContextOptions<LlamaColorsDbContext> options) : base(options)
-        { }
+    //    public LlamaColorsDbContext(DbContextOptions<LlamaColorsDbContext> options) : base(options)
+    //    { }
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-        }
-    }
+    //    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    //    {
+    //    }
+    //}
   
 }

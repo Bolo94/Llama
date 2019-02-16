@@ -128,3 +128,6 @@ D:\DotNetProjects\LlamaApp\DevBranch\Llama\Llama\obj\Debug\netcoreapp2.2\Llama.V
 D:\DotNetProjects\LlamaApp\DevBranch\Llama\Llama\obj\Debug\netcoreapp2.2\Llama.dll
 D:\DotNetProjects\LlamaApp\DevBranch\Llama\Llama\obj\Debug\netcoreapp2.2\Llama.pdb
 D:\DotNetProjects\LlamaApp\DevBranch\Llama\Llama\obj\Debug\netcoreapp2.2\Llama.csproj.CopyComplete
+C:\Users\Carlos\Documents\GitHub\Llama\Llama\obj\Debug\netcoreapp2.2\Razor\Views\CreateLlama\LlamaColor.g.cshtml.cs
+C:\Users\Carlos\Documents\GitHub\Llama\Llama\obj\Debug\netcoreapp2.2\Razor\Views\CreateLlama\LlamaColorResult.g.cshtml.cs
+C:\Users\Carlos\Documents\GitHub\Llama\Llama\obj\Debug\netcoreapp2.2\Razor\Views\CreateLlama\CreateAvatar.g.cshtml.cs

@@ -16,6 +16,7 @@ namespace Llama.Controllers
             _userRepository = userRepository;
         }
 
+
         public IActionResult Index()
         {
             return View(_userRepository.GetAllUsers());

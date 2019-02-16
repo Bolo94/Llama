@@ -19,6 +19,29 @@ namespace Llama.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+            modelBuilder.Entity("Llama.Models.Avatar", b =>
+                {
+                    b.Property<int>("IdAvatar")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("BodyColor");
+
+                    b.Property<string>("EarsColor");
+
+                    b.Property<string>("EyesColor");
+
+                    b.Property<int>("IdUser");
+
+                    b.Property<string>("Name");
+
+                    b.Property<string>("TailColor");
+
+                    b.HasKey("IdAvatar");
+
+                    b.ToTable("Avatars");
+                });
+
             modelBuilder.Entity("Llama.Models.Users", b =>
                 {
                     b.Property<int>("IdUser")

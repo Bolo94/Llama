@@ -36,6 +36,7 @@ namespace Llama
             services.AddDbContext<UserDbContext>
             (options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
             services.AddTransient<IUserRepository, UserRepository>();
+            services.AddTransient<IAvatarRepository, AvatarRepository>();
             // Add framework services.
             //services.AddApplicationInsightsTelemetry(Configuration);
 
