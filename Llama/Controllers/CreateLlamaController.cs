@@ -58,6 +58,7 @@ namespace Llama.Controllers
 
             }
             return View(pAvatar);
+           
         }
 
         // public IActionResult LlamaColor()
@@ -65,9 +66,9 @@ namespace Llama.Controllers
         //     return View();
         // }
 
-        // public IActionResult LlamaColorResult(LlamaColors llamacolor)
-        // {
-        //     return View(llamacolor);
-        // }
+         public IActionResult LlamaColorResult(Avatar avatar)
+         {
+            return View(avatar);
+         }
     }
 }

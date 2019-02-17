@@ -102,7 +102,6 @@ D:\DotNetProjects\LlamaApp\DevBranch\Llama\Llama\obj\Debug\netcoreapp2.2\Llama.T
 D:\DotNetProjects\LlamaApp\DevBranch\Llama\Llama\obj\Debug\netcoreapp2.2\Llama.RazorCoreGenerate.cache
 D:\DotNetProjects\LlamaApp\DevBranch\Llama\Llama\obj\Debug\netcoreapp2.2\Razor\Views\CreateLlama\Customization.g.cshtml.cs
 D:\DotNetProjects\LlamaApp\DevBranch\Llama\Llama\obj\Debug\netcoreapp2.2\Razor\Views\CreateLlama\Index.g.cshtml.cs
-D:\DotNetProjects\LlamaApp\DevBranch\Llama\Llama\obj\Debug\netcoreapp2.2\Razor\Views\CreateLlama\LlamaColor.g.cshtml.cs
 D:\DotNetProjects\LlamaApp\DevBranch\Llama\Llama\obj\Debug\netcoreapp2.2\Razor\Views\CreateLlama\LlamaColorResult.g.cshtml.cs
 D:\DotNetProjects\LlamaApp\DevBranch\Llama\Llama\obj\Debug\netcoreapp2.2\Razor\Views\CreateLlama\Name.g.cshtml.cs
 D:\DotNetProjects\LlamaApp\DevBranch\Llama\Llama\obj\Debug\netcoreapp2.2\Razor\Views\CreateLlama\NamePageTest.g.cshtml.cs

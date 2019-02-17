@@ -1,4 +1,4 @@
-@model Llama.Models.LlamaColors
+@model Llama.Models.Avatar
 
 @{
     ViewData["Title"] = "Character_name";
@@ -462,7 +462,7 @@
         </div>
 
             <div class="col-lg-4 col-md-4 col-sm-12">
-                <form  asp-action="LlamaColorResult"  method="post">
+                <form    method="post">
                         <h1>Llama's colors </h1>
                         <div class="row text-center">
                             <ul id="llama-colorpick-tabs" class="nav nav-tabs">
@@ -479,121 +479,121 @@
                             <div id="body" class="tab-pane fade in active">
                                 <h3> Body Color Options</h3>
                                
-                                    <input id="core_white_button" class="option-input white radio" asp-for="ColorName" type="radio" value="#ffffff" onClick="changeToWhite(this.id)"/>
+                                    <input id="core_white_button" class="option-input white radio" asp-for="BodyColor" type="radio" value="#ffffff" onClick="changeToWhite(this.id)"/>
                                     <label class="form-check-label" for="White"></label>
                                
-                                    <input id="core_yellow_button" class="option-input yellow radio" asp-for="ColorName" type="radio" value="#FFFF0D" onClick="changeToYellow(this.id)"/>
+                                    <input id="core_yellow_button" class="option-input yellow radio" asp-for="BodyColor" type="radio" value="#FFFF0D" onClick="changeToYellow(this.id)"/>
                                     <label class="form-check-label " for="Yellow"></label>
                                
-                                    <input id="core_blue_button" class="option-input blue radio" asp-for="ColorName" type="radio" value="#347AB6" onClick="changeToBlue(this.id)"/>
+                                    <input id="core_blue_button" class="option-input blue radio" asp-for="BodyColor" type="radio" value="#347AB6" onClick="changeToBlue(this.id)"/>
                                     <label class="form-check-label" for="Blue"></label>
                                
-                                    <input id="core_fuchsia_button" class="option-input fuchsia radio" asp-for="ColorName" type="radio" value="#ff0030" onClick="changeToFuchsia(this.id)"/>
+                                    <input id="core_fuchsia_button" class="option-input fuchsia radio" asp-for="BodyColor" type="radio" value="#ff0030" onClick="changeToFuchsia(this.id)"/>
                                     <label class="form-check-label" for="Fuchsia"></label>
                                 
-                                    <input id="core_green_button" class="option-input green radio" asp-for="ColorName" type="radio" value="#57BB58" onClick="changeToGreen(this.id)"/>
+                                    <input id="core_green_button" class="option-input green radio" asp-for="BodyColor" type="radio" value="#57BB58" onClick="changeToGreen(this.id)"/>
                                     <label class="form-check-label" for="Green"></label>
                                     
-                                    <input id="core_orange_button" class="option-input orange radio" asp-for="ColorName" type="radio" value="#EFAD4D" onClick="changeToOrange(this.id)"/>
+                                    <input id="core_orange_button" class="option-input orange radio" asp-for="BodyColor" type="radio" value="#EFAD4D" onClick="changeToOrange(this.id)"/>
                                     <label class="form-check-label" for="Orange"></label>
                                     
-                                    <input id="core_red_button" class="option-input red radio" asp-for="ColorName" type="radio" value="#D9544F" onClick="changeToRed(this.id)"/>
+                                    <input id="core_red_button" class="option-input red radio" asp-for="BodyColor" type="radio" value="#D9544F" onClick="changeToRed(this.id)"/>
                                     <label class="form-check-label" for="Red"></label>
                                     
-                                    <input id="core_gray_button" class="option-input gray radio" asp-for="ColorName" type="radio" value="#C77E5D" onClick="changeToGray(this.id)"/>
+                                    <input id="core_gray_button" class="option-input gray radio" asp-for="BodyColor" type="radio" value="#C77E5D" onClick="changeToGray(this.id)"/>
                                     <label class="form-check-label" for="Gray"></label>
                                     
-                                    <input id="core_lbrown_button" class="option-input lbrown radio" asp-for="ColorName" type="radio" value="#C0C0C0" onClick="changeToLBrown(this.id)"/>
+                                    <input id="core_lbrown_button" class="option-input lbrown radio" asp-for="BodyColor" type="radio" value="#C0C0C0" onClick="changeToLBrown(this.id)"/>
                                     <label class="form-check-label" for="LBrown"></label>
                             </div>
 
                             <div id="eyes" class="tab-pane fade">
                                 <h3> Eyes Color Options</h3>
-                                    <input id="eyes_white_button" class="option-input white radio" asp-for="ColorName" type="radio" value="#ffffff" onClick="changeToWhite(this.id)"/>
+                                    <input id="eyes_white_button" class="option-input white radio" asp-for="EyesColor" type="radio" value="#ffffff" onClick="changeToWhite(this.id)"/>
                                     <label class="form-check-label" for="White"></label>
                                
-                                    <input id="eyes_yellow_button" class="option-input yellow radio" asp-for="ColorName" type="radio" value="#FFFF0D" onClick="changeToYellow(this.id)"/>
+                                    <input id="eyes_yellow_button" class="option-input yellow radio" asp-for="EyesColor" type="radio" value="#FFFF0D" onClick="changeToYellow(this.id)"/>
                                     <label class="form-check-label " for="Yellow"></label>
                                
-                                    <input id="eyes_blue_button" class="option-input blue radio" asp-for="ColorName" type="radio" value="#347AB6" onClick="changeToBlue(this.id)"/>
+                                    <input id="eyes_blue_button" class="option-input blue radio" asp-for="EyesColor" type="radio" value="#347AB6" onClick="changeToBlue(this.id)"/>
                                     <label class="form-check-label" for="Blue"></label>
                                
-                                    <input id="eyes_fuchsia_button" class="option-input fuchsia radio" asp-for="ColorName" type="radio" value="#ff0030" onClick="changeToFuchsia(this.id)"/>
+                                    <input id="eyes_fuchsia_button" class="option-input fuchsia radio" asp-for="EyesColor" type="radio" value="#ff0030" onClick="changeToFuchsia(this.id)"/>
                                     <label class="form-check-label" for="Fuchsia"></label>
                                 
-                                    <input id="eyes_green_button" class="option-input green radio" asp-for="ColorName" type="radio" value="#57BB58" onClick="changeToGreen(this.id)"/>
+                                    <input id="eyes_green_button" class="option-input green radio" asp-for="EyesColor" type="radio" value="#57BB58" onClick="changeToGreen(this.id)"/>
                                     <label class="form-check-label" for="Green"></label>
                                     
-                                    <input id="eyes_orange_button" class="option-input orange radio" asp-for="ColorName" type="radio" value="#EFAD4D" onClick="changeToOrange(this.id)"/>
+                                    <input id="eyes_orange_button" class="option-input orange radio" asp-for="EyesColor" type="radio" value="#EFAD4D" onClick="changeToOrange(this.id)"/>
                                     <label class="form-check-label" for="Orange"></label>
                                     
-                                    <input id="eyes_red_button" class="option-input red radio" asp-for="ColorName" type="radio" value="#D9544F" onClick="changeToRed(this.id)"/>
+                                    <input id="eyes_red_button" class="option-input red radio" asp-for="EyesColor" type="radio" value="#D9544F" onClick="changeToRed(this.id)"/>
                                     <label class="form-check-label" for="Red"></label>
                                     
-                                    <input id="eyes_gray_button" class="option-input gray radio" asp-for="ColorName" type="radio" value="#C77E5D" onClick="changeToGray(this.id)"/>
+                                    <input id="eyes_gray_button" class="option-input gray radio" asp-for="EyesColor" type="radio" value="#C77E5D" onClick="changeToGray(this.id)"/>
                                     <label class="form-check-label" for="Gray"></label>
                                     
-                                    <input id="eyes_lbrown_button" class="option-input lbrown radio" asp-for="ColorName" type="radio" value="#C0C0C0" onClick="changeToLBrown(this.id)"/>
+                                    <input id="eyes_lbrown_button" class="option-input lbrown radio" asp-for="EyesColor" type="radio" value="#C0C0C0" onClick="changeToLBrown(this.id)"/>
                                     <label class="form-check-label" for="LBrown"></label>
                             </div>
 
                             <div id="tail" class="tab-pane fade">
                                 <h3> Tail Color Options</h3>
-                                    <input id="tail_white_button" class="option-input white radio" asp-for="ColorName" type="radio" value="#ffffff" onClick="changeToWhite(this.id)"/>
+                                    <input id="tail_white_button" class="option-input white radio" asp-for="TailColor" type="radio" value="#ffffff" onClick="changeToWhite(this.id)"/>
                                     <label class="form-check-label" for="White"></label>
                                
-                                    <input id="tail_yellow_button" class="option-input yellow radio" asp-for="ColorName" type="radio" value="#FFFF0D" onClick="changeToYellow(this.id)"/>
+                                    <input id="tail_yellow_button" class="option-input yellow radio" asp-for="TailColor" type="radio" value="#FFFF0D" onClick="changeToYellow(this.id)"/>
                                     <label class="form-check-label " for="Yellow"></label>
                                
-                                    <input id="tail_blue_button" class="option-input blue radio" asp-for="ColorName" type="radio" value="#347AB6" onClick="changeToBlue(this.id)"/>
+                                    <input id="tail_blue_button" class="option-input blue radio" asp-for="TailColor" type="radio" value="#347AB6" onClick="changeToBlue(this.id)"/>
                                     <label class="form-check-label" for="Blue"></label>
                                
-                                    <input id="tail_fuchsia_button" class="option-input fuchsia radio" asp-for="ColorName" type="radio" value="#ff0030" onClick="changeToFuchsia(this.id)"/>
+                                    <input id="tail_fuchsia_button" class="option-input fuchsia radio" asp-for="TailColor" type="radio" value="#ff0030" onClick="changeToFuchsia(this.id)"/>
                                     <label class="form-check-label" for="Fuchsia"></label>
                                 
-                                    <input id="tail_green_button" class="option-input green radio" asp-for="ColorName" type="radio" value="#57BB58" onClick="changeToGreen(this.id)"/>
+                                    <input id="tail_green_button" class="option-input green radio" asp-for="TailColor" type="radio" value="#57BB58" onClick="changeToGreen(this.id)"/>
                                     <label class="form-check-label" for="Green"></label>
                                     
-                                    <input id="tail_orange_button" class="option-input orange radio" asp-for="ColorName" type="radio" value="#EFAD4D" onClick="changeToOrange(this.id)"/>
+                                    <input id="tail_orange_button" class="option-input orange radio" asp-for="TailColor" type="radio" value="#EFAD4D" onClick="changeToOrange(this.id)"/>
                                     <label class="form-check-label" for="Orange"></label>
                                     
-                                    <input id="tail_red_button" class="option-input red radio" asp-for="ColorName" type="radio" value="#D9544F" onClick="changeToRed(this.id)"/>
+                                    <input id="tail_red_button" class="option-input red radio" asp-for="TailColor" type="radio" value="#D9544F" onClick="changeToRed(this.id)"/>
                                     <label class="form-check-label" for="Red"></label>
                                     
-                                    <input id="tail_gray_button" class="option-input gray radio" asp-for="ColorName" type="radio" value="#C77E5D" onClick="changeToGray(this.id)"/>
+                                    <input id="tail_gray_button" class="option-input gray radio" asp-for="TailColor" type="radio" value="#C77E5D" onClick="changeToGray(this.id)"/>
                                     <label class="form-check-label" for="Gray"></label>
                                     
-                                    <input id="tail_lbrown_button" class="option-input lbrown radio" asp-for="ColorName" type="radio" value="#C0C0C0" onClick="changeToLBrown(this.id)"/>
+                                    <input id="tail_lbrown_button" class="option-input lbrown radio" asp-for="TailColor" type="radio" value="#C0C0C0" onClick="changeToLBrown(this.id)"/>
                                     <label class="form-check-label" for="LBrown"></label>
                             </div>
 
                             <div id="ears" class="tab-pane fade">
                                 <h3> Ears Color Options</h3>
-                                    <input id="ears_white_button" class="option-input white radio" asp-for="ColorName" type="radio" value="#ffffff" onClick="changeToWhite(this.id)"/>
+                                    <input id="ears_white_button" class="option-input white radio" asp-for="EarsColor" type="radio" value="#ffffff" onClick="changeToWhite(this.id)"/>
                                     <label class="form-check-label" for="White"></label>
                                
-                                    <input id="ears_yellow_button" class="option-input yellow radio" asp-for="ColorName" type="radio" value="#FFFF0D" onClick="changeToYellow(this.id)"/>
+                                    <input id="ears_yellow_button" class="option-input yellow radio" asp-for="EarsColor" type="radio" value="#FFFF0D" onClick="changeToYellow(this.id)"/>
                                     <label class="form-check-label " for="Yellow"></label>
                                
-                                    <input id="ears_blue_button" class="option-input blue radio" asp-for="ColorName" type="radio" value="#347AB6" onClick="changeToBlue(this.id)"/>
+                                    <input id="ears_blue_button" class="option-input blue radio" asp-for="EarsColor" type="radio" value="#347AB6" onClick="changeToBlue(this.id)"/>
                                     <label class="form-check-label" for="Blue"></label>
                                
-                                    <input id="ears_fuchsia_button" class="option-input fuchsia radio" asp-for="ColorName" type="radio" value="#ff0030" onClick="changeToFuchsia(this.id)"/>
+                                    <input id="ears_fuchsia_button" class="option-input fuchsia radio" asp-for="EarsColor" type="radio" value="#ff0030" onClick="changeToFuchsia(this.id)"/>
                                     <label class="form-check-label" for="Fuchsia"></label>
                                 
-                                    <input id="ears_green_button" class="option-input green radio" asp-for="ColorName" type="radio" value="#57BB58" onClick="changeToGreen(this.id)"/>
+                                    <input id="ears_green_button" class="option-input green radio" asp-for="EarsColor" type="radio" value="#57BB58" onClick="changeToGreen(this.id)"/>
                                     <label class="form-check-label" for="Green"></label>
                                     
-                                    <input id="ears_orange_button" class="option-input orange radio" asp-for="ColorName" type="radio" value="#EFAD4D" onClick="changeToOrange(this.id)"/>
+                                    <input id="ears_orange_button" class="option-input orange radio" asp-for="EarsColor" type="radio" value="#EFAD4D" onClick="changeToOrange(this.id)"/>
                                     <label class="form-check-label" for="Orange"></label>
                                     
-                                    <input id="ears_red_button" class="option-input red radio" asp-for="ColorName" type="radio" value="#D9544F" onClick="changeToRed(this.id)"/>
+                                    <input id="ears_red_button" class="option-input red radio" asp-for="EarsColor" type="radio" value="#D9544F" onClick="changeToRed(this.id)"/>
                                     <label class="form-check-label" for="Red"></label>
                                     
-                                    <input id="ears_gray_button" class="option-input gray radio" asp-for="ColorName" type="radio" value="#C77E5D" onClick="changeToGray(this.id)"/>
+                                    <input id="ears_gray_button" class="option-input gray radio" asp-for="EarsColor" type="radio" value="#C77E5D" onClick="changeToGray(this.id)"/>
                                     <label class="form-check-label" for="Gray"></label>
                                     
-                                    <input id="ears_lbrown_button" class="option-input lbrown radio" asp-for="ColorName" type="radio" value="#C0C0C0" onClick="changeToLBrown(this.id)"/>
+                                    <input id="ears_lbrown_button" class="option-input lbrown radio" asp-for="EarsColor" type="radio" value="#C0C0C0" onClick="changeToLBrown(this.id)"/>
                                     <label class="form-check-label" for="LBrown"></label>
                             </div>
                         </div>
