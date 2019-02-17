@@ -26,18 +26,22 @@ namespace Llama.Controllers
             return View();
         }
 
-        public IActionResult Name()
+        public IActionResult Name(Avatar pAvatar)
         {
+            if (ModelState.IsValid)
+            {
+                _AvatarRepository.AddAvatar(pAvatar);
 
-            return View();
+            }
+            return View(pAvatar);
 
         }
 
 
-        public IActionResult NamePageTest(LlamaName test)
+        public IActionResult NamePageTest(Avatar pAvatar)
         {
 
-            return View(test);
+            return View(pAvatar);
 
         }
 
@@ -52,11 +56,11 @@ namespace Llama.Controllers
         [HttpPost]
         public IActionResult Customization(Avatar pAvatar)
         {
-            if (ModelState.IsValid)
+          /*  if (ModelState.IsValid)
             {
                 _AvatarRepository.AddAvatar(pAvatar);
 
-            }
+            }*/
             return View(pAvatar);
            
         }
@@ -66,9 +70,9 @@ namespace Llama.Controllers
         //     return View();
         // }
 
-         public IActionResult LlamaColorResult(Avatar avatar)
+        /* public IActionResult LlamaColorResult(Avatar avatar)
          {
             return View(avatar);
-         }
+         }*/
     }
 }
