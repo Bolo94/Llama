@@ -24,7 +24,31 @@ namespace Llama.Controllers
         public IActionResult Index()
         {
             return View();
+
         }
+
+        [HttpPost]
+        public IActionResult Customization(Avatar pAvatar)
+        {
+            if (ModelState.IsValid)
+            {
+                _AvatarRepository.AddAvatar(pAvatar);
+
+            }
+            return View(pAvatar);
+
+        }
+
+        // [HttpPost]
+        // public IActionResult DoWorkOne(Avatar aModel)
+        // {
+        //     if (ModelState.IsValid)
+        //     {
+        //         _AvatarRepository.AddAvatar(aModel);
+
+        //     }
+        //     return View(aModel);
+        // }
 
         public IActionResult Name(Avatar pAvatar)
         {
@@ -53,17 +77,7 @@ namespace Llama.Controllers
         {
             return View();
         }
-        [HttpPost]
-        public IActionResult Customization(Avatar pAvatar)
-        {
-          /*  if (ModelState.IsValid)
-            {
-                _AvatarRepository.AddAvatar(pAvatar);
 
-            }*/
-            return View(pAvatar);
-           
-        }
 
         // public IActionResult LlamaColor()
         // {

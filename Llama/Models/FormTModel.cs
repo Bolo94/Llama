@@ -12,7 +12,9 @@ namespace Llama.Models
 
         public String Color { get; set; }
 
-        public String SvgString {get; set;}
+        public String SvgString { get; set; }
+
+        public String Pet { get; set; }
 
     }
 

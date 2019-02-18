@@ -1,11 +1,53 @@
 @model Llama.Models.Avatar
 
 @{
-    ViewData["Title"] = "Character_name";
+    ViewData["Title"] = "Character_color";
 }
 
 
+<div class="container">
+    <div class="row text-center">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="row text-center avatarCardsContainer">
+                <div class="col-lg-4 col-sm-12 avatarImgCard">
+                    <a href="#" class="d-block mb-4 h-100">
+                        <img class="img-fluid img-thumbnail img-rounded" src="~/images/avatarType.png" alt="Llama img"></a>
+                </div>
+                <div class="col-lg-4 col-sm-12 avatarImgCard">
+                    <a href="#" class="d-block mb-4 h-100">
+                        <img class="img-fluid img-thumbnail" src="~/images/avatarType.png" alt="Llama img">
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-12 avatarImgCard">
+                    <a href="#" class="d-block mb-4 h-100">
+                        <img class="img-fluid img-thumbnail" src="~/images/avatarType.png" alt="Llama img">
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-12 avatarImgCard">
+                    <a href="#" class="d-block mb-4 h-100">
+                        <img class="img-fluid img-thumbnail" src="~/images/avatarType.png" alt="Llama img">
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-12 avatarImgCard">
+                    <a href="#" class="d-block mb-4 h-100">
+                        <img class="img-fluid img-thumbnail" src="~/images/avatarType.png" alt="Llama img">
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-12 avatarImgCard">
+                   <a href="#" class="d-block mb-4 h-100">
+                        <img class="img-fluid img-thumbnail" src="~/images/avatarType.png" alt="Llama img">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
 <div class="container custumizationContainer">
+
+    
     <div class="row text-center">
         <div class="col-lg-4 col-md-4 col-sm-12 ">
             <h1>Llama's acessories</h1>
@@ -462,7 +504,7 @@
         </div>
 
             <div class="col-lg-4 col-md-4 col-sm-12">
-                <form  asp-action="Name"  method="post">
+                <form  asp-action=""  method="get" formaction="DoWorkOne">
                         <h1>Llama's colors </h1>
                         <div class="row text-center">
                             <ul id="llama-colorpick-tabs" class="nav nav-tabs">
@@ -601,7 +643,7 @@
 
                     </div>
 
-                    <div class="row">
+                    <!-- <div class="row">
                         <div class="col-lg-6 col-md-6 col-sm-12 text-left ">
                             <a asp-area="" asp-controller="CreateLlama" asp-action="Index"><button type="submit" class="btn btnBack">Back</button></a>
 
@@ -610,10 +652,38 @@
                             
                             <a asp-area="" asp-controller="CreateLlama" asp-action="Name"><button type="submit" class="btn btnNext">Next</button></a>
                         </div>
+                    </div> -->
+
+
+
+
+                    <div class="container">
+                        <div class="row text-center">
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                
+                                <img class="img-fluid" src="~/images/llamaAvatarChoosen.png" alt="Llama img">
+                                        
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12">      
+                                <div class="row text-left">
+                                    <div class="llamaSpeechBubble">
+                                        <p>Hey, my name is </p>
+                                        <p><input  asp-for="Name" maxlength="15"/> !!!</p>
+                                        <button  type="submit"  class="btn">Submit</button>
+                                    </div>
+                                </div>
+                            </div>
+        
+                        </div>
                     </div>
+
+
+
+
                 </form>
             </div>
         </div>
 
     </div>
 </div>
+
