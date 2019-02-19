@@ -33,7 +33,7 @@ namespace Llama.Controllers
             if (ModelState.IsValid)
             {
                 _userRepository.AddUser(user);
-                return RedirectToAction("RegisterComplete");
+                return RedirectToAction("Customization", "CreateLlama");
             }
             return View(user);
         }
