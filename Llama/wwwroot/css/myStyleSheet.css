@@ -1,6 +1,71 @@
 /* Google Fonts*/
 @import url('https://fonts.googleapis.com/css?family=Oswald|Spicy+Rice');
 
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+
+
+.fancyName {
+  z-index: 10;
+  text-align: center;
+  font-size: 7em;
+  margin: 20px 0 20px 0;
+  text-decoration: none;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+  color: #fff;
+  font-family: Monoton;
+  -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+  animation: neon1 1.5s ease-in-out infinite alternate;
+}
+
+/*glow for webkit*/
+
+@-webkit-keyframes neon1 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF1177, 0 0 70px #FF1177, 0 0 80px #FF1177, 0 0 100px #FF1177, 0 0 150px #FF1177;
+  }
+
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF1177, 0 0 35px #FF1177, 0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177;
+  }
+}
+
+
+
+
+
+.congratsContainer {
+  background-color: #3b1237;
+}
+
+.doorStyleCongrats {
+  z-index: 0;
+  position: absolute;
+  left: -447px;
+  margin-left: 50%;
+  /* height: 70%; */
+
+}
+
+.finalLlamaCongrats {
+  z-index: 5;
+  margin: 0 auto;
+  position: absolute;
+  bottom: -15px;
+  left: -115px;
+  margin-left: 50%;
+}
+
+
 body {
   background-color: #00dcf8;
   width: 100%;
@@ -121,7 +186,7 @@ body {
 
 .btnDown {
   background-color: #6B7b9B;
-  
+
   border-color: #411c47;
   border-width: 8px;
   border-radius: 50%;
@@ -210,40 +275,41 @@ body {
 }
 
 .customContainer {
-  height:100vh;
+  height: 100vh;
   background-color: #d98816;
   border-radius: 25px;
   margin: 10px;
-  
+
 }
 
-.customTitle{
+.customTitle {
   color: #fbdd74;
   font-family: "Spicy Rice", cursive;
-  font-size: 60px; 
+  font-size: 60px;
   padding-top: 10px;
 }
 
-.customTitleSmall{
+.customTitleSmall {
   color: #fbdd74;
   font-family: "Spicy Rice", cursive;
-  font-size: 40px; 
+  font-size: 40px;
   padding-top: 10px;
 }
 
-.avatarImg{
+.avatarImg {
   height: 70%;
 }
+
 .nextBackButtonContainer {
   padding: 2%;
 }
 
 .avatarCardsContainer {
-  
-margin-top: 20px;
-margin-bottom: 20px;
-margin-left: 10%;
-margin-right: 10%;
+
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 10%;
+  margin-right: 10%;
   padding: 10px 16px;
   background-color: #86467b;
   border-radius: 25px;
@@ -256,62 +322,13 @@ margin-right: 10%;
   padding: 10px;
 }
 
-/* Create account Form*/
-.createAccountForm{
-  background-color:#a67f2a ;
-  border-width: 8px;
-  border-radius: 25px;
-  box-shadow: 0 0 0 4px  #a67f2a , 2px 1px 8px 4px rgba(10, 10, 0, 0.5);
-  margin: 3% auto;
-  padding: 2%;
-  width: 70%;
-  transform: rotate(-4deg) rotateY(-15deg);
-}
-
-.createAccountField{
-  background-color:#e1b53a ;
-
-  border-width: 8px;
-  border-radius: 15px;
-  padding-left: 15px;
-  padding-right: 10px;
-  padding-bottom: 5px;
-  padding-top: 10px;
-  width: 60%;
-  margin: 5px auto;
-  
-  transform: rotate(4deg) rotateY(15deg);
-  
-}
-
-.createFormTitle{
-  color: #fbdd74;
-  font-family: "Spicy Rice", cursive;
-  font-size: 40px; 
-  padding-top: 5px;
-}
-
-.btnCreate {
-  background-color: #ca8400;
-  border: 8px solid #fbdd74;
-  font-family: "Spicy Rice", cursive;
-  font-size: 30px;
-  text-decoration: none;
-  color: #fbdd74;
-  display: inline-block;
-  border-radius: 25px;
-  padding: 8px 4px;
- margin-right: 3%;
-
-}
-
 /* Clouds*/
 .cloudsWrapper {
   text-align: right;
 }
 
 .cloudSmall {
-  margin-top: 4%;
+  margin-top: 3%;
   padding-right: 3%;
   z-index: 1;
   animation-name: cloudMoveSmall;
@@ -321,7 +338,7 @@ margin-right: 10%;
 }
 
 .cloudMed {
-  margin-top: 7%;
+  margin-top: 6%;
 
   z-index: 2;
   animation-name: cloudMoveMed;
@@ -331,7 +348,7 @@ margin-right: 10%;
 }
 
 .cloudLarge {
-  margin-top: 5%;
+  margin-top: 1%;
 
   z-index: 3;
   animation-name: cloudMoveLarge;
