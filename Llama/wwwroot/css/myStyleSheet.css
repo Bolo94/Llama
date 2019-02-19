@@ -256,13 +256,62 @@ margin-right: 10%;
   padding: 10px;
 }
 
+/* Create account Form*/
+.createAccountForm{
+  background-color:#a67f2a ;
+  border-width: 8px;
+  border-radius: 25px;
+  box-shadow: 0 0 0 4px  #a67f2a , 2px 1px 8px 4px rgba(10, 10, 0, 0.5);
+  margin: 3% auto;
+  padding: 2%;
+  width: 70%;
+  transform: rotate(-4deg) rotateY(-15deg);
+}
+
+.createAccountField{
+  background-color:#e1b53a ;
+
+  border-width: 8px;
+  border-radius: 15px;
+  padding-left: 15px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  padding-top: 10px;
+  width: 60%;
+  margin: 5px auto;
+  
+  transform: rotate(4deg) rotateY(15deg);
+  
+}
+
+.createFormTitle{
+  color: #fbdd74;
+  font-family: "Spicy Rice", cursive;
+  font-size: 40px; 
+  padding-top: 5px;
+}
+
+.btnCreate {
+  background-color: #ca8400;
+  border: 8px solid #fbdd74;
+  font-family: "Spicy Rice", cursive;
+  font-size: 30px;
+  text-decoration: none;
+  color: #fbdd74;
+  display: inline-block;
+  border-radius: 25px;
+  padding: 8px 4px;
+ margin-right: 3%;
+
+}
+
 /* Clouds*/
 .cloudsWrapper {
   text-align: right;
 }
 
 .cloudSmall {
-  margin-top: 3%;
+  margin-top: 4%;
   padding-right: 3%;
   z-index: 1;
   animation-name: cloudMoveSmall;
@@ -272,7 +321,7 @@ margin-right: 10%;
 }
 
 .cloudMed {
-  margin-top: 6%;
+  margin-top: 7%;
 
   z-index: 2;
   animation-name: cloudMoveMed;
@@ -282,7 +331,7 @@ margin-right: 10%;
 }
 
 .cloudLarge {
-  margin-top: 1%;
+  margin-top: 5%;
 
   z-index: 3;
   animation-name: cloudMoveLarge;
