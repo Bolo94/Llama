@@ -131,3 +131,5 @@ C:\Users\Carlos\Documents\GitHub\Llama\Llama\obj\Debug\netcoreapp2.2\Razor\Views
 C:\Users\Carlos\Documents\GitHub\Llama\Llama\obj\Debug\netcoreapp2.2\Razor\Views\CreateLlama\CreateAvatar.g.cshtml.cs
 C:\Users\nerea\source\repos\NewLlama\Llama\Llama\obj\Debug\netcoreapp2.2\Razor\Views\Users\FormT2.g.cshtml.cs
 C:\Users\nerea\source\repos\NewLlama\Llama\Llama\obj\Debug\netcoreapp2.2\Razor\Views\Users\FormT3.g.cshtml.cs
+D:\DotNetProjects\LlamaApp\DevBranch\Llama\Llama\obj\Debug\netcoreapp2.2\Razor\Views\Users\FormT2.g.cshtml.cs
+D:\DotNetProjects\LlamaApp\DevBranch\Llama\Llama\obj\Debug\netcoreapp2.2\Razor\Views\Users\FormT3.g.cshtml.cs
