@@ -45,22 +45,39 @@
 
 .congratsContainer {
   background-color: #3b1237;
+  overflow: hidden;
 }
 
 .doorStyleCongrats {
   z-index: 0;
   position: absolute;
-  left: -447px;
+  left: -293px;
   margin-left: 50%;
-  /* height: 70%; */
+  height: 70%; 
+
+}
+
+.brightArcCongrats {
+  z-index: 0;
+  position: absolute;
+  left: -320px;
+  top: 20%;
+  margin-left: 50%;
+  height: 80%;
+
+  animation-name: brightArcAnim;
+  animation-duration: 30s;
+  animation-delay: 0s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 
 }
 
 .finalLlamaCongrats {
-  z-index: 5;
+  z-index: 3;
   margin: 0 auto;
   position: absolute;
-  bottom: -15px;
+  bottom: 8%;
   left: -115px;
   margin-left: 50%;
 }
@@ -490,7 +507,12 @@ body {
   }
 }
 
+@keyframes brightArcAnim {
 
+  to {
+    transform: rotate(360deg);
+  }
+}
 
 
 /*Llama speech bubble*/
