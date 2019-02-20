@@ -333,3 +333,9 @@ ASALocalRun/
 # Local History for Visual Studio
 .localhistory/
 .DS_Store
+Llama/obj/project.assets.json
+Llama/obj/Llama.csproj.nuget.g.targets
+Llama/obj/Llama.csproj.nuget.g.props
+Llama/obj/Llama.csproj.nuget.cache
+Llama/obj/Debug/netcoreapp2.2/Llama.csprojAssemblyReference.cache
+Llama/obj/Debug/netcoreapp2.2/Llama.assets.cache
