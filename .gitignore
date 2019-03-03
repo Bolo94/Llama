@@ -341,4 +341,4 @@ Llama/obj/Debug/netcoreapp2.2/Llama.csprojAssemblyReference.cache
 Llama/obj/Debug/netcoreapp2.2/Llama.assets.cache
 
 #Phaser lib
-Llama/wwwroot/game/lib/*.*
+Llama/wwwroot/game/lib/
