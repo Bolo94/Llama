@@ -9,7 +9,6 @@ App.prototype.start = function(){
     let scenes = [];
 
     scenes.push(Boot);
-   
     scenes.push(PlayGround);
     scenes.push(MiniGameMath1);
 
