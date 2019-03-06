@@ -333,3 +333,24 @@ ASALocalRun/
 # Local History for Visual Studio
 .localhistory/
 .DS_Store
+Llama/obj/project.assets.json
+Llama/obj/Llama.csproj.nuget.g.targets
+Llama/obj/Llama.csproj.nuget.g.props
+Llama/obj/Llama.csproj.nuget.cache
+Llama/obj/Debug/netcoreapp2.2/Llama.csprojAssemblyReference.cache
+Llama/obj/Debug/netcoreapp2.2/Llama.assets.cache
+Llama/bin/Debug/netcoreapp2.2/Llama.Views.dll
+Llama/bin/Debug/netcoreapp2.2/Llama.Views.pdb
+Llama/obj/Debug/netcoreapp2.2/Llama.assets.cache
+Llama/obj/Debug/netcoreapp2.2/Llama.csprojAssemblyReference.cache
+Llama/obj/Debug/netcoreapp2.2/Llama.Views.dll
+Llama/obj/Debug/netcoreapp2.2/Llama.Views.pdb
+Llama/obj/Debug/netcoreapp2.2/Razor/Views/Shared/_Layout.g.cshtml.cs
+Llama/obj/Llama.csproj.nuget.cache
+Llama/obj/Llama.csproj.nuget.g.props
+Llama/obj/Llama.csproj.nuget.g.targets
+Llama/obj/project.assets.json
+Llama/Views/CreateLlama/NamePageTest.cshtml
+Llama/Views/Shared/_Layout.cshtml
+Llama/wwwroot/css/myStyleSheet.css
+Llama/wwwroot/images/BrightBackGround.svg

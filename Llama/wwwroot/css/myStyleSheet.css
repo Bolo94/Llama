@@ -1,5 +1,84 @@
 /* Google Fonts*/
-@import url('https://fonts.googleapis.com/css?family=Oswald|Spicy+Rice');
+@import url('https:/s/fonts.googleapis.com/css?family=Oswald|Spicy+Rice');
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+
+
+.fancyName {
+  z-index: 7;
+  text-align: center;
+  font-size: 7em;
+  margin: 20px 0 20px 0;
+  text-decoration: none;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+  color: #fff;
+  font-family: Monoton;
+  -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+  animation: neon1 1.5s ease-in-out infinite alternate;
+}
+
+/*glow for webkit*/
+
+@-webkit-keyframes neon1 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF1177, 0 0 70px #FF1177, 0 0 80px #FF1177, 0 0 100px #FF1177, 0 0 150px #FF1177;
+  }
+
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF1177, 0 0 35px #FF1177, 0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177;
+  }
+}
+
+
+
+
+
+.congratsContainer {
+  background-color: #3b1237;
+  overflow: hidden;
+}
+
+.doorStyleCongrats {
+  z-index:0;
+  position: absolute;
+  left: -376px;
+  margin-left: 50%;
+  height: 90%; 
+  bottom: -80px;
+  overflow: hidden;
+}
+
+.brightArcCongrats {
+  z-index: -5;
+  position: absolute;
+  left: -515px;
+  bottom: 10%;
+  margin-left: 50%;
+  height: 80%;
+
+
+}
+
+.finalLlamaCongrats {
+  z-index: 3;
+  margin: 0 auto;
+  position: absolute;
+  bottom: -40px;
+  left: -100px;
+  margin-left: 50%;
+}
+
+
 
 .hide {
   display: none;
@@ -322,6 +401,58 @@ body {
   padding: 10px;
 }
 
+<<<<<<< HEAD
+=======
+/* Create account Form*/
+.createAccountForm {
+  background-color: #a67f2a;
+  border-width: 8px;
+  border-radius: 25px;
+  box-shadow: 0 0 0 4px #a67f2a, 2px 1px 8px 4px rgba(10, 10, 0, 0.5);
+  margin: 3% auto;
+  padding: 2%;
+  width: 70%;
+  transform: rotate(-4deg) rotateY(-15deg);
+}
+
+.createAccountField {
+  background-color: #e1b53a;
+
+  border-width: 8px;
+  border-radius: 15px;
+  padding-left: 15px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  padding-top: 10px;
+  width: 60%;
+  margin: 5px auto;
+
+  transform: rotate(4deg) rotateY(15deg);
+
+}
+
+.createFormTitle {
+  color: #fbdd74;
+  font-family: "Spicy Rice", cursive;
+  font-size: 40px;
+  padding-top: 5px;
+}
+
+.btnCreate {
+  background-color: #ca8400;
+  border: 8px solid #fbdd74;
+  font-family: "Spicy Rice", cursive;
+  font-size: 30px;
+  text-decoration: none;
+  color: #fbdd74;
+  display: inline-block;
+  border-radius: 25px;
+  padding: 8px 4px;
+  margin-right: 3%;
+
+}
+
+>>>>>>> 0f0fd95146408a168aec18184a984466bba30fe5
 /* Clouds*/
 .cloudsWrapper {
   text-align: right;
@@ -440,7 +571,12 @@ body {
   }
 }
 
+@keyframes brightArcAnim {
 
+  to {
+    transform: rotate(360deg);
+  }
+}
 
 
 /*Llama speech bubble*/
