@@ -13,6 +13,9 @@ class MiniGameMath1 extends Phaser.Scene{
     preload(){
         // Load images
         this.load.image('loadLogo', 'Assets/img/loadLogo.png');
+    
+        this.load.image('fruitJar', 'Assets/img/fruitJar.png');
+
      
       
 
@@ -24,7 +27,7 @@ class MiniGameMath1 extends Phaser.Scene{
 
         //Background definitions
         let logo = this.add.sprite(0, 0, 'loadLogo');
-        let fruitJar = this.add.sprite(300, 300);
+        let fruitJar1 = this.add.sprite(300, 300, 'fruitJar');
 
 
   

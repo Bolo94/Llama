@@ -2,7 +2,7 @@
 
 class PlayGround extends Phaser.Scene{
     constructor(){
-        super({key:'PlayGround', active: true});
+        super({key:'PlayGround'});
         console.log("PlayGround");
     }
 
@@ -114,9 +114,9 @@ class PlayGround extends Phaser.Scene{
     if (this.cursors.left.isDown)
     {
         this.scene.start('MiniGameMath1');
-        this.player.x -=this.playerSpeed;
+        // this.player.x -=this.playerSpeed;
 
-        this.player.anims.play('left', true);
+        // this.player.anims.play('left', true);
     }
     
     else if (this.cursors.right.isDown)
