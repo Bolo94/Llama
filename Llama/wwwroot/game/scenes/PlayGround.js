@@ -113,6 +113,7 @@ class PlayGround extends Phaser.Scene{
 
     if (this.cursors.left.isDown)
     {
+        this.scene.start('MiniGameMath1');
         this.player.x -=this.playerSpeed;
 
         this.player.anims.play('left', true);

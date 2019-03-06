@@ -1,6 +1,6 @@
 class Boot extends Phaser.Scene{
     constructor(){
-        super({key:'Boot', active: true});
+        super({key:'Boot'});
         console.log("Booting");
     }
 
@@ -15,4 +15,6 @@ class Boot extends Phaser.Scene{
     create(){
         this.scene.start('PlayGround');
     }
+
+   
 }
