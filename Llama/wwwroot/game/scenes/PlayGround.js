@@ -33,6 +33,13 @@ class PlayGround extends Phaser.Scene{
     }
 
     create(){
+
+        //Create game audio
+        this.levelTheme = this.sound.add('levelTheme');
+
+        //Playing game audio
+        this.levelTheme.play();
+        
          //Background definitions
     let bg = this.add.sprite(0, 0, 'bg');
     bg.setScale(2);
@@ -99,11 +106,6 @@ class PlayGround extends Phaser.Scene{
     });
 
   
-    //Create game audio
-    this.levelTheme = this.sound.add('levelTheme');
-
-    //Playing game audio
-    this.levelTheme.play();
     }
 
     update(){
@@ -113,6 +115,7 @@ class PlayGround extends Phaser.Scene{
 
     if (this.cursors.left.isDown)
     {
+        this.levelTheme.stop();
         this.scene.start('MiniGameMath1');
         // this.player.x -=this.playerSpeed;
 
