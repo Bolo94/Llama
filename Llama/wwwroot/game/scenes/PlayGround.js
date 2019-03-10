@@ -72,6 +72,7 @@ class PlayGround extends Phaser.Scene{
     //Player definitions
     this.player = this.matter.add.sprite(400, 300, 'llamas');
     this.player.setScale(0.7);
+   // this.player.setGravity(0, 0); 
     //this.player.body.setGravityX(0);
     
 

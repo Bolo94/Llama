@@ -2,19 +2,34 @@
 
 class MiniGameMath1 extends Phaser.Scene{
     constructor(){
-        super({key:'MiniGameMath1'});
+        super({
+            key: 'MiniGameMath1',
+            //active: true,
+            physics:
+            {
+              
+                default: 'arcade',
+                arcade:
+                {
+                    gravity:
+                    {
+                       y: 100
+                    }
+                }
+            },
+
+        });
         
     }
 
-    init(){
-
+    init() {
+        
     }
 
     preload(){
         // Load images
         this.load.image('bkg', 'Assets/img/clubBackground.jpg');
-
-
+       
         this.load.image('loadLogo', 'Assets/img/loadLogo.png');
     
         this.load.image('fruitJar', 'Assets/img/fruitJar.png');
@@ -30,7 +45,7 @@ class MiniGameMath1 extends Phaser.Scene{
 
         // Load body shapes from JSON file generated using PhysicsEditor
         this.load.json('shapes','Assets/jsonFiles/fruit-shapes.json');
-    
+        
       
     }
 
@@ -90,14 +105,19 @@ class MiniGameMath1 extends Phaser.Scene{
         //Click counter
         let clickCount = 1;
 
+        
 
         //fruit jar
         let fruitJar1 = this.add.sprite(450, 200, 'fruitJar').setScale(0.3);
          fruitJar1.setInteractive()
-        .on('pointerdown', () => { 
-
-            this.matter.add.sprite(500, 200, 'sheet', 'cherries', {
-            shape: shapes.cherries}).setScale(0.5);
+           .on('pointerdown', () => {
+               // shows a cherry and goes down to the basket
+               let _cherry = this.physics.add.sprite(450, 200, 'sheet', 'cherries', {
+                     shape: shapes.cherries
+                 }).setScale(0.5);
+                 _cherry.setBounce(0.2);
+                 _cherry.setCollideWorldBounds(true);
+                      
 
             //if the user click count is not equal to the sum result
             if(clickCount != rdnNumsResult){
