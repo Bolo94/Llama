@@ -33,6 +33,7 @@ class MiniGameMath1 extends Phaser.Scene{
         this.load.image('loadLogo', 'Assets/img/loadLogo.png');
     
         this.load.image('fruitJar', 'Assets/img/fruitJar.png');
+        this.load.image('fruitBasket', 'Assets/img/fruitBasket.png');
 
 
         //Load game audio
@@ -174,6 +175,10 @@ class MiniGameMath1 extends Phaser.Scene{
                 this.add.text(415, 160, 'U WON!!');
             }
         });
+
+        //fruit basket
+        let basket = this.add.sprite(450, 500, 'fruitBasket');
+        //fruitJar1.setInteractive();
         
                 this.matter.world.setBounds();
 
@@ -192,9 +197,7 @@ class MiniGameMath1 extends Phaser.Scene{
         
 
 
-        //fruit basket
-        let basket = this.add.sprite(450, 500, 'fruitJar').setScale(0.3);
-        fruitJar1.setInteractive()
+        
 
 
         
