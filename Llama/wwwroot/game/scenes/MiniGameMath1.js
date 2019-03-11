@@ -133,6 +133,8 @@ class MiniGameMath1 extends Phaser.Scene{
                 }).setScale(0.5)
                 ;
                 this.fruit.setBounce(0.2);
+
+               
                 
                  /*_cherry = this.physics.add.sprite(450, 200, 'sheet', 'cherries', {
                      shape: shapes.cherries
@@ -190,8 +192,6 @@ class MiniGameMath1 extends Phaser.Scene{
             useAdvancedWrap: true
             }
         });
-
-
 
         
         
