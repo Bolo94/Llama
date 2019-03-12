@@ -8,12 +8,12 @@ class MiniGameMath1 extends Phaser.Scene{
             physics:
             {
               
-                default: 'matter',
-                matter:
+                default: 'arcade',
+                arcade:
                 {
                     gravity:
                     {
-                       y: 1
+                       y: 200
                     }
                 }
             },
@@ -47,10 +47,15 @@ class MiniGameMath1 extends Phaser.Scene{
         // Load body shapes from JSON file generated using PhysicsEditor
         this.load.json('shapes','Assets/jsonFiles/fruit-shapes.json');
         
+
+        this.load.image('strawberry', 'Assets/img/fruit.png');
       
     }
 
     create(){
+
+    
+
 
         //Create game audio
         this.partyMusic = this.sound.add('partyMusic');
@@ -106,7 +111,8 @@ class MiniGameMath1 extends Phaser.Scene{
         //Click counter
         let clickCount = 1;
 
-        
+
+        let fruits = this.physics.add.group();
 
         //fruit jar
         let fruitJar1 = this.add.sprite(450, 200, 'fruitJar').setScale(0.3);
@@ -114,39 +120,38 @@ class MiniGameMath1 extends Phaser.Scene{
            .on('pointerdown', () => {
                // shows fruit and goes down to the basket
                
-                /* let fruitGroup = this.physics.add.group({
-                    //key: 'fruits'+clickCount+'',
-                     bounceX: 0.2,
-                     bounceY: 0.2,
-                     collideWorldBounds: true
-                 });*/
+            //    let fruitGroup = this.physics.add.group({
+            //         key: 'fruit',
+            //         bounceX: 0.4,
+            //          bounceY: 0.4,
+            //          collideWorldBounds: true
+            //      });
+                  
+            //      this.physics.arcade.collide(fruitGroup, fruitGroup);
 
-                /* this.fruit = fruitGroup.create(450, 200, 'sheet', 'cherries', {
-                    shape: shapes.cherries
-                }).setScale(0.5);*/
+            //      this.fruit = fruitGroup.create(450, 200, 'sheet', 'cherries', {
+            //         shape: shapes.cherries
+            //     }).setScale(0.5);
             
-               
-                
+
                 //this.physics.add.collider(fruitGroup, fruitGroup);
-                this.fruit = this.matter.add.sprite(450, 200, 'sheet', 'cherries', {
-                    shape: shapes.cherries
-                }).setScale(0.5)
-                ;
-                this.fruit.setBounce(0.2);
+                // this.fruit = this.physics.add.sprite(450, 200, 'sheet', 'cherries', {
+                //     shape: shapes.cherries
+                // }).setScale(0.5);
+
+                
 
                
                 
-                 /*_cherry = this.physics.add.sprite(450, 200, 'sheet', 'cherries', {
-                     shape: shapes.cherries
-                 }).setScale(0.5)
-                 ;
-                 
-                 _cherry.setBounce(0.2);*/
-                
-               
-                 //_cherry.setCollideWorldBounds(true);
-                 console.log(this.fruit);
+                 //console.log(fruit);
+
+                 this.fruit = fruits.create(450, 200, 'strawberry');
+                 this.fruit.setBounceY(Phaser.Math.FloatBetween(0.2, 0.4));
+                 this.fruit.setBounceX(Phaser.Math.FloatBetween(0.2, 0.4));
+                 this.fruit.setCollideWorldBounds(true);
+                 this.physics.add.collider(fruits, fruits);
                       
+
 
             //if the user click count is not equal to the sum result
             if(clickCount != rdnNumsResult){
@@ -180,10 +185,8 @@ class MiniGameMath1 extends Phaser.Scene{
 
         //fruit basket
         let basket = this.add.sprite(450, 500, 'fruitBasket');
-        //fruitJar1.setInteractive();
-        
-                this.matter.world.setBounds();
-
+      
+      
 
         let clickMeBtn = this.add.text(415, 190, 'CLICK ME!', {
             fontSize: '18px',
@@ -192,6 +195,9 @@ class MiniGameMath1 extends Phaser.Scene{
             useAdvancedWrap: true
             }
         });
+
+
+        // this.physics.world.enable([ this.fruit, this.fruit]);
 
         
         
@@ -204,7 +210,7 @@ class MiniGameMath1 extends Phaser.Scene{
     }
 
     update(){
-        
+
     }
 }
 
