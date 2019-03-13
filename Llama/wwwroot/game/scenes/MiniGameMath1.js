@@ -212,6 +212,7 @@ class MiniGameMath1 extends Phaser.Scene{
             }
         });
 
+        
         let DoneBtn = this.add.text(650, 500, 'Done!', {
             fontSize: '18px',
             wordWrap: {
@@ -220,7 +221,6 @@ class MiniGameMath1 extends Phaser.Scene{
             }
         });
 
-        
 
         
         
