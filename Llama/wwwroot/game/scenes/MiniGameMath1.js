@@ -15,7 +15,7 @@ class MiniGameMath1 extends Phaser.Scene{
                     {
                        y: 220
                     },
-                    debug : true
+                    debug : false
                 }
             },
 
@@ -79,8 +79,8 @@ class MiniGameMath1 extends Phaser.Scene{
 
         //math equation
 
-        let rdnNum1 = Phaser.Math.Between(1, 6);
-        let rdnNum2 = Phaser.Math.Between(1, 6);
+        let rdnNum1 = Phaser.Math.Between(1, 5);
+        let rdnNum2 = Phaser.Math.Between(1, 5);
 
         let rdnNumsResult = rdnNum1 + rdnNum2;
 
@@ -110,7 +110,7 @@ class MiniGameMath1 extends Phaser.Scene{
 
 
         //Click counter
-        let clickCount = 1;
+        let clickCount = 0;
 
 
         let fruits = this.physics.add.group();
@@ -119,36 +119,14 @@ class MiniGameMath1 extends Phaser.Scene{
         let fruitJar1 = this.add.sprite(450, 200, 'fruitJar').setScale(0.3);
          fruitJar1.setInteractive()
            .on('pointerdown', () => {
-               // shows fruit and goes down to the basket
-               
-            //    let fruitGroup = this.physics.add.group({
-            //         key: 'fruit',
-            //         bounceX: 0.4,
-            //          bounceY: 0.4,
-            //          collideWorldBounds: true
-            //      });
-                  
-            //      this.physics.arcade.collide(fruitGroup, fruitGroup);
 
-            //      this.fruit = fruitGroup.create(450, 200, 'sheet', 'cherries', {
-            //         shape: shapes.cherries
-            //     }).setScale(0.5);
-            
-
-                //this.physics.add.collider(fruitGroup, fruitGroup);
-                // this.fruit = this.physics.add.sprite(450, 200, 'sheet', 'cherries', {
-                //     shape: shapes.cherries
-                // }).setScale(0.5);
-
-                
-
+                clickCount++;
                
                 
-                 //console.log(fruit);
+                 console.log(clickCount);
 
 
                  this.fruit = fruits.create(450, 200, 'apple');
-                 //this.fruit.destroy();
                 
                  this.fruit.setCircle(20);
                  this.fruit.setBounceY(Phaser.Math.FloatBetween(0.2, 0.4));
@@ -157,36 +135,6 @@ class MiniGameMath1 extends Phaser.Scene{
                  this.fruit.setCollideWorldBounds(true);
                  this.physics.add.collider(fruits, fruits);
                       
-
-
-            //if the user click count is not equal to the sum result
-            if(clickCount != rdnNumsResult){
-                clickCount++;
-                console.log(clickCount);
-            }
-            else{
-                //restart click count
-                clickCount = 1;
-                
-                //generate new random nums
-                rdnNum1 = Phaser.Math.Between(1,6);
-                rdnNum2 = Phaser.Math.Between(1,6);
-
-                //display them to the screen
-
-                firstSumNumTxt.setText(rdnNum1);
-                secondSumNumTxt.setText(rdnNum2);
-
-
-                //debugging
-                console.log("first rdn num is " + rdnNum1);
-                console.log("second rdn num is " + rdnNum2);
-
-
-
-                //congrats msg
-                this.add.text(415, 160, 'U WON!!');
-            }
         });
 
      
@@ -195,21 +143,6 @@ class MiniGameMath1 extends Phaser.Scene{
         let basket = this.physics.add.sprite(450, 500, 'fruitBasket');
         basket.setCollideWorldBounds(true);
 
-        /*let basketCollider = this.physics.add.image(450, 400, 'fruitBasket').setImmovable();
-        basketCollider.setScale(1,0.2);
-        basketCollider.body.setAllowGravity(false);*/
-        
-      /* function countingFruits(fruits, basket){
-        console.log("Counting Fruits: ");
-        
-            
-        }*/
-      
-        //Overlap collider
-       // this.physics.add.overlap(fruits, basket, countingFruits, null, this);
-      
-      
-
         let clickMeBtn = this.add.text(415, 190, 'CLICK!! ME!', {
             fontSize: '18px',
             wordWrap: {
@@ -217,24 +150,77 @@ class MiniGameMath1 extends Phaser.Scene{
             useAdvancedWrap: true
             }
         });
-        let DoneJar = this.add.sprite(680, 500, 'fruitJar').setScale(0.3);
-        DoneJar.setInteractive()
-            .on('pointerdown', () => {
-                fruits.clear(true);
-                console.log("Hola");
-            });
-        
-        let DoneBtn = this.add.text(650, 500, 'Done!', {
+            
+    
+    
+        //Display message
+        let timedEvent;
+
+        let resultText = this.add.text(415, 160, '');;
+
+
+
+
+        //Done button set up and logic
+        let doneBtnBox = this.add.sprite(650, 500, 'fruitJar').setScale(0.3);
+
+        let doneBtnTxt = this.add.text(650, 500, 'Done!', {
             fontSize: '18px',
             wordWrap: {
-            width: 450,
-            useAdvancedWrap: true
+                width: 450,
+                useAdvancedWrap: true
             }
         });
 
 
+        doneBtnBox.setInteractive().on('pointerdown', () => {
+
+            console.log("click count is: " + clickCount);
+            console.log("random numbers result is: " + rdnNumsResult);
+
+            //if the user click count is not equal to the sum result
+            if (clickCount != rdnNumsResult) {
+                resultText.setText('SORRY, YOU ARE A LOSER!');
+
+
+            } else {
+
+                //congrats msg
+                resultText.setText('U WON!!!');
+
+
+                //debugging
+                console.log("first rdn num is " + rdnNum1);
+                console.log("second rdn num is " + rdnNum2);
+
+            }
+
+            timedEvent = this.time.delayedCall(3000, nextEquation, [], this);
+
+        })
         
-        
+
+        function nextEquation() {
+
+             fruits.clear(true);
+             console.log("Hola");
+
+            resultText.setText('');
+
+            //restart click count
+            clickCount = 0;
+
+            //generate new random nums
+            rdnNum1 = Phaser.Math.Between(1, 6);
+            rdnNum2 = Phaser.Math.Between(1, 6);
+
+            rdnNumsResult = rdnNum1 + rdnNum2;
+
+            //display them to the screen
+            firstSumNumTxt.setText(rdnNum1);
+            secondSumNumTxt.setText(rdnNum2);
+
+        }
 
 
         
