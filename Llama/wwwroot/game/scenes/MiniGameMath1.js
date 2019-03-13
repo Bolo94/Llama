@@ -34,7 +34,7 @@ class MiniGameMath1 extends Phaser.Scene{
         this.load.image('loadLogo', 'Assets/img/loadLogo.png');
     
         this.load.image('fruitJar', 'Assets/img/fruitJar.png');
-        this.load.image('fruitBasket', 'Assets/img/fruitBasket.png');
+        this.load.image('fruitBasket', 'Assets/img/basket.png');
         this.load.image('apple', 'Assets/img/appleFruit.png');
 
         //Load game audio
