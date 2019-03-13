@@ -4,7 +4,7 @@ class MiniGameMath1 extends Phaser.Scene{
     constructor(){
         super({
             key: 'MiniGameMath1',
-            //active: true,
+            active: true,
             physics:
             {
               
@@ -145,7 +145,9 @@ class MiniGameMath1 extends Phaser.Scene{
                 
                  //console.log(fruit);
 
+
                  this.fruit = fruits.create(450, 200, 'strawberry');
+                 //this.fruit.destroy();
                  this.fruit.setBounceY(Phaser.Math.FloatBetween(0.2, 0.4));
                  this.fruit.setBounceX(Phaser.Math.FloatBetween(0.2, 0.4));
                  this.fruit.setCollideWorldBounds(true);
@@ -183,7 +185,7 @@ class MiniGameMath1 extends Phaser.Scene{
             }
         });
 
-       
+     
         
         //fruit basket
         let basket = this.physics.add.sprite(450, 500, 'fruitBasket');
@@ -204,14 +206,19 @@ class MiniGameMath1 extends Phaser.Scene{
       
       
 
-        let clickMeBtn = this.add.text(415, 190, 'CLICK ME!', {
+        let clickMeBtn = this.add.text(415, 190, 'CLICK!! ME!', {
             fontSize: '18px',
             wordWrap: {
             width: 450,
             useAdvancedWrap: true
             }
         });
-
+        let DoneJar = this.add.sprite(680, 500, 'fruitJar').setScale(0.3);
+        DoneJar.setInteractive()
+            .on('pointerdown', () => {
+                fruits.clear(true);
+                console.log("Hola");
+            });
         
         let DoneBtn = this.add.text(650, 500, 'Done!', {
             fontSize: '18px',
