@@ -55,7 +55,7 @@ class MiniGameMath1 extends Phaser.Scene{
     create(){
 
     
-
+        let overlapTriggered = false;
 
         //Create game audio
         this.partyMusic = this.sound.add('partyMusic');
@@ -183,8 +183,24 @@ class MiniGameMath1 extends Phaser.Scene{
             }
         });
 
+       
+        
         //fruit basket
-        let basket = this.add.sprite(450, 500, 'fruitBasket');
+        let basket = this.physics.add.sprite(450, 500, 'fruitBasket');
+        basket.setCollideWorldBounds(true);
+
+        /*let basketCollider = this.physics.add.image(450, 400, 'fruitBasket').setImmovable();
+        basketCollider.setScale(1,0.2);
+        basketCollider.body.setAllowGravity(false);*/
+        
+      /* function countingFruits(fruits, basket){
+        console.log("Counting Fruits: ");
+        
+            
+        }*/
+      
+        //Overlap collider
+       // this.physics.add.overlap(fruits, basket, countingFruits, null, this);
       
       
 
@@ -196,8 +212,15 @@ class MiniGameMath1 extends Phaser.Scene{
             }
         });
 
+        let DoneBtn = this.add.text(650, 500, 'Done!', {
+            fontSize: '18px',
+            wordWrap: {
+            width: 450,
+            useAdvancedWrap: true
+            }
+        });
 
-        // this.physics.world.enable([ this.fruit, this.fruit]);
+        
 
         
         
