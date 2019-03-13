@@ -34,7 +34,7 @@ class MiniGameMath1 extends Phaser.Scene{
     
         this.load.image('fruitJar', 'Assets/img/fruitJar.png');
         this.load.image('fruitBasket', 'Assets/img/fruitBasket.png');
-
+        this.load.image('apple', 'Assets/img/appleFruit.png');
 
         //Load game audio
         this.load.audio('partyMusic', ['Assets/sound/bensound-jazzcomedy.mp3']);
@@ -48,7 +48,7 @@ class MiniGameMath1 extends Phaser.Scene{
         this.load.json('shapes','Assets/jsonFiles/fruit-shapes.json');
         
 
-        this.load.image('strawberry', 'Assets/img/fruit.png');
+        
       
     }
 
@@ -145,7 +145,8 @@ class MiniGameMath1 extends Phaser.Scene{
                 
                  //console.log(fruit);
 
-                 this.fruit = fruits.create(450, 200, 'strawberry');
+                 this.fruit = fruits.create(450, 200, 'apple');
+                 this.fruit.setScale(0.4);
                  this.fruit.setBounceY(Phaser.Math.FloatBetween(0.2, 0.4));
                  this.fruit.setBounceX(Phaser.Math.FloatBetween(0.2, 0.4));
                  this.fruit.setCollideWorldBounds(true);
