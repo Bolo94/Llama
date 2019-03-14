@@ -21,6 +21,7 @@ class PlayGround extends Phaser.Scene{
     this.load.image('walkway', 'Assets/img/walkway.png');
     this.load.image('redFlower', 'Assets/img/redFlower.png');
     this.load.image('pinkFlower', 'Assets/img/pinkFlower.png');
+    this.load.image('mathRuins', 'Assets/img/ruins.png');
 
     //Load game spritesheets      
     this.load.spritesheet('player', 'Assets/img/playerSpriteSheet.svg',
@@ -58,6 +59,11 @@ class PlayGround extends Phaser.Scene{
     let pinkFlower1 = this.add.sprite(150, 400, 'pinkFlower');
     let redFlower2 = this.add.sprite(600, 200, 'redFlower');
     let pinkFlower2 = this.add.sprite(650, 200, 'pinkFlower');
+
+    //math Ruins
+    let mathRuins = this.matter.add.sprite(710, 90, 'mathRuins');
+    mathRuins.setScale(0.15);
+    mathRuins.setStatic(true);
    
 
     //Forest background
@@ -71,13 +77,21 @@ class PlayGround extends Phaser.Scene{
 
     //Player definitions
     this.player = this.matter.add.sprite(400, 300, 'llamas');
-    this.player.setScale(0.7);
+     this.player.setScale(0.7);
+     let playerSprite = this.player;
+    
    // this.player.setGravity(0, 0); 
     //this.player.body.setGravityX(0);
     
+    //Passing scene and theme for the collision detectin function
+    let nextScene = this.scene;
+    let theme = this.levelTheme;
 
-     
-    
+    this.matter.world.on('collisionstart', function (event, playerSprite, mathRuins) {
+        theme.stop();
+        nextScene.start('MiniGameMath1');
+    });
+
     //this.player.setCollideWorldBounds(true);
     //this.player.anchor.setTo(0.5);
 
@@ -116,11 +130,11 @@ class PlayGround extends Phaser.Scene{
 
     if (this.cursors.left.isDown)
     {
-        this.levelTheme.stop();
-        this.scene.start('MiniGameMath1');
-        // this.player.x -=this.playerSpeed;
+        //this.levelTheme.stop();
+        //this.scene.start('MiniGameMath1');
+        this.player.x -=this.playerSpeed;
 
-        // this.player.anims.play('left', true);
+        this.player.anims.play('left', true);
     }
     
     else if (this.cursors.right.isDown)
