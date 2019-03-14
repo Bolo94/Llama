@@ -28,7 +28,7 @@ class MiniGameMath1 extends Phaser.Scene{
 
     preload(){
         // Load images
-        this.load.image('bkg', 'Assets/img/clubBackground.jpg');
+        this.load.image('bkg', 'Assets/img/mathGameBG.png');
        
         this.load.image('loadLogo', 'Assets/img/loadLogo.png');
     
@@ -65,7 +65,7 @@ class MiniGameMath1 extends Phaser.Scene{
 
         //Background definitions
         let bkg1 = this.add.sprite(450, 280, 'bkg');
-        bkg1.setScale(1.3);
+        bkg1.setScale(1.15);
 
         //logo
         let logo = this.add.sprite(50, 50, 'loadLogo').setScale(0.25);
