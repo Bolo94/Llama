@@ -4,7 +4,6 @@ class MiniGameMath1 extends Phaser.Scene{
     constructor(){
         super({
             key: 'MiniGameMath1',
-            active: true,
             physics:
             {
               
