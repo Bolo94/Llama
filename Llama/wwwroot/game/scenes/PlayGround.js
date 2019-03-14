@@ -60,10 +60,13 @@ class PlayGround extends Phaser.Scene{
     let redFlower2 = this.add.sprite(600, 200, 'redFlower');
     let pinkFlower2 = this.add.sprite(650, 200, 'pinkFlower');
 
+   
+    let cat2 = this.matter.world.nextCategory();
     //math Ruins
     let mathRuins = this.matter.add.sprite(710, 90, 'mathRuins');
     mathRuins.setScale(0.15);
     mathRuins.setStatic(true);
+    mathRuins.setCollisionCategory(cat2);
    
 
     //Forest background
@@ -73,21 +76,24 @@ class PlayGround extends Phaser.Scene{
     //Construction background
     let contructionDown = this.matter.add.sprite(800, 400, 'constructionDown').setStatic(true);
 
-     
+    let cat1 = this.matter.world.nextCategory();
+    
 
     //Player definitions
     this.player = this.matter.add.sprite(400, 300, 'llamas');
      this.player.setScale(0.7);
-     let playerSprite = this.player;
+     this.player.setCollisionCategory(cat1);
+    
     
    // this.player.setGravity(0, 0); 
     //this.player.body.setGravityX(0);
     
-    //Passing scene and theme for the collision detectin function
-    let nextScene = this.scene;
+    //Passing scene and theme for the collision detection function
     let theme = this.levelTheme;
+    let nextScene = this.scene;
+    this.player.setCollidesWith([ cat1, cat2 ]);
 
-    this.matter.world.on('collisionstart', function (event, playerSprite, mathRuins) {
+    this.matter.world.on('collisionstart', function (event) {
         theme.stop();
         nextScene.start('MiniGameMath1');
     });
@@ -130,8 +136,7 @@ class PlayGround extends Phaser.Scene{
 
     if (this.cursors.left.isDown)
     {
-        //this.levelTheme.stop();
-        //this.scene.start('MiniGameMath1');
+        
         this.player.x -=this.playerSpeed;
 
         this.player.anims.play('left', true);
