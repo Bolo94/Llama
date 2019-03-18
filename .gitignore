@@ -342,6 +342,3 @@ Llama/obj/Debug/netcoreapp2.2/Llama.assets.cache
 
 #Debug files netcore versions
 Llama/bin/Debug/
-
-#Phaser lib
-Llama/wwwroot/game/lib/
