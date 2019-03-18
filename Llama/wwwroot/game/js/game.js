@@ -32,14 +32,9 @@ App.prototype.start = function(){
         scene: scenes // our newly created scene
         }
         
-        // Create the game, and pass it the configuration
+    // Create the game, and pass it the configuration
     let game = new Phaser.Game(config);
+    
 }
-
-
-
-
-
-     
     
    

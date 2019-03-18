@@ -115,8 +115,9 @@ class PlayGround extends Phaser.Scene{
     update() {
 
         //this.game.physics.arcade.collide(this.player, mathLab, this.changeTheme(), null, this);
+        //App.game.physics.arcade.collide(this.player, mathLab, this.changeTheme(), null, this);
         
- 
+
     //Player Controls
 
     if (this.cursors.left.isDown)
