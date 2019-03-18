@@ -68,8 +68,14 @@ class PlayGround extends Phaser.Scene{
     //Construction background
     let contructionDown = this.matter.add.sprite(800, 400, 'constructionDown').setStatic(true);
 
+    let cat2 = this.matter.world.nextCategory();
+
     //MathLab background
     let mathlab = this.matter.add.sprite(700, 100, 'mathlab').setStatic(true);
+    mathlab.setCollisionCategory(cat2);
+   
+    
+    let cat1 = this.matter.world.nextCategory();
 
     //Player definitions
     this.player = this.matter.add.sprite(400, 300, 'llamas');
@@ -79,8 +85,21 @@ class PlayGround extends Phaser.Scene{
     //this.player.setCollideWorldBounds(true);
     //this.player.anchor.setTo(0.5);
 
-  //Collision detection
-     //this.physics.add.collider(this.player, setting);
+    //Collision detection
+    //this.physics.add.collider(this.player, setting);
+
+     //Passing scene and theme for the collision detection function
+    let nextScene = this.scene;
+    //Passing scene and theme for the collision detection function
+    let theme = this.levelTheme;
+   
+    this.player.setCollidesWith([ cat1, cat2 ]);
+
+    
+    this.matter.world.on('collisionstart', function (event) {
+        theme.stop();
+        nextScene.start('MiniGameMath1');
+    });
 
     //Animations Definitions
     this.anims.create({
