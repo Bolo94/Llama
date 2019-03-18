@@ -9,7 +9,6 @@ class PlayGround extends Phaser.Scene{
     init(){
         this.playerSpeed = 1.5;
         this.cursors = this.input.keyboard.createCursorKeys();
-
     }
 
     preload(){
@@ -108,14 +107,20 @@ class PlayGround extends Phaser.Scene{
   
     }
 
-    update(){
-        game.physics.arcade.collide(player, mathLab, this.scene.start('MiniGameMath1'));    
+    changeTheme() {
+        this.levelTheme.stop();
+        this.scene.start('MiniGameMath1');
+    }
+
+    update() {
+
+        //this.game.physics.arcade.collide(this.player, mathLab, this.changeTheme(), null, this);
+        
+ 
     //Player Controls
 
     if (this.cursors.left.isDown)
     {
-        //this.levelTheme.stop();
-        //this.scene.start('MiniGameMath1');
         this.player.x -=this.playerSpeed;
 
         this.player.anims.play('left', true);
@@ -150,4 +155,5 @@ class PlayGround extends Phaser.Scene{
     }
 
     }
+
 }

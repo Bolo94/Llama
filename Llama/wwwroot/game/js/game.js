@@ -33,8 +33,7 @@ App.prototype.start = function(){
         }
         
         // Create the game, and pass it the configuration
-        let game = new Phaser.Game(config);
-        
+    let game = new Phaser.Game(config);
 }
 
 
