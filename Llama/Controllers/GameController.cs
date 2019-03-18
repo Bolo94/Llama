@@ -15,6 +15,4 @@ namespace Llama.Controllers
             return View();
         } 
     }
-
-
 }

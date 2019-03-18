@@ -21,6 +21,8 @@ class PlayGround extends Phaser.Scene{
     this.load.image('walkway', 'Assets/img/walkway.png');
     this.load.image('redFlower', 'Assets/img/redFlower.png');
     this.load.image('pinkFlower', 'Assets/img/pinkFlower.png');
+    this.load.image('mathlab', 'Assets/img/mathLab.png');
+
 
     //Load game spritesheets      
     this.load.spritesheet('player', 'Assets/img/playerSpriteSheet.svg',
@@ -67,15 +69,13 @@ class PlayGround extends Phaser.Scene{
     //Construction background
     let contructionDown = this.matter.add.sprite(800, 400, 'constructionDown').setStatic(true);
 
-     
+    //MathLab background
+    let mathlab = this.matter.add.sprite(700, 100, 'mathlab').setStatic(true);
 
     //Player definitions
     this.player = this.matter.add.sprite(400, 300, 'llamas');
     this.player.setScale(0.7);
     //this.player.body.setGravityX(0);
-    
-
-     
     
     //this.player.setCollideWorldBounds(true);
     //this.player.anchor.setTo(0.5);
@@ -109,17 +109,16 @@ class PlayGround extends Phaser.Scene{
     }
 
     update(){
-        
-    
+        game.physics.arcade.collide(player, mathLab, this.scene.start('MiniGameMath1'));    
     //Player Controls
 
     if (this.cursors.left.isDown)
     {
-        this.levelTheme.stop();
-        this.scene.start('MiniGameMath1');
-        // this.player.x -=this.playerSpeed;
+        //this.levelTheme.stop();
+        //this.scene.start('MiniGameMath1');
+        this.player.x -=this.playerSpeed;
 
-        // this.player.anims.play('left', true);
+        this.player.anims.play('left', true);
     }
     
     else if (this.cursors.right.isDown)
