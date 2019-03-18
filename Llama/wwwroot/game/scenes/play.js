@@ -1,9 +1,9 @@
 
 
-class PlayGround extends Phaser.Scene {
+class play extends Phaser.Scene {
     constructor() {
-        super({ key: 'PlayGround' });
-        console.log("PlayGround");
+        super({ key: 'play' });
+        console.log("play");
     }
 
     init() {

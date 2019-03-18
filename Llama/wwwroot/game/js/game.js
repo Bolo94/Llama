@@ -11,7 +11,7 @@ App.prototype.start = function(){
     scenes.push(Boot);
     scenes.push(PlayGround);
     scenes.push(MiniGameMath1);
-    scenes.push(PlayGround2);
+    scenes.push(play);
 
     
 
@@ -36,6 +36,8 @@ App.prototype.start = function(){
         
         // Create the game, and pass it the configuration
     let game = new Phaser.Game(config);
+
+    game.state.add('play', playState);
 }
 
 
