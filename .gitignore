@@ -354,3 +354,4 @@ Llama/Views/CreateLlama/NamePageTest.cshtml
 Llama/Views/Shared/_Layout.cshtml
 Llama/wwwroot/css/myStyleSheet.css
 Llama/wwwroot/images/BrightBackGround.svg
+*.js
