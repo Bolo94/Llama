@@ -35,6 +35,8 @@ class MiniGameMath1 extends Phaser.Scene{
         this.load.image('fruitJar', 'Assets/img/fruitJar.png');
         this.load.image('fruitBasket', 'Assets/img/basket.png');
         this.load.image('apple', 'Assets/img/appleFruit.png');
+        this.load.image('redBtn', 'Assets/img/redBtn.png');
+        this.load.image('blueBtn', 'Assets/img/blueBtn.png');
 
         //Load game audio
         this.load.audio('partyMusic', ['Assets/sound/bensound-jazzcomedy.mp3']);
@@ -115,7 +117,7 @@ class MiniGameMath1 extends Phaser.Scene{
         let fruits = this.physics.add.group();
 
         //fruit jar
-        let fruitJar1 = this.add.sprite(450, 200, 'fruitJar').setScale(0.3);
+        let fruitJar1 = this.add.sprite(450, 200, 'redBtn');
          fruitJar1.setInteractive()
            .on('pointerdown', () => {
 
@@ -142,7 +144,7 @@ class MiniGameMath1 extends Phaser.Scene{
         let basket = this.physics.add.sprite(450, 500, 'fruitBasket');
         basket.setCollideWorldBounds(true);
 
-        let clickMeBtn = this.add.text(415, 190, 'CLICK!! ME!', {
+        let clickMeBtn = this.add.text(425, 190, 'PUSH', {
             fontSize: '18px',
             wordWrap: {
             width: 450,
@@ -155,15 +157,15 @@ class MiniGameMath1 extends Phaser.Scene{
         //Display message
         let timedEvent;
 
-        let resultText = this.add.text(415, 160, '');;
+        let resultText = this.add.text(415, 160, '');
 
 
 
 
         //Done button set up and logic
-        let doneBtnBox = this.add.sprite(650, 500, 'fruitJar').setScale(0.3);
+        let doneBtnBox = this.add.sprite(700, 500, 'blueBtn').setScale(1, 0.6);
 
-        let doneBtnTxt = this.add.text(650, 500, 'Done!', {
+        let doneBtnTxt = this.add.text(680, 490, 'Done', {
             fontSize: '18px',
             wordWrap: {
                 width: 450,
