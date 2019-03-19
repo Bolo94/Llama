@@ -11,7 +11,7 @@ App.prototype.start = function(){
     scenes.push(Boot);
     scenes.push(PlayGround);
     scenes.push(MiniGameMath1);
-    //scenes.push(PlayGround2);
+    
 
     
 
