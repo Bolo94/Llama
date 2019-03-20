@@ -142,14 +142,26 @@ class MiniGameMath1 extends Phaser.Scene{
                  this.fruit.setVelocityX(Phaser.Math.FloatBetween(0.2, 0.4));
                  this.fruit.setCollideWorldBounds(true);
                  this.physics.add.collider(fruits, fruits);
+                 
                       
         });
 
-     
+        
+        
+       
+
         
         //fruit basket
         let basket = this.physics.add.sprite(450, 500, 'fruitBasket');
         basket.setCollideWorldBounds(true);
+
+        //Basket limits
+
+        /*let basketSideR =this.add.rectangle(290, 490, 50, 200,  0x6666ff);
+        this.physics.add.existing(basketSideR);
+        basketSideR.body.immovable = true;
+        basketSideR.body.collideWorldBounds = true;*/
+        
 
         let clickMeBtn = this.add.text(427, 238, 'PUSH', {
             fontSize: '18px',
