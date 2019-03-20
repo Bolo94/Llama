@@ -37,6 +37,7 @@ class MiniGameMath1 extends Phaser.Scene{
         this.load.image('apple', 'Assets/img/appleFruit.png');
         this.load.image('redBtn', 'Assets/img/redBtn.png');
         this.load.image('blueBtn', 'Assets/img/blueBtn.png');
+        this.load.image('appleJar', 'Assets/img/appleJar.png');
 
         //Load game audio
         this.load.audio('partyMusic', ['Assets/sound/bensound-jazzcomedy.mp3']);
@@ -68,6 +69,9 @@ class MiniGameMath1 extends Phaser.Scene{
         //Background definitions
         let bkg1 = this.add.sprite(450, 280, 'bkg');
         bkg1.setScale(1.15);
+
+        //Apple jar
+        let appleJar = this.add.sprite(450, 160, 'appleJar');
 
         //logo
         let logo = this.add.sprite(50, 50, 'loadLogo').setScale(0.25);
@@ -117,7 +121,7 @@ class MiniGameMath1 extends Phaser.Scene{
         let fruits = this.physics.add.group();
 
         //fruit jar
-        let fruitJar1 = this.add.sprite(450, 200, 'redBtn');
+        let fruitJar1 = this.add.sprite(450, 242, 'redBtn');
          fruitJar1.setInteractive()
            .on('pointerdown', () => {
 
@@ -127,7 +131,7 @@ class MiniGameMath1 extends Phaser.Scene{
                  console.log(clickCount);
 
 
-                 this.fruit = fruits.create(450, 200, 'apple');
+                 this.fruit = fruits.create(450, 325, 'apple');
                 
                  this.fruit.setCircle(20);
                  this.fruit.setBounceY(Phaser.Math.FloatBetween(0.2, 0.4));
@@ -144,7 +148,7 @@ class MiniGameMath1 extends Phaser.Scene{
         let basket = this.physics.add.sprite(450, 500, 'fruitBasket');
         basket.setCollideWorldBounds(true);
 
-        let clickMeBtn = this.add.text(425, 190, 'PUSH', {
+        let clickMeBtn = this.add.text(427, 238, 'PUSH', {
             fontSize: '18px',
             wordWrap: {
             width: 450,
@@ -163,7 +167,7 @@ class MiniGameMath1 extends Phaser.Scene{
 
 
         //Done button set up and logic
-        let doneBtnBox = this.add.sprite(700, 500, 'blueBtn').setScale(1, 0.6);
+        let doneBtnBox = this.add.sprite(700, 500, 'blueBtn');
 
         let doneBtnTxt = this.add.text(680, 490, 'Done', {
             fontSize: '18px',
