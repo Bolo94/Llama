@@ -71,7 +71,7 @@ class MiniGameMath1 extends Phaser.Scene{
 
         //Background definitions
         let bkg1 = this.add.sprite(450, 280, 'bkg');
-        bkg1.setScale(1);
+        bkg1.setScale(1.14);
 
         //Apple jar
         let appleJar = this.add.sprite(450, 160, 'appleJar');
