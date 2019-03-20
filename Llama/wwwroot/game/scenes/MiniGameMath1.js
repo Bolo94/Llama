@@ -38,6 +38,9 @@ class MiniGameMath1 extends Phaser.Scene{
         this.load.image('redBtn', 'Assets/img/redBtn.png');
         this.load.image('blueBtn', 'Assets/img/blueBtn.png');
         this.load.image('appleJar', 'Assets/img/appleJar.png');
+        this.load.image('firstSumBox', 'Assets/img/numBGRed1.png');
+        this.load.image('secondSumBox', 'Assets/img/numBGRed2.png');
+        this.load.image('resultSumBox', 'Assets/img/numBGBlue.png');
 
         //Load game audio
         this.load.audio('partyMusic', ['Assets/sound/bensound-jazzcomedy.mp3']);
@@ -90,28 +93,28 @@ class MiniGameMath1 extends Phaser.Scene{
         let rdnNumsResult = rdnNum1 + rdnNum2;
 
 
-        let firstSumNumBox = this.add.sprite(370, 80, 'fruitJar').setScale(0.2);
-        let firstSumNumTxt = this.add.text(355, 60, rdnNum1, {
+        let firstSumNumBox = this.add.sprite(330, 120, 'firstSumBox');
+        let firstSumNumTxt = this.add.text(315, 100, rdnNum1, {
             fontSize: '52px'
         });
 
 
-        let sumSign = this.add.text(413, 60, '+', {
+        let sumSign = this.add.text(373, 100, '+', {
             fontSize: '52px',
             fill: 'white'
         });
 
-        let secondSumNumBox = this.add.sprite(490, 80, 'fruitJar').setScale(0.2);
-        let secondSumNumTxt = this.add.text(475, 60, rdnNum2, {
+        let secondSumNumBox = this.add.sprite(450, 120, 'secondSumBox');
+        let secondSumNumTxt = this.add.text(435, 100, rdnNum2, {
             fontSize: '52px'
         });
 
-        let equalSign = this.add.text(530, 60, '=', {
+        let equalSign = this.add.text(495, 100, '=', {
             fontSize: '52px',
             fill: 'white'
         });
 
-        let sumResult = this.add.sprite(600, 80, 'fruitJar').setScale(0.2);
+        let sumResult = this.add.sprite(570, 120, 'resultSumBox');
 
 
         //Click counter
