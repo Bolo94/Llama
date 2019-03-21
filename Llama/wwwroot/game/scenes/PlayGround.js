@@ -126,16 +126,7 @@ class PlayGround extends Phaser.Scene{
   
     }
 
-    changeTheme() {
-        this.levelTheme.stop();
-        this.scene.start('MiniGameMath1');
-    }
-
     update() {
-
-        //this.game.physics.arcade.collide(this.player, mathLab, this.changeTheme(), null, this);
-        //App.game.physics.arcade.collide(this.player, mathLab, this.changeTheme(), null, this);
-        
 
     //Player Controls
 

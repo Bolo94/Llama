@@ -7,11 +7,11 @@ namespace Llama.Models
 {
     public class AvatarRepository : IAvatarRepository
     {
-        private UserDbContext _DbContext;
+        private AppDbContext _DbContext;
 
-        public AvatarRepository(UserDbContext userDbContext)
+        public AvatarRepository(AppDbContext appDbContext)
         {
-            _DbContext = userDbContext;
+            _DbContext = appDbContext;
         }
 
         public void AddAvatar(Avatar pAvatar)
