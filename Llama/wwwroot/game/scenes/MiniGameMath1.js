@@ -37,6 +37,10 @@ class MiniGameMath1 extends Phaser.Scene{
         this.load.image('apple', 'Assets/img/appleFruit.png');
         this.load.image('redBtn', 'Assets/img/redBtn.png');
         this.load.image('blueBtn', 'Assets/img/blueBtn.png');
+        this.load.image('appleJar', 'Assets/img/appleJar.png');
+        this.load.image('firstSumBox', 'Assets/img/numBGRed1.png');
+        this.load.image('secondSumBox', 'Assets/img/numBGRed2.png');
+        this.load.image('resultSumBox', 'Assets/img/numBGBlue.png');
 
         //Load game audio
         this.load.audio('partyMusic', ['Assets/sound/bensound-jazzcomedy.mp3']);
@@ -67,7 +71,10 @@ class MiniGameMath1 extends Phaser.Scene{
 
         //Background definitions
         let bkg1 = this.add.sprite(450, 280, 'bkg');
-        bkg1.setScale(1.15);
+        bkg1.setScale(1.14);
+
+        //Apple jar
+        let appleJar = this.add.sprite(450, 160, 'appleJar');
 
         //logo
         let logo = this.add.sprite(50, 50, 'loadLogo').setScale(0.25);
@@ -86,28 +93,28 @@ class MiniGameMath1 extends Phaser.Scene{
         let rdnNumsResult = rdnNum1 + rdnNum2;
 
 
-        let firstSumNumBox = this.add.sprite(370, 80, 'fruitJar').setScale(0.2);
-        let firstSumNumTxt = this.add.text(355, 60, rdnNum1, {
+        let firstSumNumBox = this.add.sprite(330, 120, 'firstSumBox');
+        let firstSumNumTxt = this.add.text(315, 100, rdnNum1, {
             fontSize: '52px'
         });
 
 
-        let sumSign = this.add.text(413, 60, '+', {
+        let sumSign = this.add.text(373, 100, '+', {
             fontSize: '52px',
             fill: 'white'
         });
 
-        let secondSumNumBox = this.add.sprite(490, 80, 'fruitJar').setScale(0.2);
-        let secondSumNumTxt = this.add.text(475, 60, rdnNum2, {
+        let secondSumNumBox = this.add.sprite(450, 120, 'secondSumBox');
+        let secondSumNumTxt = this.add.text(435, 100, rdnNum2, {
             fontSize: '52px'
         });
 
-        let equalSign = this.add.text(530, 60, '=', {
+        let equalSign = this.add.text(495, 100, '=', {
             fontSize: '52px',
             fill: 'white'
         });
 
-        let sumResult = this.add.sprite(600, 80, 'fruitJar').setScale(0.2);
+        let sumResult = this.add.sprite(570, 120, 'resultSumBox');
 
 
         //Click counter
@@ -117,7 +124,7 @@ class MiniGameMath1 extends Phaser.Scene{
         let fruits = this.physics.add.group();
 
         //fruit jar
-        let fruitJar1 = this.add.sprite(450, 200, 'redBtn');
+        let fruitJar1 = this.add.sprite(450, 242, 'redBtn');
          fruitJar1.setInteractive()
            .on('pointerdown', () => {
 
@@ -127,7 +134,7 @@ class MiniGameMath1 extends Phaser.Scene{
                  console.log(clickCount);
 
 
-                 this.fruit = fruits.create(450, 200, 'apple');
+                 this.fruit = fruits.create(450, 325, 'apple');
                 
                  this.fruit.setCircle(20);
                  this.fruit.setBounceY(Phaser.Math.FloatBetween(0.2, 0.4));
@@ -135,16 +142,28 @@ class MiniGameMath1 extends Phaser.Scene{
                  this.fruit.setVelocityX(Phaser.Math.FloatBetween(0.2, 0.4));
                  this.fruit.setCollideWorldBounds(true);
                  this.physics.add.collider(fruits, fruits);
+                 
                       
         });
 
-     
+        
+        
+       
+
         
         //fruit basket
         let basket = this.physics.add.sprite(450, 500, 'fruitBasket');
         basket.setCollideWorldBounds(true);
 
-        let clickMeBtn = this.add.text(425, 190, 'PUSH', {
+        //Basket limits
+
+        /*let basketSideR =this.add.rectangle(290, 490, 50, 200,  0x6666ff);
+        this.physics.add.existing(basketSideR);
+        basketSideR.body.immovable = true;
+        basketSideR.body.collideWorldBounds = true;*/
+        
+
+        let clickMeBtn = this.add.text(427, 238, 'PUSH', {
             fontSize: '18px',
             wordWrap: {
             width: 450,
@@ -163,7 +182,7 @@ class MiniGameMath1 extends Phaser.Scene{
 
 
         //Done button set up and logic
-        let doneBtnBox = this.add.sprite(700, 500, 'blueBtn').setScale(1, 0.6);
+        let doneBtnBox = this.add.sprite(700, 500, 'blueBtn');
 
         let doneBtnTxt = this.add.text(680, 490, 'Done', {
             fontSize: '18px',

@@ -13,6 +13,8 @@ App.prototype.start = function(){
     scenes.push(MiniGameMath1);
     
 
+    
+
     // Configuration
     let config = {
         type: Phaser.AUTO, //Phaser will decide how to render our game (WebGL or Canvas)
