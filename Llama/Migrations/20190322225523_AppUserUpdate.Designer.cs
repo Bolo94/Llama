@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Llama.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20190321225509_Identity")]
-    partial class Identity
+    [Migration("20190322225523_AppUserUpdate")]
+    partial class AppUserUpdate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

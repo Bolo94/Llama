@@ -12,8 +12,10 @@ namespace Llama.Models
         {
 
         }
-        public String NickName { get; set; }
+        public string NickName { get; set; }
+
         public int Age { get; set; }
+
         public Boolean Gender { get; set; }
     }
 }

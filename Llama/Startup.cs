@@ -42,7 +42,7 @@ namespace Llama
             //services.AddApplicationInsightsTelemetry(Configuration);
 
             services.AddMvc();
-
+            services.AddSession();
             //services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
     

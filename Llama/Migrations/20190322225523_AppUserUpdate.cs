@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Llama.Migrations
 {
-    public partial class Identity : Migration
+    public partial class AppUserUpdate : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
