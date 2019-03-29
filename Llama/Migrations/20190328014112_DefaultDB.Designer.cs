@@ -4,14 +4,16 @@ using Llama.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Llama.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20190328014112_DefaultDB")]
+    partial class DefaultDB
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -88,15 +90,13 @@ namespace Llama.Migrations
 
                     b.Property<string>("EyesColor");
 
-                    b.Property<string>("IdUser");
+                    b.Property<int>("IdUser");
 
                     b.Property<string>("Name");
 
                     b.Property<string>("TailColor");
 
                     b.HasKey("IdAvatar");
-
-                    b.HasIndex("IdUser");
 
                     b.ToTable("Avatars");
                 });
@@ -209,13 +209,6 @@ namespace Llama.Migrations
                     b.HasKey("UserId", "LoginProvider", "Name");
 
                     b.ToTable("AspNetUserTokens");
-                });
-
-            modelBuilder.Entity("Llama.Models.Avatar", b =>
-                {
-                    b.HasOne("Llama.Models.ApplicationUser", "User")
-                        .WithMany()
-                        .HasForeignKey("IdUser");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

@@ -30,6 +30,13 @@ namespace Llama.Controllers
             });
         }
 
+        public async Task<IActionResult> Index()
+        {
+            var userId = (await _userManager.GetUserAsync(HttpContext.User))?.Id;
+            ViewBag.userId = userId;
+            return View();
+        }
+
         [HttpPost]
         public async Task<IActionResult> Login(LoginViewModel loginViewModel)
         {

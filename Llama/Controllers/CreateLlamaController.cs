@@ -4,6 +4,8 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Llama.Models;
+using Llama.ViewModels;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Llama.Controllers
@@ -15,10 +17,12 @@ namespace Llama.Controllers
     public class CreateLlamaController : Controller
     {
         private readonly IAvatarRepository _AvatarRepository;
+        private readonly UserManager<ApplicationUser> _userManager;
 
-        public CreateLlamaController(IAvatarRepository AvatarRepository)
+        public CreateLlamaController(IAvatarRepository AvatarRepository, UserManager<ApplicationUser> userManager)
         {
             _AvatarRepository = AvatarRepository;
+            _userManager = userManager;
         }
 
         public IActionResult Index()
@@ -42,9 +46,10 @@ namespace Llama.Controllers
         }
 
 
-        public IActionResult NamePageTest(Avatar pAvatarTest)
+        public async Task<IActionResult> NamePageTest(Avatar pAvatarTest)
         {
-             if (ModelState.IsValid)
+            pAvatarTest.IdUser = (await _userManager.GetUserAsync(HttpContext.User))?.Id;
+            if (ModelState.IsValid)
             {
                 _AvatarRepository.AddAvatar(pAvatarTest);
 

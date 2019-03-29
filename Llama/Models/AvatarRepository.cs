@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Llama.ViewModels;
 
 namespace Llama.Models
 {
@@ -23,7 +24,7 @@ namespace Llama.Models
 
         public IEnumerable<Avatar> GetAvatar()
         {
-            return _DbContext.Avatars;
+            throw new NotImplementedException();
         }
     }
 }
