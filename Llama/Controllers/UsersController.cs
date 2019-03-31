@@ -30,13 +30,6 @@ namespace Llama.Controllers
             });
         }
 
-        public async Task<IActionResult> Index()
-        {
-            var userId = (await _userManager.GetUserAsync(HttpContext.User))?.Id;
-            ViewBag.userId = userId;
-            return View();
-        }
-
         [HttpPost]
         public async Task<IActionResult> Login(LoginViewModel loginViewModel)
         {
@@ -86,6 +79,7 @@ namespace Llama.Controllers
                 var result = await _userManager.CreateAsync(user, loginViewModel.Password);
                 if (result.Succeeded)
                 {
+                    TempData["Registration"] = "Success";
                     return RedirectToAction("Index", "Home");
                 }
             }

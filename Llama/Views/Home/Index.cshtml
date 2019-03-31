@@ -1,18 +1,33 @@
-﻿@{
+﻿<p> 
+    Do not delete this. 
+</p>
+<p>
+    Do not delete this.
+</p>
+
+@if (string.Equals(TempData["Registration"], "Success"))
+{
+<div class="container">
+    <div class="alert alert-success alert-dismissible">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        <strong>Registration Success!</strong> Please log in to use our service.
+    </div>
+</div>
+}
+
+@{
     ViewData["Title"] = null;
 }
 
 
 <div class="container landPageContainer ">
 
-    <!--Land Page Game Theme --> 
-    <audio autoplay loop src="~/audio/bensound-smallguitar.mp3">
-    </audio>
-           
-       
+    <!--Land Page Game Theme -->
+    <audio autoplay loop src="~/audio/bensound-smallguitar.mp3"></audio>
 
-   <!--Llama app Navbar -->
-      @*<nav class="navbar navbar-default  navbar-fixed-top  ">
+
+    <!--Llama app Navbar -->
+    @*<nav class="navbar navbar-default  navbar-fixed-top  ">
             <div class="container-fluid">
                     <div class="navbar-header ">
                     <a class="navbar-brand " href="#"><img src="~/images/llamaLogo.svg" class="imgLlamaLogo"></a>
@@ -22,7 +37,7 @@
                     <li><a asp-controller="Users" asp-action="Create">Join</a></li>
                     <li><a href="#">Parents</a></li>
                     <li><a href="#">Help</a></li>
-                    
+
                     </ul>
                    <form class="navbar-form navbar-right" asp-action="NamePageTest"  method="post">
                        <div class="form-group">
@@ -32,48 +47,44 @@
                         <button  type="submit"  class="btnPlayLogin">Go!</button>
                        </div>
                      </form>
-                
+
             </div>
         </nav>*@
     <!--End of Llama app Navbar -->
-    
-    
+    <!--<div class=" text-center imgLlamaBus">
+        <img src="~/images/llamaBus.svg">
+    </div>-->
+    <div class="cloudsWrapper">
+        <img src="~/images/cloudMed.svg" class="cloudMed">
+        <img src="~/images/cloudSmall.svg" class="cloudSmall">
+        <img src="~/images/cloudLarge.svg" class="cloudLarge">
+    </div>
+    <div class=" floorLandPage">
 
-    
-        <!--<div class=" text-center imgLlamaBus">
-            <img src="~/images/llamaBus.svg">
-        </div>-->
-        <div class="cloudsWrapper">
-            <img src="~/images/cloudMed.svg" class="cloudMed">
-            <img src="~/images/cloudSmall.svg" class="cloudSmall">
-            <img src="~/images/cloudLarge.svg" class="cloudLarge">
+        <div class="imgLlamaBus imgBusBody">
+            <img src="~/images/llamaBusBody.svg">
         </div>
-        <div class=" floorLandPage">
-            
-            <div class="imgLlamaBus imgBusBody">
-                <img src="~/images/llamaBusBody.svg">
-            </div>
-            <div class="imgLlamaBus imgLlamaBusBackWheel">
-                <img src="~/images/llamaBusWheel.svg">
-            </div>
-            <div class="imgLlamaBus imgLlamaBusFrontWheel">
-                <img src="~/images/llamaBusWheel.svg">
-            </div>
-            <div class="groundLine">
-            <img src="~/images/groundLineLarge.svg" class=" groundLineAnim"> 
-            </div>
+        <div class="imgLlamaBus imgLlamaBusBackWheel">
+            <img src="~/images/llamaBusWheel.svg">
         </div>
-        
-        <div >
-            <img src="~/images/landPageLlama.svg " class="imgLandPageLlama " >
+        <div class="imgLlamaBus imgLlamaBusFrontWheel">
+            <img src="~/images/llamaBusWheel.svg">
         </div>
-    
-   <div class="text-center">
+        <div class="groundLine">
+            <img src="~/images/groundLineLarge.svg" class=" groundLineAnim">
+        </div>
+    </div>
+
+    <div>
+        <img src="~/images/landPageLlama.svg " class="imgLandPageLlama ">
+    </div>
+
+    <div class="text-center">
         <a asp-area="" asp-controller="Game" asp-action="Playground"><button class="btnPlay">Play</button></a>
     </div>
 
-    
-    
 
-    
+
+
+
 </div>

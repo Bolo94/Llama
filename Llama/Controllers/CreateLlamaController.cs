@@ -49,6 +49,7 @@ namespace Llama.Controllers
         public async Task<IActionResult> NamePageTest(Avatar pAvatarTest)
         {
             pAvatarTest.IdUser = (await _userManager.GetUserAsync(HttpContext.User))?.Id;
+
             if (ModelState.IsValid)
             {
                 _AvatarRepository.AddAvatar(pAvatarTest);
