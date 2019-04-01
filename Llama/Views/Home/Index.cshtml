@@ -27,29 +27,26 @@
 
 
     <!--Llama app Navbar -->
-    @*<nav class="navbar navbar-default  navbar-fixed-top  ">
-            <div class="container-fluid">
-                    <div class="navbar-header ">
-                    <a class="navbar-brand " href="#"><img src="~/images/llamaLogo.svg" class="imgLlamaLogo"></a>
-                    </div>
-                    <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a asp-controller="Users" asp-action="Create">Join</a></li>
-                    <li><a href="#">Parents</a></li>
-                    <li><a href="#">Help</a></li>
-
-                    </ul>
-                   <form class="navbar-form navbar-right" asp-action="NamePageTest"  method="post">
-                       <div class="form-group">
-                        <label class="navbar-login-title">Player Login</label>
-                        <input class="navbar-input" type="text" placeholder="username">
-                        <input class="navbar-input" type="text" placeholder="password">
-                        <button  type="submit"  class="btnPlayLogin">Go!</button>
-                       </div>
-                     </form>
-
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" asp-controller="Home" asp-action="Index">LIama</a>
             </div>
-        </nav>*@
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a asp-controller="Home" asp-action="Index">Home</a></li>
+                    <li><a asp-controller="About" asp-action="Index">About</a></li>
+                </ul>
+                @await Html.PartialAsync("LoginPartial")
+            </div>
+        </div>
+    </nav>
     <!--End of Llama app Navbar -->
     <!--<div class=" text-center imgLlamaBus">
         <img src="~/images/llamaBus.svg">
