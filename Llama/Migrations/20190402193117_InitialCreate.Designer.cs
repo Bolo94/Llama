@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Llama.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20190327231039_AvatarIDAdded")]
-    partial class AvatarIDAdded
+    [Migration("20190402193117_InitialCreate")]
+    partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -39,8 +39,6 @@ namespace Llama.Migrations
                     b.Property<bool>("EmailConfirmed");
 
                     b.Property<bool>("Gender");
-
-                    b.Property<int>("IdAvatar");
 
                     b.Property<bool>("LockoutEnabled");
 
@@ -92,7 +90,7 @@ namespace Llama.Migrations
 
                     b.Property<string>("EyesColor");
 
-                    b.Property<int>("IdUser");
+                    b.Property<string>("IdUser");
 
                     b.Property<string>("Name");
 

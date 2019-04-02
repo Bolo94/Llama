@@ -96,8 +96,6 @@ namespace Llama.Migrations
 
                     b.HasKey("IdAvatar");
 
-                    b.HasIndex("IdUser");
-
                     b.ToTable("Avatars");
                 });
 
@@ -209,13 +207,6 @@ namespace Llama.Migrations
                     b.HasKey("UserId", "LoginProvider", "Name");
 
                     b.ToTable("AspNetUserTokens");
-                });
-
-            modelBuilder.Entity("Llama.Models.Avatar", b =>
-                {
-                    b.HasOne("Llama.Models.ApplicationUser", "User")
-                        .WithMany()
-                        .HasForeignKey("IdUser");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

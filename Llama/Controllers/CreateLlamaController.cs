@@ -8,6 +8,9 @@ using Llama.ViewModels;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Hosting;
+using System.IO;
+using System.Text;
 
 namespace Llama.Controllers
 {
@@ -17,13 +20,18 @@ namespace Llama.Controllers
     {
         private readonly IAvatarRepository _AvatarRepository;
         private readonly UserManager<ApplicationUser> _userManager;
-        private readonly SignInManager<ApplicationUser> _signInManager; 
+        private readonly SignInManager<ApplicationUser> _signInManager;
 
-        public CreateLlamaController(IAvatarRepository AvatarRepository, UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager)
+        private IHostingEnvironment _env;
+
+
+        public CreateLlamaController(IAvatarRepository AvatarRepository, UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager, IHostingEnvironment env)
         {
             _AvatarRepository = AvatarRepository;
             _userManager = userManager;
             _signInManager = signInManager;
+            _env = env;
+
         }
 
         public IActionResult Index()
@@ -44,8 +52,6 @@ namespace Llama.Controllers
 
             }*/
 
-        
-
             return View(pAvatar);
 
         }
@@ -61,7 +67,6 @@ namespace Llama.Controllers
 
             }
             return View(pAvatarTest);
-
         }
 
       
@@ -82,6 +87,36 @@ namespace Llama.Controllers
            
         }
 
+        public IActionResult test(String userSvg, String userIdStr)
+        {
+            ViewBag.userSvg = userSvg;
+            ViewBag.userIdStr = userIdStr;
+
+            var finalUserSvg = userSvg;
+
+            //var webRoot = _env.WebRootPath;
+
+            ViewBag.FilePath = _env.WebRootPath;
+
+
+            //var filePath = System.IO.Path.Combine(webRoot, @"game/Assets/userSpritesheets/test45.txt");
+
+
+            // if(!System.IO.File.Exists(filePath)){
+
+            //     String myText = "hot australian guy";
+
+            //     System.IO.File.WriteAllText(filePath, "Hot brazilian girl");
+
+            //     var logFile = System.IO.File.Create(filePath);
+
+            //     logFile.Close();
+            // }
+
+
+            return View();
+        }
+
         // public IActionResult LlamaColor()
         // {
         //     return View();
@@ -92,4 +127,6 @@ namespace Llama.Controllers
             return View(avatar);
          }*/
     }
+
+    
 }

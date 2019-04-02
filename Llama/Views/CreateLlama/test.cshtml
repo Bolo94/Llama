@@ -1,0 +1,20 @@
+@ViewBag.userSvg
+
+@{
+
+    var webRoot = @ViewBag.FilePath;
+
+    var userSvgHtml = @ViewBag.userSvg;
+
+    var userIdStr = @ViewBag.userIdStr;
+
+
+    var filePath = System.IO.Path.Combine(webRoot, @userIdStr); 
+
+            
+   
+   System.IO.File.WriteAllText(filePath, userSvgHtml);
+
+
+
+}

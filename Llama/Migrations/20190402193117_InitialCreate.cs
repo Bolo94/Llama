@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Llama.Migrations
 {
-    public partial class AppUserUpdate : Migration
+    public partial class InitialCreate : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -56,7 +56,7 @@ namespace Llama.Migrations
                 {
                     IdAvatar = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
-                    IdUser = table.Column<int>(nullable: false),
+                    IdUser = table.Column<string>(nullable: true),
                     Name = table.Column<string>(nullable: true),
                     BodyColor = table.Column<string>(nullable: true),
                     EyesColor = table.Column<string>(nullable: true),
