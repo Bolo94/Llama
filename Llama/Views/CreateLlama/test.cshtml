@@ -1,4 +1,9 @@
+@using Microsoft.AspNetCore.Identity;
+@using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+
 @ViewBag.userSvg
+@inject UserManager<ApplicationUser> UserManager;
+
 
 @{
 
@@ -7,6 +12,8 @@
     var userSvgHtml = @ViewBag.userSvg;
 
     var userIdStr = @ViewBag.userIdStr;
+
+   // var realUserId = UserManager.FindById()
 
 
     var filePath = System.IO.Path.Combine(webRoot, @userIdStr); 
