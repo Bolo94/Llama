@@ -20,5 +20,7 @@ namespace Llama.Models
 
         public Boolean Gender { get; set; }
 
+        public int IdAvatar { get; set; }
+
     }
 }

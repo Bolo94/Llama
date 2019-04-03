@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Llama.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20190327231039_AvatarIDAdded")]
-    partial class AvatarIDAdded
+    [Migration("20190403193805_IdAvatarAddedUser")]
+    partial class IdAvatarAddedUser
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -92,7 +92,7 @@ namespace Llama.Migrations
 
                     b.Property<string>("EyesColor");
 
-                    b.Property<int>("IdUser");
+                    b.Property<string>("IdUser");
 
                     b.Property<string>("Name");
 
