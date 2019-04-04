@@ -16,6 +16,7 @@ namespace Llama.Controllers
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly SignInManager<ApplicationUser> _signInManager;
 
+
         public UsersController(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager)
         {
             _userManager = userManager;
@@ -80,7 +81,9 @@ namespace Llama.Controllers
                 if (result.Succeeded)
                 {
                     TempData["Registration"] = "Success";
-                    return RedirectToAction("Index", "Home");
+                    await Login(loginViewModel);
+                    
+                    return RedirectToAction("Index", "CreateLlama");
                 }
             }
             return View(loginViewModel);
