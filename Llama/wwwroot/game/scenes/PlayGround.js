@@ -9,6 +9,9 @@ class PlayGround extends Phaser.Scene{
     init(){
         this.playerSpeed = 1.5;
         this.cursors = this.input.keyboard.createCursorKeys();
+        console.log("hiiiii, marcos is not nice");
+        this.userId = document.getElementById("idAvatarInput").value;
+        console.log(this.userId);
     }
 
     preload(){

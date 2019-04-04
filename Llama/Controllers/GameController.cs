@@ -24,7 +24,7 @@ namespace Llama.Controllers
         {
             if (_signInManager.IsSignedIn(User))
             {
-                ViewBag.IdAvatar = (await _userManager.GetUserAsync(HttpContext.User))?.IdAvatar;
+                ViewBag.NickName = (await _userManager.GetUserAsync(HttpContext.User))?.NormalizedUserName;
                 return View();
             }
             return RedirectToAction("Login", "Users");
