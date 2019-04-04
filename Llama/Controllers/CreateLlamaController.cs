@@ -87,11 +87,12 @@ namespace Llama.Controllers
            
         }
 
-        public IActionResult test(String userSvg, String userIdStr)
+        public async Task<IActionResult> test(String userSvg, String userIdStr)
         {
             ViewBag.userSvg = userSvg;
             ViewBag.userIdStr = userIdStr;
 
+            ViewBag.IdAvatar = (await _userManager.GetUserAsync(HttpContext.User))?.IdAvatar;
             var finalUserSvg = userSvg;
 
             //var webRoot = _env.WebRootPath;
