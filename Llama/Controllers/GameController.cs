@@ -13,16 +13,18 @@ namespace Llama.Controllers
     public class GameController : Controller
     {
         private readonly SignInManager<ApplicationUser> _signInManager;
-
-        public GameController(SignInManager<ApplicationUser> signInManager)
+        private readonly UserManager<ApplicationUser> _userManager;
+        public GameController(SignInManager<ApplicationUser> signInManager, UserManager<ApplicationUser> userManager)
         {
+            _userManager = userManager;
             _signInManager = signInManager;
         }
 
-        public IActionResult Playground()
+        public async Task<IActionResult> Playground()
         {
             if (_signInManager.IsSignedIn(User))
             {
+                ViewBag.IdAvatar = (await _userManager.GetUserAsync(HttpContext.User))?.IdAvatar;
                 return View();
             }
             return RedirectToAction("Login", "Users");

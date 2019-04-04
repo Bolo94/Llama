@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Llama.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20190403235944_InitialCreate")]
+    [Migration("20190404201536_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
