@@ -63,7 +63,12 @@ namespace Llama.Controllers
 
             if (ModelState.IsValid)
             {
+                
                 _AvatarRepository.AddAvatar(pAvatarTest);
+                
+                var user = await _userManager.GetUserAsync(HttpContext.User);
+                user.IdAvatar = pAvatarTest.IdAvatar;
+                await _userManager.UpdateAsync(user);
 
             }
             return View(pAvatarTest);
