@@ -1,10 +1,14 @@
 @using Microsoft.AspNetCore.Identity;
 @using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
+<div  style="display:none;">
 @ViewBag.userSvg
+</div>
 @inject UserManager<ApplicationUser> UserManager;
 
-
+<div class="text-center">
+        <a asp-area="" asp-controller="Game" asp-action="Playground"><button class="btnPlay">Play</button></a>
+    </div>
 
 @{
 
@@ -12,12 +16,12 @@
 
     var userSvgHtml = @ViewBag.userSvg;
 
-    var userIdStr = @ViewBag.userIdStr;
+    var userSprPath = @ViewBag.userSprSheetPath;
 
     var realUserId = ViewBag.IdAvatar;
 
 
-    var filePath = System.IO.Path.Combine(webRoot, @userIdStr); 
+    var filePath = System.IO.Path.Combine(webRoot, @userSprPath); 
 
             
    

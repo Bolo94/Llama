@@ -92,46 +92,34 @@ namespace Llama.Controllers
            
         }
 
-        public async Task<IActionResult> test(String userSvg, String userIdStr)
+        public async Task<IActionResult> test(String userSvg, String userSprSheetPath, String userIdAvatar)
         {
             ViewBag.userSvg = userSvg;
-            ViewBag.userIdStr = userIdStr;
+            ViewBag.userSprSheetPath = userSprSheetPath;
+            ViewBag.userIdAvatar = userIdAvatar;
 
             ViewBag.IdAvatar = (await _userManager.GetUserAsync(HttpContext.User))?.IdAvatar;
             var finalUserSvg = userSvg;
 
-            //var webRoot = _env.WebRootPath;
-
             ViewBag.FilePath = _env.WebRootPath;
 
+            // TempData["Message"] = ViewBag.userSprSheetPath;
 
-            //var filePath = System.IO.Path.Combine(webRoot, @"game/Assets/userSpritesheets/test45.txt");
+            TempData["Message"] = ViewBag.userIdAvatar;
 
 
-            // if(!System.IO.File.Exists(filePath)){
+            //return RedirectToAction("Playground", "Game");
+
 
             //     String myText = "hot australian guy";
 
             //     System.IO.File.WriteAllText(filePath, "Hot brazilian girl");
 
-            //     var logFile = System.IO.File.Create(filePath);
-
-            //     logFile.Close();
-            // }
-
 
             return View();
         }
 
-        // public IActionResult LlamaColor()
-        // {
-        //     return View();
-        // }
 
-        /* public IActionResult LlamaColorResult(Avatar avatar)
-         {
-            return View(avatar);
-         }*/
     }
 
     

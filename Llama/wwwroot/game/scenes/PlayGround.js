@@ -11,7 +11,13 @@ class PlayGround extends Phaser.Scene{
         this.cursors = this.input.keyboard.createCursorKeys();
         console.log("hiiiii, marcos is not nice");
         this.userId = document.getElementById("idAvatarInput").value;
+        this.userSpriteSheetPath = document.getElementById("theUserPath").innerHTML;
+
+       
+
+       
         console.log(this.userId);
+        console.log(this.userSpriteSheetPath);
     }
 
     preload(){
@@ -27,7 +33,7 @@ class PlayGround extends Phaser.Scene{
 
 
     //Load game spritesheets      
-    this.load.spritesheet('player', 'Assets/img/playerSpriteSheet.svg',
+        this.load.spritesheet('player', this.userSpriteSheetPath,
     { frameWidth: 82.59, frameHeight: 162, endFrame: 10 });
     
 
@@ -57,8 +63,11 @@ class PlayGround extends Phaser.Scene{
     setting.create(160, 150, 'forest');
     setting.create(800, 400, 'constructionDown');*/
 
+
+
     //Flowers
     let redFlower1 = this.add.sprite(100, 400, 'redFlower');
+
     let pinkFlower1 = this.add.sprite(150, 400, 'pinkFlower');
     let redFlower2 = this.add.sprite(600, 200, 'redFlower');
     let pinkFlower2 = this.add.sprite(650, 200, 'pinkFlower');
@@ -80,16 +89,23 @@ class PlayGround extends Phaser.Scene{
     
     let cat1 = this.matter.world.nextCategory();
 
-    //Player definitions
-    this.player = this.matter.add.sprite(400, 300, 'llamas');
-    this.player.setScale(0.7);
-    //this.player.body.setGravityX(0);
-    
-    //this.player.setCollideWorldBounds(true);
-    //this.player.anchor.setTo(0.5);
+    var container = this.add.container(400, 300);
 
-    //Collision detection
-    //this.physics.add.collider(this.player, setting);
+
+    //Player definitions
+    this.player = this.matter.add.sprite(0, 0, 'llamas');
+    this.player.setScale(0.7);
+
+        this.label = this.add.text(-30, -65, this.userId, {
+            fontFamily: 'Arial',
+            color: '#000000',
+            align: 'center',
+        }).setFontSize(18);
+
+        container.add(this.player);
+        container.add(this.label);
+
+
 
      //Passing scene and theme for the collision detection function
     let nextScene = this.scene;
@@ -137,6 +153,8 @@ class PlayGround extends Phaser.Scene{
     {
         this.player.x -=this.playerSpeed;
 
+        this.label.x -= this.playerSpeed;
+
         this.player.anims.play('left', true);
     }
     
@@ -144,17 +162,23 @@ class PlayGround extends Phaser.Scene{
     {
         this.player.x += this.playerSpeed;
 
+        this.label.x += this.playerSpeed;
+
         this.player.anims.play('right', true);
     }
     else if (this.cursors.up.isDown)
     {
         this.player.y -= this.playerSpeed;
 
+        this.label.y -= this.playerSpeed;
+
        this.player.anims.play('up', true);
     }
     else if (this.cursors.down.isDown)
     {
         this.player.y += this.playerSpeed;
+        this.label.y += this.playerSpeed;
+
 
        // player.anims.play('right', true);
     }

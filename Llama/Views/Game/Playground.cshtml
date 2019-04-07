@@ -21,7 +21,12 @@
     <script src="~/game/js/game.js"></script>
     <script src="~/game/js/main.js"></script>
 
-    <input id="idAvatarInput" value="@ViewBag.NickName">
+    <div style="display:none;" id="theUserPath">
+        @TempData["Message"]
+        
+    </div>
+
+    <input style="display:none;" id="idAvatarInput" value="@ViewBag.NickName">
     
     
 </body>

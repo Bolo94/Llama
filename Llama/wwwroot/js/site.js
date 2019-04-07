@@ -12,7 +12,7 @@ function changeToWhite(clicked_id) {
     document.getElementById('llama-left-eye').setAttribute('style', 'fill: #ffffff');
     document.getElementById('llama-right-eye').setAttribute('style', 'fill: #ffffff');
   } else if (clicked_id == "tail_white_button") {
-    document.getElementById('llama-tail-outer-shadow').setAttribute('style', 'fill: #fffff');
+    document.getElementById('llama-tail-outer-shadow').setAttribute('style', 'fill: #ffffff');
   } else if (clicked_id == "ears_white_button") {
     document.getElementById('llama-left-ear').setAttribute('style', 'fill: #ffffff');
     document.getElementById('llama-right-ear').setAttribute('style', 'fill: #ffffff');

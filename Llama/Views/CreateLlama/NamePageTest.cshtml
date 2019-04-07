@@ -11,7 +11,7 @@
    <script>
 
 
-            function myFunction() {
+      function myFunction() {
 
 
          console.log("\n");
@@ -134,18 +134,6 @@
          document.getElementById('leftEyeR2').setAttribute('style', userllamaEyes);
 
 
-         /*var openingXML ="<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n";
-
-         var svgTag = "<svg ";
-
-         var svgOpTag = "xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:cc=\"http://creativecommons.org/ns#\" xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\" xmlns:svg=\"http://www.w3.org/2000/svg\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:sodipodi=\"http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd\" xmlns:inkscape=\"http://www.inkscape.org/namespaces/inkscape\"";
-         
-         var restOfString = " width=\"42.666916mm\" height=\"75.83334mm\" viewBox=\"0 0 72.666916 105.83334\" version=\"1.1\" id=\"svg6690\" inkscape:version=\"0.92.3 (2405546, 2018-03-11)\" sodipodi:docname=";
-
-         var userID = "\"@Model.IdAvatar\"";
-
-         var svgCloTag = "</svg>";*/
-
 
          var openingXML ="<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n";
 
@@ -168,36 +156,35 @@
          console.log("finalSvgStr :"+finalSvgStr+"\n\n");
          
 
-         var elInput = document.getElementById("mytext").value;
+         var elInput = document.getElementById("finalUserSvg").value;
          
          console.log(elInput+" n index: "+elInput.indexOf("/n"));
 
 
 
          //set the svg on the textarea
-         document.getElementById("mytext").value = finalSvgStr;
+         document.getElementById("finalUserSvg").value = finalSvgStr;
 
          //set userid
-         var userID_Input = document.getElementById("userId");
+         var userSprPath = document.getElementById("userSpriteSheetPath");
          var idAvatar = "@Model.IdAvatar";
 
          var defaultPath = "game/Assets/userSpritesheets/" + idAvatar + ".svg";
 
-         userID_Input.value = defaultPath;
+         var createSprSheetPath = "Assets/userSpritesheets/" + idAvatar + ".svg";
+
+         userSprPath.value = defaultPath;
 
 
          console.log(defaultPath);
+
+         document.getElementById("llamaUserIdAvatar").value = createSprSheetPath;
 
       }
 
       
 </script>
 
-<form asp-action="test"  method="post">
-   <textarea name="userSvg" id="mytext" > </textarea>
-   <textarea name="userIdStr" id="userId"></textarea>
-   <button type="submit">Send</button>
-   </form>
 
 <div style="display:none;">
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
@@ -4331,6 +4318,16 @@
 
    </div>
 </div>
+
+<form asp-action="test"  method="post">
+   <textarea style="display:none;" name="userSvg" id="finalUserSvg" > </textarea>
+   <textarea style="display:none;" name="userSprSheetPath" id="userSpriteSheetPath"></textarea>
+   <input style="display:none;" name="userIdAvatar" id="llamaUserIdAvatar"/>
+   <div class="row text-right">
+   <button type="submit">Go Play!</button>
+   </div>
+   </form>
+
 
 </body>
 
