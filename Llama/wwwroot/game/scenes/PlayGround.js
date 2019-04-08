@@ -11,10 +11,7 @@ class PlayGround extends Phaser.Scene{
         this.cursors = this.input.keyboard.createCursorKeys();
         console.log("hiiiii, marcos is not nice");
         this.userId = document.getElementById("idAvatarInput").value;
-        this.userSpriteSheetPath = document.getElementById("theUserPath").innerHTML;
-
-       
-
+        this.userSpriteSheetPath = 'Assets/userSpritesheets/' + this.userId + '.svg';
        
         console.log(this.userId);
         console.log(this.userSpriteSheetPath);

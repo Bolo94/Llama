@@ -16,7 +16,11 @@
 
     var userSvgHtml = @ViewBag.userSvg;
 
-    var userSprPath = @ViewBag.userSprSheetPath;
+    //var userSprPath = @ViewBag.userSprSheetPath;
+
+    var usrNickName = @ViewBag.UserName;
+
+    var userSprPath = "game/Assets/userSpritesheets/" + usrNickName + ".svg";
 
     var realUserId = ViewBag.IdAvatar;
 

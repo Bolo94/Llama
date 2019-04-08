@@ -46,11 +46,6 @@ namespace Llama.Controllers
         [HttpPost]
         public IActionResult Name(Avatar pAvatar)
         {
-           /*  if (ModelState.IsValid)
-            {
-                _AvatarRepository.AddAvatar(pAvatar);
-
-            }*/
 
             return View(pAvatar);
 
@@ -60,6 +55,7 @@ namespace Llama.Controllers
         public async Task<IActionResult> NamePageTest(Avatar pAvatarTest)
         {
             pAvatarTest.IdUser = (await _userManager.GetUserAsync(HttpContext.User))?.Id;
+
 
             if (ModelState.IsValid)
             {
@@ -99,17 +95,14 @@ namespace Llama.Controllers
             ViewBag.userIdAvatar = userIdAvatar;
 
             ViewBag.IdAvatar = (await _userManager.GetUserAsync(HttpContext.User))?.IdAvatar;
+
+            ViewBag.UserName = (await _userManager.GetUserAsync(HttpContext.User))?.NormalizedUserName;
+
+
+
             var finalUserSvg = userSvg;
 
             ViewBag.FilePath = _env.WebRootPath;
-
-            // TempData["Message"] = ViewBag.userSprSheetPath;
-
-            TempData["Message"] = ViewBag.userIdAvatar;
-
-
-            //return RedirectToAction("Playground", "Game");
-
 
             //     String myText = "hot australian guy";
 
