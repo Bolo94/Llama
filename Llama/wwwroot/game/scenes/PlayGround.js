@@ -9,7 +9,7 @@ class PlayGround extends Phaser.Scene{
     init(){
         this.playerSpeed = 1.5;
         this.cursors = this.input.keyboard.createCursorKeys();
-        console.log("hiiiii, marcos is not nice");
+
         this.userId = document.getElementById("idAvatarInput").value;
         this.userSpriteSheetPath = 'Assets/userSpritesheets/' + this.userId + '.svg';
        
@@ -48,12 +48,12 @@ class PlayGround extends Phaser.Scene{
         this.levelTheme.play();
         
          //Background definitions
-    let bg = this.add.sprite(0, 0, 'bg');
-    bg.setScale(2);
+        let bg = this.add.sprite(0, 0, 'bg');
+        bg.setScale(2);
 
-     //Walkway background
-    let walkway = this.add.sprite(400, 300, 'walkway');
-    walkway.setScale(1.2);
+        //Walkway background
+        let walkway = this.add.sprite(400, 300, 'walkway');
+        walkway.setScale(1.2);
 
     //Create setting group for collision
     /*setting = this.matter.add.staticGroup();
@@ -64,7 +64,6 @@ class PlayGround extends Phaser.Scene{
 
     //Flowers
     let redFlower1 = this.add.sprite(100, 400, 'redFlower');
-
     let pinkFlower1 = this.add.sprite(150, 400, 'pinkFlower');
     let redFlower2 = this.add.sprite(600, 200, 'redFlower');
     let pinkFlower2 = this.add.sprite(650, 200, 'pinkFlower');
@@ -86,21 +85,15 @@ class PlayGround extends Phaser.Scene{
     
     let cat1 = this.matter.world.nextCategory();
 
-    var container = this.add.container(400, 300);
-
-
     //Player definitions
-    this.player = this.matter.add.sprite(0, 0, 'llamas');
+    this.player = this.matter.add.sprite(400, 300, 'llamas');
     this.player.setScale(0.7);
 
-        this.label = this.add.text(-30, -65, this.userId, {
+        this.label = this.add.text(370, 235, this.userId, {
             fontFamily: 'Arial',
             color: '#000000',
             align: 'center',
         }).setFontSize(18);
-
-        container.add(this.player);
-        container.add(this.label);
 
 
 
@@ -108,6 +101,9 @@ class PlayGround extends Phaser.Scene{
     let nextScene = this.scene;
     //Passing scene and theme for the collision detection function
     let theme = this.levelTheme;
+
+
+    
    
     this.player.setCollidesWith([ cat1, cat2 ]);
 
