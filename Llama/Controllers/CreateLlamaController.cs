@@ -94,22 +94,38 @@ namespace Llama.Controllers
             ViewBag.userSprSheetPath = userSprSheetPath;
             ViewBag.userIdAvatar = userIdAvatar;
 
+
             ViewBag.IdAvatar = (await _userManager.GetUserAsync(HttpContext.User))?.IdAvatar;
 
             ViewBag.UserName = (await _userManager.GetUserAsync(HttpContext.User))?.NormalizedUserName;
 
-
-
-            var finalUserSvg = userSvg;
-
             ViewBag.FilePath = _env.WebRootPath;
+
+
+            var webRoot = @ViewBag.FilePath;
+
+            var userSvgHtml = @ViewBag.userSvg;
+
+            var usrNickName = @ViewBag.UserName;
+
+            var userSprPath = "game/Assets/userSpritesheets/" + usrNickName + ".svg";
+
+
+
+            var filePath = System.IO.Path.Combine(webRoot, @userSprPath);
+
+            System.IO.File.WriteAllText(filePath, userSvgHtml);
+
+
 
             //     String myText = "hot australian guy";
 
             //     System.IO.File.WriteAllText(filePath, "Hot brazilian girl");
 
 
-            return View();
+            //return View();
+
+            return RedirectToAction("Playground", "Game");
         }
 
 

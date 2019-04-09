@@ -16,20 +16,15 @@
 
     var userSvgHtml = @ViewBag.userSvg;
 
-    //var userSprPath = @ViewBag.userSprSheetPath;
-
     var usrNickName = @ViewBag.UserName;
 
     var userSprPath = "game/Assets/userSpritesheets/" + usrNickName + ".svg";
 
-    var realUserId = ViewBag.IdAvatar;
 
 
     var filePath = System.IO.Path.Combine(webRoot, @userSprPath); 
-
-            
    
-   System.IO.File.WriteAllText(filePath, userSvgHtml);
+    System.IO.File.WriteAllText(filePath, userSvgHtml);
 
 
 
