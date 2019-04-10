@@ -26,7 +26,7 @@ class PlayGround extends Phaser.Scene{
     this.load.image('walkway', 'Assets/img/walkway.png');
     this.load.image('redFlower', 'Assets/img/redFlower.png');
     this.load.image('pinkFlower', 'Assets/img/pinkFlower.png');
-    this.load.image('mathlab', 'Assets/img/mathLab.png');
+    this.load.image('mathlab', 'Assets/img/fruitStand.png');
 
 
     //Load game spritesheets      
